@@ -17,3 +17,4 @@ wp-config.php
 # OS Files
 .DS_Store
 Thumbs.db
+database/*.sql.gz
