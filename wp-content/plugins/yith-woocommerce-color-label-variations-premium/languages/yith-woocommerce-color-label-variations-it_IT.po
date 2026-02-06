@@ -1,0 +1,672 @@
+# Translation of YITH WooCommerce Color And Label Variations in Italian
+# This file is distributed under the same license as the YITH WooCommerce Color And Label Variations package.
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH WooCommerce Color And Label Variations\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/yith-woocommerce-"
+"colors-labels-variations.premium\n"
+"POT-Creation-Date: 2025-06-24 07:59:09+00:00\n"
+"PO-Revision-Date: 2024-06-26 07:52:09+0000\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+
+#: includes/class.yith-wccl-admin.php:185
+msgid "General Options"
+msgstr "Opzioni generali"
+
+#: includes/class.yith-wccl-admin.php:187
+msgid "Set the general options for the plugin behavior."
+msgstr "Imposta le opzioni generali per il funzionalmento del plugin."
+
+#: includes/class.yith-wccl-admin.php:190
+msgid "Customization"
+msgstr "Personalizzazione"
+
+#: includes/class.yith-wccl-admin.php:194
+msgid "Set the customization options for the plugin behavior."
+msgstr "Configura le opzioni di personalizzazione del plugin."
+
+#: includes/class.yith-wccl-admin.php:342
+msgid ""
+"The most effective way to show your product variations (size, colors, "
+"shapes, etc.)"
+msgstr ""
+"Il modo più efficace per mostrare gli attributi dei tuoi prodotti (taglie, "
+"colori, forme etc.)"
+
+#: includes/class.yith-wccl-admin.php:354
+msgid "Create or customize your products' attributes"
+msgstr "Crea o personalizza i tuoi attributi prodotto"
+
+#: includes/class.yith-wccl-admin.php:355
+msgid "and start a new adventure!"
+msgstr "e dai inizio all’avventura!"
+
+#: includes/class.yith-wccl-admin.php:977
+msgid "Color"
+msgstr "Colore"
+
+#: includes/class.yith-wccl-admin.php:981 includes/function.yith-wccl.php:106
+#: includes/function.yith-wccl.php:425
+msgid "Image"
+msgstr "Immagine"
+
+#: includes/class.yith-wccl-admin.php:985 includes/function.yith-wccl.php:107
+msgid "Label"
+msgstr "Etichetta"
+
+#: includes/class.yith-wccl-admin.php:990
+#: includes/class.yith-wccl-admin.php:1169 includes/function.yith-wccl.php:434
+#: includes/function.yith-wccl.php:505 includes/function.yith-wccl.php:593
+msgid "Value"
+msgstr "Valore"
+
+#: includes/class.yith-wccl-admin.php:1085
+msgid "Select terms"
+msgstr "Seleziona termini"
+
+#: includes/class.yith-wccl-admin.php:1096
+msgid "Select all"
+msgstr "Seleziona tutto"
+
+#: includes/class.yith-wccl-admin.php:1097
+msgid "Select none"
+msgstr "Deseleziona tutto"
+
+#: includes/class.yith-wccl-admin.php:1098
+msgid "Add new"
+msgstr "Aggiungi nuovo"
+
+#: includes/class.yith-wccl-admin.php:1157
+msgid "Create new attribute term"
+msgstr "Crea nuovo termine  attributo"
+
+#: includes/class.yith-wccl-admin.php:1162
+msgid "Name"
+msgstr "Nome"
+
+#: includes/class.yith-wccl-admin.php:1165
+msgid "Slug"
+msgstr "Slug"
+
+#: includes/class.yith-wccl-admin.php:1174
+#: plugin-options/customization-options.php:16
+msgid "Tooltip"
+msgstr "Tooltip"
+
+#: includes/class.yith-wccl-admin.php:1206
+msgid "A value is required for this term"
+msgstr "È necessario inserire un valore per questo termine"
+
+#: includes/class.yith-wccl-admin.php:1297
+msgid "Enable this option to show this variation in archive pages"
+msgstr ""
+"Abilita questa opzione per mostrare la variazione nelle pagine archivio"
+
+#: includes/class.yith-wccl-admin.php:1298
+msgid "Show in archive pages?"
+msgstr "Mostrare nelle pagine archivio?"
+
+#: includes/class.yith-wccl-admin.php:1320
+msgid "Hide in archive pages?"
+msgstr "Nascondere nelle pagine archivio?"
+
+#: includes/class.yith-wccl-frontend.php:219
+msgid "View Cart"
+msgstr "Vedi carrello"
+
+#: includes/class.yith-wccl-frontend.php:231
+#: plugin-options/general-options.php:155
+msgid "Add to cart"
+msgstr "Aggiungi al carrello"
+
+#: includes/class.yith-wccl-frontend.php:235
+msgid "Please, select an option"
+msgstr "Seleziona un'opzione"
+
+#. translators: %1$s stand form the product name.
+#: includes/class.yith-wccl-frontend.php:1258
+msgid " \"%1$s\" has been added to cart correctly"
+msgstr "\"%1$s\" è stato aggiunto al carrello correttamente"
+
+#: includes/function.yith-wccl.php:105
+msgid "Colorpicker"
+msgstr "Colorpicker"
+
+#: includes/function.yith-wccl.php:413 includes/function.yith-wccl.php:501
+#: includes/function.yith-wccl.php:577
+msgid "Use for tooltip"
+msgstr "Usa per il tooltip"
+
+#: includes/function.yith-wccl.php:417
+msgid "Swatch type"
+msgstr "Tipo campione"
+
+#: includes/function.yith-wccl.php:423
+msgid "Single color"
+msgstr "Colore singolo"
+
+#: includes/function.yith-wccl.php:424
+msgid "Bicolor"
+msgstr "Bicolore"
+
+#: includes/function.yith-wccl.php:460 includes/function.yith-wccl.php:522
+#: includes/function.yith-wccl.php:608
+msgid "Tooltip text"
+msgstr "Testo tooltip"
+
+#: includes/function.yith-wccl.php:473 includes/function.yith-wccl.php:533
+#: includes/function.yith-wccl.php:620
+msgid "Tooltip image"
+msgstr "Immagine tooltip"
+
+#: includes/function.yith-wccl.php:539
+msgid "No image"
+msgstr "Nessuna immagine"
+
+#: includes/function.yith-wccl.php:540
+msgid "Use attribute image"
+msgstr "Usa immagine dell’attributo"
+
+#: includes/function.yith-wccl.php:541
+msgid "Upload image"
+msgstr "Carica immagine"
+
+#: includes/function.yith-wccl.php:589
+msgid "Use for label"
+msgstr "Usa per l’etichetta"
+
+#: includes/wc-blocks/src/class-yith-wccl-wc-item-endpoint-register.php:89
+msgid "Button for editing the attributes on the Cart page."
+msgstr "Pulsante per modificare gli attributi nella pagina Carrello."
+
+#: init.php:39
+msgid ""
+"YITH WooCommerce Color and Label Variations Premium is enabled but not "
+"effective. It requires WooCommerce in order to work."
+msgstr ""
+"YITH WooCommerce Color and Label Variations Premium è abilitato ma non in "
+"funzione. Devi aver installato WooCommerce perché questo possa funzionare "
+"correttamente."
+
+#: plugin-options/customization-options.php:24
+msgid "Enable tooltip on attributes"
+msgstr "Abilita tooltip negli attributi"
+
+#: plugin-options/customization-options.php:27
+msgid "Enable to show a tooltip with the attributes' label."
+msgstr "Abilita per mostrare un tooltip con l’etichetta degli attributi."
+
+#: plugin-options/customization-options.php:33
+msgid "Tooltip position"
+msgstr "Posizione tooltip"
+
+#: plugin-options/customization-options.php:38
+msgid "Top"
+msgstr "Sopra"
+
+#: plugin-options/customization-options.php:39
+msgid "Bottom"
+msgstr "Sotto"
+
+#: plugin-options/customization-options.php:51
+msgid "Tooltip animation"
+msgstr "Animazione tooltip"
+
+#: plugin-options/customization-options.php:56
+msgid "Fade in"
+msgstr "Dissolvenza"
+
+#: plugin-options/customization-options.php:57
+msgid "Slide in"
+msgstr "Scorrimento"
+
+#: plugin-options/customization-options.php:69
+msgid "Tooltip colors"
+msgstr "Colori tooltip"
+
+#: plugin-options/customization-options.php:75
+msgid "Background"
+msgstr "Sfondo"
+
+#: plugin-options/customization-options.php:81
+msgid "Text"
+msgstr "Testo"
+
+#: plugin-options/customization-options.php:98
+msgid "Style options"
+msgstr "Opzioni di stile "
+
+#: plugin-options/customization-options.php:106
+msgid "Form colors"
+msgstr "Colori form"
+
+#: plugin-options/customization-options.php:112
+msgid "Border"
+msgstr "Bordo"
+
+#: plugin-options/customization-options.php:118
+msgid "Accent"
+msgstr "In risalto"
+
+#: plugin-options/customization-options.php:125
+msgid "When a variation is out of stock,"
+msgstr "Quando una variazione è esaurita,"
+
+#: plugin-options/customization-options.php:131
+msgid "Hide it"
+msgstr "Nascondila"
+
+#: plugin-options/customization-options.php:132
+msgid "Blur it"
+msgstr "Mostrala sfocata"
+
+#: plugin-options/customization-options.php:133
+msgid "Blur it and cross it out"
+msgstr "Mostrala sfocata e sbarrata"
+
+#: plugin-options/customization-options.php:138
+msgid "Color swatches size (px)"
+msgstr "Dimensione campioni colore (px)"
+
+#: plugin-options/customization-options.php:146
+#, fuzzy
+msgid "Border radius of color swatches (px)"
+msgstr "Dimensione campioni colore (px)"
+
+#: plugin-options/customization-options.php:155
+msgid "Border radius of labels and images swatches (px)"
+msgstr ""
+
+#: plugin-options/general-options.php:16
+msgid "Variations on shop & archive pages"
+msgstr "Variazioni nelle pagine shop e archivio"
+
+#: plugin-options/general-options.php:22
+msgid "Show variations as separate products"
+msgstr "Mostra le variazioni come prodotti separati"
+
+#: plugin-options/general-options.php:23
+msgid ""
+"Enable to show each single variation as a separate product on the shop and "
+"archive pages."
+msgstr ""
+"Abilita per mostrare le singole variazioni come prodotti separati nelle "
+"pagine shop e archivio."
+
+#: plugin-options/general-options.php:31
+#, fuzzy
+msgid "Hide Variable Products"
+msgstr "Nascondi i prodotti genitore"
+
+#: plugin-options/general-options.php:32
+#, fuzzy
+msgid "Hide variable products in loop when their variations are displayed."
+msgstr ""
+"Nascondi i prodotti genitore nel loop quando vengono mostrate le singole "
+"variazioni."
+
+#: plugin-options/general-options.php:45
+msgid "Order products by ID"
+msgstr "Ordina i prodotti per ID"
+
+#: plugin-options/general-options.php:46
+msgid ""
+"Order products by ID in all WooCommerce loop. This option alters the main "
+"WordPress query so you may notice changes in different sections of your "
+"site. We recommend enabling this option if you see your variations "
+"sequentially"
+msgstr ""
+"Ordina i prodotti per ID nel loop di WooCommerce. Questa opzione altera la "
+"query principale di WordPress pertanto potresti notare dei cambiamenti in "
+"diverse sezioni del tuo sito. Consigliamo di attivare questa opzione se vedi "
+"le variazioni in modo sequenziale"
+
+#: plugin-options/general-options.php:60
+msgid "Allow attributes selection on shop and archive pages"
+msgstr "Permetti la selezione degli attributi nelle pagine shop e archivio"
+
+#: plugin-options/general-options.php:63
+msgid ""
+"Enable to allow users to choose variations on the shop and archive pages."
+msgstr ""
+"Abilita per permettere agli utenti di scegliere le variazioni nelle pagine "
+"shop e archivio."
+
+#: plugin-options/general-options.php:70
+msgid "Show only specific attributes on shop archive pages"
+msgstr "Mostra solo determinati attributi nelle pagine shop e archivio"
+
+#: plugin-options/general-options.php:76
+msgid "Enable to choose which attributes to show on the shop archive pages."
+msgstr ""
+"Abilita per selezionare gli attributi da mostrare nelle pagine shop e "
+"archivio."
+
+#: plugin-options/general-options.php:77
+msgid "If disabled, all attributes will be shown."
+msgstr "Se disabilitata, verranno mostrati tutti gli attributi."
+
+#: plugin-options/general-options.php:89
+msgid "Attributes to show:"
+msgstr "Attributi da mostrare:"
+
+#: plugin-options/general-options.php:107
+msgid "Variations form position on archive pages"
+msgstr "Posizione del form delle variazioni nelle pagine archivio"
+
+#: plugin-options/general-options.php:111
+msgid "Before the \"Add to Cart\" button"
+msgstr "Prima del pulsante “Aggiungi al carrello”"
+
+#: plugin-options/general-options.php:112
+msgid "After the \"Add to Cart\" button"
+msgstr "Dopo il pulsante “Aggiungi al carrello”"
+
+#: plugin-options/general-options.php:123
+msgid "Enable AJAX form on archive pages"
+msgstr "Abilita il form AJAX nelle pagine archivio"
+
+#: plugin-options/general-options.php:126
+msgid "Enable AJAX handle for variations form on archive shop pages."
+msgstr ""
+"Abilita la gestione AJAX per il form delle variazioni nelle pagine archivio."
+
+#: plugin-options/general-options.php:137
+msgid "Customize the \"Add to cart\" button label"
+msgstr "Personalizza il testo del pulsante “Aggiungi al carrello”"
+
+#: plugin-options/general-options.php:140
+msgid ""
+"Enable to set a custom label for the \"Add to cart\" button when a variation "
+"is selected."
+msgstr ""
+"Abilita per personalizzare l’etichetta del pulsante \"Aggiungi al carrello\" "
+"quando viene selezionata una variazione."
+
+#: plugin-options/general-options.php:151
+msgid "Label for the \"Add to cart\" button"
+msgstr "Etichetta per il pulsante \"Aggiungi al carrello\""
+
+#: plugin-options/general-options.php:154
+msgid ""
+"Label for the \"Add to cart\" button when a variation is selected from an "
+"archive page."
+msgstr ""
+"Inserisci il testo per il pulsante \"Aggiungi al carrello\" quando si "
+"seleziona una variazione dalla pagina archivio."
+
+#: plugin-options/general-options.php:168
+msgid "Variations on product pages"
+msgstr "Variazioni nelle pagine prodotto"
+
+#: plugin-options/general-options.php:174
+msgid "Variations layout"
+msgstr "Layout variazioni"
+
+#: plugin-options/general-options.php:180
+msgid "Inline"
+msgstr "In linea"
+
+#: plugin-options/general-options.php:181
+msgid "Separate lines"
+msgstr "Linee separate"
+
+#: plugin-options/general-options.php:186
+msgid "Show attribute description"
+msgstr "Mostra la descrizione dell’attributo"
+
+#: plugin-options/general-options.php:189
+msgid ""
+"Choose to show the description below each attribute on the single product "
+"page."
+msgstr ""
+"Scegli se mostrare la descrizione sotto ogni attributo nella pagina prodotto."
+
+#: plugin-options/general-options.php:194
+msgid "Replace product image on hover"
+msgstr "Sostituisci l'immagine del prodotto all’hover"
+
+#: plugin-options/general-options.php:197
+#, fuzzy
+msgid ""
+"Enable to replace the default product image when the mouse hovers over  \n"
+"a specific attribute."
+msgstr ""
+"Abilita per sostituire l'immagine del prodotto passando il mouse \n"
+"sull'attributo interessato. ATTENZIONE: funziona soltanto per i prodotti che "
+"hanno \n"
+"un solo attributo per variazione. "
+
+#: plugin-options/general-options.php:207
+msgid "Show custom attributes on \"Additional Information\" Tab"
+msgstr "Mostra attributi personalizzati nella tab \"Informazioni aggiuntive\""
+
+#: plugin-options/general-options.php:210
+msgid ""
+"Enable to add the custom attributes style to the info shown on the "
+"\"Additional Information\" tab."
+msgstr ""
+"Abilita per utilizzare lo stile personalizzato per gli attributi anche nella "
+"tab \"Informazioni aggiuntive”."
+
+#: plugin-options/general-options.php:221
+msgid "Variations on Cart page"
+msgstr "Variazioni nella pagina Carrello"
+
+#: plugin-options/general-options.php:228
+msgid "Allow editing of attributes on the Cart page "
+msgstr "Permetti la modifica degli attributi nella pagina Carrello"
+
+#: plugin-options/general-options.php:231
+msgid ""
+"Enable to allow users to edit attributes selection in a modal window on the "
+"Cart page"
+msgstr ""
+"Abilita per permettere agli utenti di modificare la selezione degli "
+"attributi tramite finestra modale nella pagina Carrello."
+
+#: templates/admin/description-field.php:20
+#: templates/admin/description-field.php:33
+msgid "Description"
+msgstr "Descrizione"
+
+#: templates/admin/description-field.php:25
+#: templates/admin/description-field.php:36
+msgid "Description for product attributes."
+msgstr "Descrizione per attributi prodotto."
+
+#: templates/admin/variation-gallery.php:16
+msgid "Variation Image Gallery"
+msgstr "Galleria immagini delle variazioni"
+
+#. translators: Link of the product in the cart page to open the variations.
+#: templates/cart/modal/cart-modal.php:31
+msgid "Update"
+msgstr "Aggiorna"
+
+#. translators: Link of the product in the cart page to open the variations.
+#: templates/cart/yith-wccl-edit-attributes.php:23
+msgid "Edit"
+msgstr "Modifica"
+
+#: templates/yith-wccl-variable-loop.php:56
+msgid "Choose an option"
+msgstr "Scegli un'opzione"
+
+#: views/html-variations-style-tab.php:20
+#: views/html-variations-style-tab.php:106
+msgid "Attributes Style"
+msgstr "Stile degli attributi"
+
+#: views/html-variations-style-tab.php:21
+#: views/html-variations-style-tab.php:107
+msgid "Customize the display of this product's attributes."
+msgstr "Personalizza lo stile degli attributi di questo prodotto."
+
+#: views/html-variations-style-tab.php:39
+msgid "Custom attribute"
+msgstr "Attributo personalizzato"
+
+#: views/html-variations-style-tab.php:74
+msgid "Override attribute options"
+msgstr "Sovrascrivi opzioni attributo"
+
+#: views/html-variations-style-tab.php:113
+msgid "No attributes set for this product"
+msgstr "Non ci sono attributi impostati per questo prodotto"
+
+#: views/html-variations-style-tab.php:115
+msgid ""
+"Before you can customize the variations style, you need to add some "
+"variation attributes on the %s"
+msgstr ""
+"Per poter personalizzare lo stile delle variazioni devi prima aggiungere "
+"degli attributi della variazione nella %s"
+
+#: views/html-wpml-variations-style-tab.php:18
+msgid "Translate the attributes %s"
+msgstr "Traduci gli attributi %s"
+
+#. Description of the plugin/theme
+msgid ""
+"<code><strong>YITH WooCommerce Color, Image & Label Variation Swatches</"
+"strong></code> allows you to customize the drop-down selection of your "
+"variable products and have customers select them directly from your shop "
+"pages. A must-have for every e-commerce store. <a href=\"https://yithemes."
+"com/\" target=\"_blank\">Get more plugins for your e-commerce shop on "
+"<strong>YITH</strong></a>."
+msgstr ""
+"<code><strong>YITH WooCommerce Color, Image & Label Variation Swatches</"
+"strong></code> ti permette di personalizzare il drop-down dei tuoi prodotti "
+"variabili ed acquistare direttamente le variazioni dalle pagine shop. "
+"Indispensabile per ogni e-commerce. <a href=\"https://yithemes.com/\" "
+"target=\"_blank\">Scopri altri plugin per il tuo e-commerce su <strong>YITH</"
+"strong></a>."
+
+#: includes/class.yith-wccl-admin.php:226
+msgctxt ""
+"[YOUR STORE TOOLS TAB] Description for plugin YITH WooCommerce Wishlist"
+msgid ""
+"Allow your customers to create lists of products they want and share them "
+"with family and friends."
+msgstr ""
+"Permetti ai tuoi clienti di creare delle liste di prodotti a cui sono "
+"interessati e condividerle con parenti e amici."
+
+#: includes/class.yith-wccl-admin.php:238
+msgctxt ""
+"[YOUR STORE TOOLS TAB] Description for plugin YITH WooCommerce Gift Cards"
+msgid ""
+"Sell gift cards in your shop to increase your earnings and attract new "
+"customers."
+msgstr ""
+"Vendi buoni regalo nel tuo shop per aumentare i guadagni ed attirare nuovi "
+"clienti."
+
+#: includes/class.yith-wccl-admin.php:250
+msgctxt ""
+"[YOUR STORE TOOLS TAB] Description for plugin YITH WooCommerce Request a "
+"Quote"
+msgid ""
+"Hide prices and/or the \"Add to cart\" button and let your customers request "
+"a custom quote for every product."
+msgstr ""
+"Nascondi i prezzi e/o il pulsante “Aggiungi al carrello” e permetti ai tuoi "
+"clienti di richiedere un preventivo personalizzato per ciascun prodotto."
+
+#: includes/class.yith-wccl-admin.php:262
+msgctxt ""
+"[YOUR STORE TOOLS TAB] Description for plugin YITH WooCommerce Ajax Product "
+"Filter"
+msgid ""
+"Help your customers to easily find the products they are looking for and "
+"improve the user experience of your shop."
+msgstr ""
+"Aiuta i tuoi clienti a trovare i prodotti che stanno cercando e migliora la "
+"user experience nel tuo shop."
+
+#: includes/class.yith-wccl-admin.php:274
+msgctxt ""
+"[YOUR STORE TOOLS TAB] Description for plugin YITH WooCommerce Product Add-"
+"Ons"
+msgid ""
+"Add paid or free advanced options to your product pages using fields like "
+"radio buttons, checkboxes, drop-downs, custom text inputs, and more."
+msgstr ""
+"Aggiungi opzioni avanzate gratuite o a pagamento alle tue pagine prodotto "
+"usando campi di tipo radio button, checkbox, drop-down, input di testo "
+"personalizzati e altro."
+
+#: includes/class.yith-wccl-admin.php:286
+msgctxt ""
+"[YOUR STORE TOOLS TAB] Description for plugin YITH WooCommerce Dynamic "
+"Pricing and Discounts"
+msgid ""
+"Increase conversions through dynamic discounts and price rules, and build "
+"powerful and targeted offers."
+msgstr ""
+"Aumenta le conversioni tramite regole di prezzo e sconti dinamici e crea "
+"delle offerte mirate e potenti."
+
+#: includes/class.yith-wccl-admin.php:298
+msgctxt ""
+"[YOUR STORE TOOLS TAB] Description for plugin YITH WooCommerce Customize My "
+"Account"
+msgid ""
+"Customize the My Account page of your customers by creating custom sections "
+"with promotions and ad-hoc content based on your needs."
+msgstr ""
+"Personalizza la pagina “Il mio account” dei tuoi clienti creando sezioni ad "
+"hoc con promozioni e contenuti in base alle loro esigenze."
+
+#: includes/class.yith-wccl-admin.php:310
+msgctxt "[YOUR STORE TOOLS TAB] Description for plugin Recover Abandoned Cart"
+msgid ""
+"Contact users who have added products to the cart without completing the "
+"order and try to recover lost sales."
+msgstr ""
+"Contatta gli utenti che hanno aggiunto prodotti al carrello senza completare "
+"l’ordine e prova a recuperare le vendite perse."
+
+#: includes/class.yith-wccl-admin.php:1271
+#: templates/admin/variation-gallery.php:22
+msgctxt "label for remove single image from variation gallery"
+msgid "Remove image"
+msgstr "Rimuovi immagine"
+
+#: includes/class.yith-wccl-admin.php:1456
+msgctxt "Product tab title"
+msgid "Attributes Style"
+msgstr "Stile attributi"
+
+#: includes/class.yith-wccl-frontend.php:1625
+msgctxt ""
+"Error from ajax call when it is not possible to retrieve attribute "
+"information"
+msgid "It is not possible to retrieve the attributes' information"
+msgstr "Non è possibile recuperare le informazioni sugli attributi"
+
+#: views/html-variations-style-tab.php:84
+msgctxt "Term name, for example Pink"
+msgid ""
+"Enable to set custom display options for the \"%s\" attributes in this "
+"specific product."
+msgstr ""
+"Abilita per impostare opzioni di stile personalizzate per gli attributi “%s” "
+"in questo prodotto."
+
+#: views/html-wpml-variations-style-tab.php:18
+msgctxt "Translate the attributes in the following section"
+msgid "in the following section"
+msgstr "Nella sezione seguente"
+
+#~ msgid "Options border radius (px)"
+#~ msgstr "Border radius opzioni (px)"
+
+#~ msgid "Color swatches border radius (px)"
+#~ msgstr "Border radius campioni coire (px)"

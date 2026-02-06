@@ -1,0 +1,63 @@
+/* CSS For Widget Icon */
+.elementor-element .icon {
+    position: relative;
+}
+/* Normal Icon */
+.elementor-element .icon .woolentor-widget-icon::after {
+    content: "WL";
+    font-size: 12px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #fff;
+    padding: 3px 4px;
+    font-family: var(--e-a-font-family);
+}
+/* New Icon */
+.elementor-element .icon .woolentor-widget-new-icon::after {
+    content: "New";
+    font-size: 12px;
+    position: absolute;
+    right: -0.5px;
+    top: -0.5px;
+    background-color: #f56540;
+    color: #fff;
+    padding: 3px 4px;
+    font-family: var(--e-a-font-family);
+    border-radius: 0 2px 0 0;
+}
+
+/* CSS For Promosion Widget Button */
+.woolentor-elementor-pro-hide{
+    display: none;
+}
+a.woolentor-pro-dialog-button-action{
+    display: none !important;
+}
+.woolentor-pro-widget a.woolentor-pro-dialog-button-action{
+    display: inline-block !important;
+}
+.elementor-button.go-pro.dialog-button.dialog-action.dialog-buttons-action.woolentor-elementor-pro-hide {
+    display: none !important;
+}
+
+/* CSS For Disable Field Control */
+.woolentor-disable-control .elementor-control-input-wrapper{
+    pointer-events: none !important;
+    opacity: 0.4;
+}
+.woolentor-disable-control:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 2;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+.woolentor-disable-control i.eicon-pro-icon {
+    color: #D73361;
+    font-size: 14px;
+}

@@ -1,0 +1,19 @@
+# Logs
+*.log
+wp-content/debug.log
+
+# WordPress Content
+wp-content/uploads/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/aiowps_backups/
+wp-content/staging/
+
+# Configuration
+wp-config.php
+.htaccess
+
+# OS Files
+.DS_Store
+Thumbs.db

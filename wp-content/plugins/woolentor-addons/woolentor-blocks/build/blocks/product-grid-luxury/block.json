@@ -1,0 +1,1826 @@
+{
+  "name": "woolentor/product-grid-luxury",
+  "category": "woolentor-blocks",
+  "title": "WL: Product Grid Luxury",
+  "description": "Display Product Grid Luxury.",
+  "keywords": [
+    "woolentor",
+    "product",
+    "luxury",
+    "grid",
+    "Grid Luxury",
+    "editorial",
+    "premium",
+    "woocommerce",
+    "shop product"
+  ],
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "attributes": {
+    "blockUniqId": {
+      "type": "string",
+      "default": ""
+    },
+    "areaPadding": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} { padding: {{areaPadding}} !important; }"
+      }
+    },
+    "areaMargin": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} { margin: {{areaMargin}} !important; }"
+      }
+    },
+    "areaBGProperty": {
+      "type": "object",
+      "default": {
+        "imageId": null,
+        "imageUrl": "",
+        "position": "",
+        "attachment": "",
+        "repeat": "",
+        "size": ""
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}}"
+      }
+    },
+    "query_type": {
+      "type": "string",
+      "default": "products"
+    },
+    "include_products": {
+      "type": "array",
+      "default": []
+    },
+    "posts_per_page": {
+      "type": "number",
+      "default": 3
+    },
+    "categories": {
+      "type": "array",
+      "default": []
+    },
+    "tags": {
+      "type": "array",
+      "default": []
+    },
+    "orderby": {
+      "type": "string",
+      "default": "none"
+    },
+    "order": {
+      "type": "string",
+      "default": "DESC"
+    },
+    "exclude_products": {
+      "type": "array",
+      "default": []
+    },
+    "exclude_out_of_stock": {
+      "type": "boolean",
+      "default": false
+    },
+    "exclude_no_image": {
+      "type": "boolean",
+      "default": false
+    },
+    "enable_filters": {
+      "type": "boolean",
+      "default": false
+    },
+    "columns": {
+      "type": "object",
+      "default": {
+        "desktop": 3
+      }
+    },
+    "gap": {
+      "type": "number",
+      "default": 25,
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-grid-luxury { gap: {{gap}}px; }"
+      }
+    },
+    "show_image": {
+      "type": "boolean",
+      "default": true
+    },
+    "image_size": {
+      "type": "string",
+      "default": "woocommerce_thumbnail"
+    },
+    "show_secondary_image": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_title": {
+      "type": "boolean",
+      "default": true
+    },
+    "title_tag": {
+      "type": "string",
+      "default": "h3"
+    },
+    "show_price": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_rating": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_categories": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_add_to_cart": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_quick_view": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_wishlist": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_compare": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_badges": {
+      "type": "boolean",
+      "default": true
+    },
+    "badge_style": {
+      "type": "string",
+      "default": "solid"
+    },
+    "badge_position": {
+      "type": "string",
+      "default": "top-left"
+    },
+    "show_sale_badge": {
+      "type": "boolean",
+      "default": true
+    },
+    "sale_badge_text": {
+      "type": "string",
+      "default": "SALE"
+    },
+    "show_new_badge": {
+      "type": "boolean",
+      "default": true
+    },
+    "new_badge_text": {
+      "type": "string",
+      "default": "NEW"
+    },
+    "new_badge_days": {
+      "type": "number",
+      "default": 7
+    },
+    "show_trending_badge": {
+      "type": "boolean",
+      "default": false
+    },
+    "trending_badge_text": {
+      "type": "string",
+      "default": "HOT"
+    },
+    "show_subtitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "subtitle_length": {
+      "type": "number",
+      "default": 5
+    },
+    "show_category_badge": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_discount_offer_badge": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_view_details": {
+      "type": "boolean",
+      "default": true
+    },
+    "view_details_text": {
+      "type": "string",
+      "default": "View Details"
+    },
+    "add_to_cart_text": {
+      "type": "string",
+      "default": ""
+    },
+    "image_aspect_ratio": {
+      "type": "string",
+      "default": "4-5"
+    },
+    "card_hover_effect": {
+      "type": "string",
+      "default": "lift"
+    },
+    "image_hover_effect": {
+      "type": "string",
+      "default": "zoom"
+    },
+    "show_quick_actions": {
+      "type": "boolean",
+      "default": true
+    },
+    "enable_pagination": {
+      "type": "boolean",
+      "default": true
+    },
+    "pagination_type": {
+      "type": "string",
+      "default": "numbers"
+    },
+    "load_more_text": {
+      "type": "string",
+      "default": "Load More"
+    },
+    "load_more_complete_text": {
+      "type": "string",
+      "default": "No more products"
+    },
+    "container_background": {
+      "type": "string",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-card { background-color: {{container_background}}; }"
+      }
+    },
+    "container_border": {
+      "type": "object",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-card"
+      }
+    },
+    "container_border_radius": {
+      "type": "object",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-card { border-radius: {{container_border_radius}}; }"
+      }
+    },
+    "container_box_shadow": {
+      "type": "object",
+      "default": {},
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-card"
+      }
+    },
+    "container_padding": {
+      "type": "object",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-card { padding: {{container_padding}}; }"
+      }
+    },
+    "image_border_radius": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_image",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-image img.woolentor-product-img { border-radius: {{image_border_radius}}; }"
+      }
+    },
+    "content_padding": {
+      "type": "object",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-content { padding: {{content_padding}}; }"
+      }
+    },
+    "content_align": {
+      "type": "string",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-content{ align-items: {{content_align}}; }"
+      }
+    },
+    "badge_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_badges",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-item .woolentor-badge:not(.woolentor-category-badge){ color: {{badge_color}}; }"
+      }
+    },
+    "badge_typography": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_badges",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-item .woolentor-badge:not(.woolentor-category-badge){ font-size: {{badge_typography}}; }"
+      }
+    },
+    "badge_background_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_badges",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-item .woolentor-badge:not(.woolentor-category-badge){ background-color: {{badge_background_color}}; }"
+      }
+    },
+    "badge_border": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_badges",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-item .woolentor-badge:not(.woolentor-category-badge)"
+      }
+    },
+    "badge_border_radius": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_badges",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-item .woolentor-badge:not(.woolentor-category-badge) { border-radius: {{badge_border_radius}}; }"
+      }
+    },
+    "badge_padding": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_badges",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-item .woolentor-badge:not(.woolentor-category-badge) { padding: {{badge_padding}}; }"
+      }
+    },
+    "title_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_title",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-title a{ color: {{title_color}}; }"
+      }
+    },
+    "title_hover_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_title",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-title a:hover{ color: {{title_hover_color}}; }"
+      }
+    },
+    "title_typography": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_title",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-title{ font-size: {{title_typography}}; }"
+      }
+    },
+    "title_margin": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_title",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-product-title { margin: {{title_margin}}; }"
+      }
+    },
+    "review_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_rating",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-stars .star{ color: {{review_color}}; }"
+      }
+    },
+    "empty_review_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_rating",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-stars .star.empty{ color: {{empty_review_color}}; }"
+      }
+    },
+    "start_size": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_rating",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-stars .star{ width: {{start_size}}px; height: {{start_size}}px; }"
+      }
+    },
+    "start_space_between": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_rating",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-stars{ gap: {{start_space_between}}px; }"
+      }
+    },
+    "review_counter_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_rating",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-rating-text{ color: {{review_counter_color}}; }"
+      }
+    },
+    "review_counter_typography": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_rating",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-rating-text{ font-size: {{review_counter_typography}}; }"
+      }
+    },
+    "review_margin": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_rating",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-rating{ margin: {{review_margin}}; }"
+      }
+    },
+    "category_badge_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_category_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-category-badge{ color: {{category_badge_color}}; }"
+      }
+    },
+    "category_badge_bg_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_category_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-category-badge{ background-color: {{category_badge_bg_color}}; }"
+      }
+    },
+    "category_badge_typography": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_category_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-category-badge{ font-size: {{category_badge_typography}}; }"
+      }
+    },
+    "category_badge_border_radius": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_category_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-category-badge{ border-radius: {{category_badge_border_radius}}; }"
+      }
+    },
+    "category_badge_padding": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_category_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-category-badge{ padding: {{category_badge_padding}}; }"
+      }
+    },
+    "category_badge_margin": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_category_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-category-badge{ margin: {{category_badge_margin}}; }"
+      }
+    },
+    "description_color": {
+      "type": "string",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-subtitle{ color: {{description_color}}; }"
+      }
+    },
+    "description_typography": {
+      "type": "string",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-subtitle{ font-size: {{description_typography}}; }"
+      }
+    },
+    "description_margin": {
+      "type": "object",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-subtitle{ margin: {{description_margin}}; }"
+      }
+    },
+    "price_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_price",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-price,{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-price del{ color: {{price_color}}; }"
+      }
+    },
+    "sale_price_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_price",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-price ins{ color: {{sale_price_color}}; }"
+      }
+    },
+    "price_typography": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_price",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-price,{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-price del{ font-size: {{price_typography}}; }"
+      }
+    },
+    "category_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_categories",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-category-badge{ color: {{category_color}}; }"
+      }
+    },
+    "category_bg_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_categories",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-category-badge{ background-color: {{category_bg_color}}; }"
+      }
+    },
+    "category_hover_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_categories",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-category-badge:hover{ color: {{category_hover_color}}; }"
+      }
+    },
+    "category_bg_hover_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_categories",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-category-badge:hover{ background-color: {{category_bg_hover_color}}; }"
+      }
+    },
+    "category_typography": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_categories",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-category-badge{ font-size: {{category_typography}}; }"
+      }
+    },
+    "category_margin": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_categories",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-category-badge{ margin: {{category_margin}}; }"
+      }
+    },
+    "category_padding": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_categories",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-category-badge{ padding: {{category_padding}}; }"
+      }
+    },
+    "category_border_radius": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_categories",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-product-category-badge{ border-radius: {{category_border_radius}}; }"
+      }
+    },
+    "cart_action_button_text_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_add_to_cart",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card a.woolentor-cart-btn{ color: {{cart_action_button_text_color}}; }"
+      }
+    },
+    "cart_action_button_background_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_add_to_cart",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card a.woolentor-cart-btn{ background-color: {{cart_action_button_background_color}};background: {{cart_action_button_background_color}}; }"
+      }
+    },
+    "cart_button_hover_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_add_to_cart",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card a.woolentor-cart-btn:hover{ color: {{cart_button_hover_color}}; }"
+      }
+    },
+    "cart_button_background_hover_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_add_to_cart",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card a.woolentor-cart-btn:hover,{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-cart-btn::before{ background-color: {{cart_button_background_hover_color}}!important;background: {{cart_button_background_hover_color}}!important; }"
+      }
+    },
+    "cart_action_button_typography": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_add_to_cart",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card a.woolentor-cart-btn{ font-size: {{cart_action_button_typography}}; }"
+      }
+    },
+    "cart_action_button_size": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_add_to_cart",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-cart-arrow{ font-size: {{cart_action_button_size}}px; }"
+      }
+    },
+    "cart_button_border": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_add_to_cart",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card a.woolentor-cart-btn"
+      }
+    },
+    "cart_button_border_radius": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_add_to_cart",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card a.woolentor-cart-btn{ border-radius: {{cart_button_border_radius}}; }"
+      }
+    },
+    "cart_button_padding": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_add_to_cart",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card a.woolentor-cart-btn{ padding: {{cart_button_padding}}; }"
+      }
+    },
+    "quick_action_button_text_color": {
+      "type": "string",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-quick-actions .woolentor-quick-action,{{WOOLENTOR_WRAPPER}} .woolentor-quick-actions .woolentor-quick-action a{ color: {{quick_action_button_text_color}}; }"
+      }
+    },
+    "quick_action_button_background_color": {
+      "type": "string",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-quick-actions .woolentor-quick-action{ background-color: {{quick_action_button_background_color}}; background:{{quick_action_button_background_color}}; }"
+      }
+    },
+    "quick_button_hover_color": {
+      "type": "string",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-quick-actions .woolentor-quick-action:hover,{{WOOLENTOR_WRAPPER}} .woolentor-quick-actions .woolentor-quick-action:hover a{ color: {{quick_button_hover_color}}; }"
+      }
+    },
+    "quick_button_background_hover_color": {
+      "type": "string",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-quick-actions .woolentor-quick-action:hover{ background-color: {{quick_button_background_hover_color}}; background:{{quick_button_background_hover_color}}; }"
+      }
+    },
+    "quick_action_button_size": {
+      "type": "string",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-quick-actions .woolentor-quick-action svg{ width: {{quick_action_button_size}}px; height: {{quick_action_button_size}}px; } {{WOOLENTOR_WRAPPER}} .woolentor-quick-actions .woolentor-quick-action{ font-size:{{quick_action_button_size}}px; }"
+      }
+    },
+    "quick_button_border_radius": {
+      "type": "object",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-quick-actions .woolentor-quick-action{ border-radius: {{quick_button_border_radius}}; }"
+      }
+    },
+    "quick_button_padding": {
+      "type": "object",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-quick-actions .woolentor-quick-action{ padding: {{quick_button_padding}}; }"
+      }
+    },
+    "view_details_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_view_details",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-view-details{ color: {{view_details_color}}; }"
+      }
+    },
+    "view_details_hover_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_view_details",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-view-details:hover{ color: {{view_details_hover_color}}; }"
+      }
+    },
+    "view_details_typography": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_view_details",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-view-details{ font-size: {{view_details_typography}}; }"
+      }
+    },
+    "view_details_margin": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_view_details",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-view-details{ margin: {{view_details_margin}}; }"
+      }
+    },
+    "discount_badge_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_discount_offer_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-sale-indicator{ color: {{discount_badge_color}}; }"
+      }
+    },
+    "discount_badge_bg_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_discount_offer_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-sale-indicator{ background-color: {{discount_badge_bg_color}}; }"
+      }
+    },
+    "discount_badge_typography": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_discount_offer_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-sale-indicator{ font-size: {{discount_badge_typography}}; }"
+      }
+    },
+    "discount_badge_width": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_discount_offer_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-sale-indicator{ width: {{discount_badge_width}}px; }"
+      }
+    },
+    "discount_badge_height": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_discount_offer_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-sale-indicator{ height: {{discount_badge_height}}px; }"
+      }
+    },
+    "discount_badge_border_radius": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_discount_offer_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-sale-indicator{ border-radius: {{discount_badge_border_radius}}; }"
+      }
+    },
+    "discount_badge_padding": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_discount_offer_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-sale-indicator{ padding: {{discount_badge_padding}}; }"
+      }
+    },
+    "discount_badge_margin": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_discount_offer_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-sale-indicator{ margin: {{discount_badge_margin}}; }"
+      }
+    },
+    "new_badge_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_new_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-new-badge-indicator{ color: {{new_badge_color}}; }"
+      }
+    },
+    "new_badge_bg_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_new_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-new-badge-indicator{ background-color: {{new_badge_bg_color}}; }"
+      }
+    },
+    "new_badge_typography": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_new_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-new-badge-indicator{ font-size: {{new_badge_typography}}; }"
+      }
+    },
+    "new_badge_border": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_new_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-new-badge-indicator"
+      }
+    },
+    "new_badge_border_radius": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_new_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-new-badge-indicator{ border-radius: {{new_badge_border_radius}}; }"
+      }
+    },
+    "new_badge_padding": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_new_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-new-badge-indicator{ padding: {{new_badge_padding}}; }"
+      }
+    },
+    "new_badge_margin": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "show_new_badge",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-luxury-card .woolentor-new-badge-indicator{ margin: {{new_badge_margin}}; }"
+      }
+    },
+    "pagination_position": {
+      "type": "string",
+      "default": "center",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination{ justify-content: {{pagination_position}}; }"
+      }
+    },
+    "pagination_typography": {
+      "type": "string",
+      "default": "center",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li a,{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li span,{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn{ font-size: {{pagination_typography}}; }"
+      }
+    },
+    "pagination_border": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li a,{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li span,{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn"
+      }
+    },
+    "pagination_border_radius": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li a,{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li span:not(.dots),{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn{ border-radius:{{pagination_border_radius}}; }"
+      }
+    },
+    "pagination_padding": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li a,{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li span:not(.dots),{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn{ padding:{{pagination_padding}}; }"
+      }
+    },
+    "pagination_margin": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination{ margin:{{pagination_margin}}; }"
+      }
+    },
+    "pagination_space_between": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "===",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul{ gap:{{pagination_space_between}}px; }"
+      }
+    },
+    "pagination_link_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "===",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li a{ color:{{pagination_link_color}}; }"
+      }
+    },
+    "pagination_link_bg_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "===",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li a{ background-color:{{pagination_link_bg_color}}; }"
+      }
+    },
+    "pagination_border_color_normal": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "===",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li a{ border-color:{{pagination_border_color_normal}}; }"
+      }
+    },
+    "pagination_link_color_hover": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "===",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li a:hover{ color:{{pagination_link_color_hover}}; }"
+      }
+    },
+    "pagination_link_bg_color_hover": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "===",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li a:hover{ background-color:{{pagination_link_bg_color_hover}}; }"
+      }
+    },
+    "pagination_border_color_hover": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "===",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li a:hover{ border-color:{{pagination_border_color_hover}}; }"
+      }
+    },
+    "pagination_link_color_active": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "===",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li span:not(.dots){ color:{{pagination_link_color_active}}; }"
+      }
+    },
+    "pagination_link_bg_color_active": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "===",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li span:not(.dots){ background-color:{{pagination_link_bg_color_active}}; }"
+      }
+    },
+    "pagination_border_color_active": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "===",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-pagination ul li span:not(.dots){ border-color:{{pagination_border_color_active}}; }"
+      }
+    },
+    "loadmore_spinner_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "!==",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-ajax-loader .spinner{ border-color:{{loadmore_spinner_color}}; }"
+      }
+    },
+    "loadmore_active_spinner_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "!==",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-ajax-loader .spinner{ border-left-color:{{loadmore_active_spinner_color}}; }"
+      }
+    },
+    "loadmore_button_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "!==",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn{ color:{{loadmore_button_color}}; }"
+      }
+    },
+    "loadmore_bg_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "!==",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn{ background-color:{{loadmore_bg_color}}; }"
+      }
+    },
+    "loadmore_border_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "!==",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn{ border-color:{{loadmore_border_color}}; }"
+      }
+    },
+    "loadmore_button_hover_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "!==",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn:hover{ color:{{loadmore_button_hover_color}}; }"
+      }
+    },
+    "loadmore_hover_bg_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "!==",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn:hover{ background-color:{{loadmore_hover_bg_color}}; }"
+      }
+    },
+    "loadmore_hover_border_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "!==",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn:hover{ border-color:{{loadmore_hover_border_color}}; }"
+      }
+    },
+    "loadmore_disable_button_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "!==",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn:disabled{ color:{{loadmore_disable_button_color}}; }"
+      }
+    },
+    "loadmore_disable_button_bg_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "!==",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn:disabled{ background-color:{{loadmore_disable_button_bg_color}}; }"
+      }
+    },
+    "loadmore_disable_button_border_color": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "enable_pagination",
+              "condition": "===",
+              "value": true
+            },
+            {
+              "key": "pagination_type",
+              "condition": "!==",
+              "value": "numbers"
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-load-more-btn:disabled{ border-color:{{loadmore_disable_button_border_color}}; }"
+      }
+    }
+  }
+}

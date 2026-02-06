@@ -1,0 +1,112 @@
+<wpml-config>
+	<admin-texts>
+        <key name="nm_theme_options">
+            <key name="top_bar_text" />
+            <key name="footer_bar_text" />
+            <key name="footer_bar_custom_content" />
+            <key name="shop_default_description" />
+            <key name="product_new_flash_text" />
+            <key name="myaccount_dashboard_text" />
+            <key name="wishlist_share_title" />
+            <key name="wishlist_share_text" />
+        </key>
+    </admin-texts>
+    <custom-types>
+        <custom-type translate="1">team</custom-type>
+        <custom-type translate="1">portfolio</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">portfolio-category</taxonomy>
+    </taxonomies>
+    <shortcodes>
+        <shortcode>
+            <tag label="Banner">nm_banner</tag>
+            <attributes>
+                <attribute label="Title">title</attribute>
+                <attribute label="Subtitle">subtitle</attribute>
+                <attribute label="Shop Link Title">shop_link_title</attribute>
+                <attribute label="Custom Link" type="link" encoding="vc_link">custom_link</attribute>
+                <attribute label="Shop Link" type="link">shop_link</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag label="Button">nm_button</tag>
+            <attributes>
+                <attribute label="Title">title</attribute>
+                <attribute label="Link" type="link" encoding="vc_link">link</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag label="Feature Box">nm_feature</tag>
+            <attributes>
+                <attribute label="Title">title</attribute>
+                <attribute label="Subtitle">subtitle</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag label="Lightbox">nm_lightbox</tag>
+            <attributes>
+                <attribute label="Title">title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag label="Lightbox">nm_testimonial</tag>
+            <attributes>
+                <attribute label="Signature">signature</attribute>
+                <attribute label="Company">company</attribute>
+                <attribute label="Description">content</attribute>
+            </attributes>
+        </shortcode>
+    </shortcodes>
+    <elementor-widgets>
+        <widget name="nm-banner">
+            <fields>
+                <field type="Title">title</field>
+                <field type="Subtitle">subtitle</field>
+                <field type="Link">link</field>
+                <field type="Shop Link Title">link_title</field>
+            </fields>
+        </widget>
+        <widget name="nm-banner-slider">
+            <fields-in-item items_of="banners">
+                <field type="Banner: Title">title</field>
+                <field type="Banner: Subtitle">subtitle</field>
+                <field type="Banner: Link">link</field>
+                <field type="Banner: Shop Link Title">link_title</field>
+            </fields-in-item>
+        </widget>
+        <widget name="nm-button">
+            <fields>
+                <field type="Title">title</field>
+                <field type="Link">link</field>
+            </fields>
+        </widget>
+        <widget name="nm-feature">
+            <fields>
+                <field type="Title">title</field>
+                <field type="Subtitle">subtitle</field>
+                <field type="Description" editor_type="AREA">content</field>
+                <field type="Link">link</field>
+                <field type="Link Title">link_title</field>
+            </fields>
+        </widget>
+        <widget name="nm-lightbox">
+            <fields>
+                <field type="Title">title</field>
+            </fields>
+        </widget>
+        <widget name="nm-tabs">
+            <fields-in-item items_of="tabs">
+                <field type="Tab: Title">tab_title</field>
+                <field type="Tab: Content" editor_type="VISUAL">tab_content</field>
+            </fields-in-item>
+        </widget>
+        <widget name="nm-testimonial">
+            <fields>
+                <field type="Signature">signature</field>
+                <field type="Company">company</field>
+                <field type="Description" editor_type="AREA">content</field>
+            </fields>
+        </widget>
+    </elementor-widgets>
+</wpml-config>

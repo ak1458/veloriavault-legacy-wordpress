@@ -1,0 +1,168 @@
+.woolentor-vacation-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+}
+
+.woolentor-vacation-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.woolentor-vacation-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999999;
+    max-width: 300px;
+}
+
+.woolentor-vacation-countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.woolentor-vacation-countdown-item {
+    text-align: center;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+.woolentor-vacation-countdown-number {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.woolentor-vacation-countdown-label {
+    font-size: 12px;
+    color: #666;
+}
+button.woolentor-popup-close {
+    padding: 8px 10px;
+    background-color: transparent;
+    color: #ff0000;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    font-size: 20px;
+}
+
+/* Floating Notice Styles */
+.woolentor-store-vacation-notice.floating-notice {
+    position: fixed;
+    max-width: 350px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 999999;
+    background-color: #fff;
+    animation: wlFloatingIn 0.5s ease-in-out;
+}
+
+/* Floating Position Variations */
+.woolentor-store-vacation-notice.floating-notice.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.woolentor-store-vacation-notice.floating-notice.top-right {
+    top: 20px;
+    right: 20px;
+}
+
+.woolentor-store-vacation-notice.floating-notice.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.woolentor-store-vacation-notice.floating-notice.bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Close Button */
+.woolentor-store-vacation-notice.floating-notice .notice-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    font-size: 18px;
+}
+
+.woolentor-store-vacation-notice.floating-notice .notice-close:hover {
+    opacity: 1;
+}
+
+/* Animation */
+@keyframes wlFloatingIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .woolentor-store-vacation-notice.floating-notice {
+        max-width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .woolentor-store-vacation-notice.floating-notice {
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+/* Additional styles for countdown in floating notice */
+.woolentor-store-vacation-notice.floating-notice .woolentor-vacation-countdown {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.woolentor-store-vacation-notice.floating-notice .woolentor-vacation-countdown-item {
+    text-align: center;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    min-width: 50px;
+}
+
+.woolentor-store-vacation-notice.floating-notice .woolentor-vacation-countdown-number {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.woolentor-store-vacation-notice.floating-notice .woolentor-vacation-countdown-label {
+    font-size: 12px;
+    opacity: 0.8;
+}

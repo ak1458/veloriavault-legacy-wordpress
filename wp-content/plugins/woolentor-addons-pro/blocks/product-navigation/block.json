@@ -1,0 +1,182 @@
+{
+	"apiVersion": 2,
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+    "name": "woolentor/product-navigation",
+    "category": "woolentor-single-product",
+    "title": "WL: Single Product Navigation",
+    "description":"Display product navigation for single product page.",
+    "keywords": ["woolentor","product","single","navigation","product navigation"],
+    "attributes": {
+        "blockUniqId":{
+            "type": "string",
+            "default": ""
+        },
+        "areaPadding": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} { padding: {{areaPadding}}; }"
+            }
+        },
+        "areaMargin": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} { padding: {{areaMargin}}; }"
+            }
+        },
+        "areaBGProperty":{
+            "type": "object",
+            "default": {
+                "imageId": null,
+                "imageUrl":"",
+                "position": "",
+                "attachment": "",
+                "repeat": "",
+                "size": ""
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}}"
+            }
+        },
+
+        "inSameCategory":{
+            "type":"boolean",
+            "default":false
+        },
+        "nextIcon":{
+            "type":"string"
+        },
+        "previousIcon":{
+            "type":"string"
+        },
+
+        "iconColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a i{ color:{{iconColor}}; }"
+            }
+        },
+        "iconSize":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a i{ font-size:{{iconSize}}; }"
+            }
+        },
+        "iconHeight":{
+            "type":"number",
+            "default":35,
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a{ height:{{iconHeight}}px; }"
+            }
+        },
+        "iconWidth":{
+            "type":"number",
+            "default":35,
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a{ width:{{iconWidth}}px; }"
+            }
+        },
+        "iconBGColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a{ background-color:{{iconBGColor}}; }"
+            }
+        },
+        "iconPadding": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a{ padding:{{iconPadding}}; }"
+            }
+        },
+        "iconMargin": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a{ margin:{{iconMargin}}; }"
+            }
+        },
+        "iconBorder":{
+            "type":"object",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a"
+            }
+        },
+        "iconBorderRadius": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a{ border-radius:{{iconBorderRadius}}; }"
+            }
+        },
+
+        "iconHoverColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a:hover i{ color:{{iconHoverColor}}; }"
+            }
+        },
+        "iconHoverBGColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a:hover{ background-color:{{iconHoverBGColor}}; }"
+            }
+        },
+        "iconHoverBorder":{
+            "type":"object",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a:hover"
+            }
+        },
+        "iconHoverBorderRadius": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .wl-single-product-navigation a:hover{ border-radius:{{iconHoverBorderRadius}}; }"
+            }
+        }
+    }
+}

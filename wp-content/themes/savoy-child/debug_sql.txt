@@ -1,0 +1,174 @@
+2026-01-30 10:47:01 - SQL: SELECT   wpur_posts.*
+					 FROM wpur_posts 
+					 WHERE 1=1  AND (wpur_posts.ID = '3244') AND wpur_posts.post_type = 'page'
+					 
+					 ORDER BY wpur_posts.post_date DESC
+					 
+2026-01-30 10:47:01 - SQL: SELECT SQL_CALC_FOUND_ROWS  wpur_posts.*, COALESCE( parents.post_date, wpur_posts.post_date ) AS 'iconic_wssv_post_date', COALESCE( parents.ID, wpur_posts.ID ) AS 'iconic_wssv_post_ID'
+					 FROM wpur_posts  LEFT JOIN wpur_posts parents ON ( wpur_posts.post_parent = parents.ID AND parents.post_type = 'product' )
+					 WHERE 1=1  AND wpur_posts.ID NOT IN (8854,8866) AND ( 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (4)
+			)
+) AND wpur_posts.post_type IN ('product', 'product_variation') AND ((wpur_posts.post_status = 'publish'))
+					 GROUP BY wpur_posts.ID
+					 ORDER BY iconic_wssv_post_date DESC, iconic_wssv_post_ID DESC, wpur_posts.post_parent ASC, wpur_posts.post_date DESC, wpur_posts.ID DESC
+					 LIMIT 0, 8
+2026-01-30 10:47:07 - SQL: SELECT SQL_CALC_FOUND_ROWS  wpur_posts.*
+					 FROM wpur_posts 
+					 WHERE 1=1  AND wpur_posts.ID NOT IN (8854,8866) AND ( 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (4)
+			)
+) AND wpur_posts.post_type IN ('product', 'product_variation') AND ((wpur_posts.post_status = 'publish'))
+					 GROUP BY wpur_posts.ID
+					 ORDER BY wpur_posts.post_date DESC, wpur_posts.ID DESC
+					 LIMIT 8, 8
+2026-01-30 10:47:11 - SQL: SELECT SQL_CALC_FOUND_ROWS  wpur_posts.*
+					 FROM wpur_posts 
+					 WHERE 1=1  AND wpur_posts.ID NOT IN (8854,8866) AND ( 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (4)
+			)
+) AND wpur_posts.post_type IN ('product', 'product_variation') AND ((wpur_posts.post_status = 'publish'))
+					 GROUP BY wpur_posts.ID
+					 ORDER BY wpur_posts.post_date DESC, wpur_posts.ID DESC
+					 LIMIT 16, 8
+2026-01-30 10:47:14 - SQL: SELECT SQL_CALC_FOUND_ROWS  wpur_posts.*
+					 FROM wpur_posts 
+					 WHERE 1=1  AND wpur_posts.ID NOT IN (8854,8866) AND ( 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (4)
+			)
+) AND wpur_posts.post_type IN ('product', 'product_variation') AND ((wpur_posts.post_status = 'publish'))
+					 GROUP BY wpur_posts.ID
+					 ORDER BY wpur_posts.post_date DESC, wpur_posts.ID DESC
+					 LIMIT 24, 8
+2026-01-30 10:47:18 - SQL: SELECT SQL_CALC_FOUND_ROWS  wpur_posts.*
+					 FROM wpur_posts 
+					 WHERE 1=1  AND wpur_posts.ID NOT IN (8854,8866) AND ( 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (4)
+			)
+) AND wpur_posts.post_type IN ('product', 'product_variation') AND ((wpur_posts.post_status = 'publish'))
+					 GROUP BY wpur_posts.ID
+					 ORDER BY wpur_posts.post_date DESC, wpur_posts.ID DESC
+					 LIMIT 32, 8
+2026-01-30 10:47:21 - SQL: SELECT SQL_CALC_FOUND_ROWS  wpur_posts.*
+					 FROM wpur_posts 
+					 WHERE 1=1  AND wpur_posts.ID NOT IN (8854,8866) AND ( 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (4)
+			)
+) AND wpur_posts.post_type IN ('product', 'product_variation') AND ((wpur_posts.post_status = 'publish'))
+					 GROUP BY wpur_posts.ID
+					 ORDER BY wpur_posts.post_date DESC, wpur_posts.ID DESC
+					 LIMIT 40, 8
+2026-01-30 10:47:24 - SQL: SELECT SQL_CALC_FOUND_ROWS  wpur_posts.*
+					 FROM wpur_posts 
+					 WHERE 1=1  AND wpur_posts.ID NOT IN (8854,8866) AND ( 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (7,9)
+			) 
+  AND 
+  wpur_posts.ID NOT IN (
+				SELECT object_id
+				FROM wpur_term_relationships
+				WHERE term_taxonomy_id IN (4)
+			)
+) AND wpur_posts.post_type IN ('product', 'product_variation') AND ((wpur_posts.post_status = 'publish'))
+					 GROUP BY wpur_posts.ID
+					 ORDER BY wpur_posts.post_date DESC, wpur_posts.ID DESC
+					 LIMIT 48, 8

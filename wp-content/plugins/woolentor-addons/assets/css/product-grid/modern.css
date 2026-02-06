@@ -1,0 +1,1571 @@
+:root {
+    --woolentor-white:#ffffff;
+    --woolentor-primary-color: #2563eb;
+    --woolentor-primary-hover: #1d4ed8;
+    --woolentor-success-color: #10b981;
+    --woolentor-warning-color: #f59e0b;
+    --woolentor-danger-color: #ef4444;
+    --woolentor-gray-50: #f9fafb;
+    --woolentor-gray-100: #f3f4f6;
+    --woolentor-gray-200: #e5e7eb;
+    --woolentor-gray-300: #d1d5db;
+    --woolentor-gray-400: #9ca3af;
+    --woolentor-gray-500: #6b7280;
+    --woolentor-gray-600: #4b5563;
+    --woolentor-gray-700: #374151;
+    --woolentor-gray-800: #1f2937;
+    --woolentor-gray-900: #111827;
+    --woolentor-border-radius: 12px;
+    --woolentor-border-radius-sm: 8px;
+    --woolentor-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --woolentor-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --woolentor-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --woolentor-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --woolentor-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --woolentor-transition-fast: all 0.15s ease;
+}
+.wp-embed-responsive .wp-block {
+    outline: 0;
+}
+.woolentor-product-grid a{
+    text-decoration: none !important;
+}
+
+/* Main Grid Container */
+.woolentor-product-grid-modern {
+    display: grid;
+    gap: 25px;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Layout Mode Specific Containers */
+.woolentor-product-grid-modern.woolentor-layout-grid {
+    display: grid;
+    grid-auto-rows: 1fr;
+}
+
+.woolentor-product-grid-modern.woolentor-layout-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Column Classes - Only for Grid Layout */
+.woolentor-columns-1 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+    grid-template-columns: 1fr;
+}
+.woolentor-columns-2 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+    grid-template-columns: repeat(2, 1fr);
+}
+.woolentor-columns-3 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+    grid-template-columns: repeat(3, 1fr);
+}
+.woolentor-columns-4 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+    grid-template-columns: repeat(4, 1fr);
+}
+.woolentor-columns-5 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+    grid-template-columns: repeat(5, 1fr);
+}
+.woolentor-columns-6 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* Same Height Grid */
+.woolentor-same-height-grid.woolentor-layout-grid .woolentor-product-card{
+    height: 100%;
+}
+.woolentor-same-height-grid.woolentor-layout-grid .woolentor-product-card .woolentor-product-actions{
+    margin-top: auto;
+}
+
+/* Filter area */
+.woolentor-product-filters {
+    background: var(--woolentor-white);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 32px;
+    box-shadow: var(--woolentor-shadow-sm);
+}
+.woolentor-filter-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.woolentor-view-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+.woolentor-view-controls .woolentor-filter-sort .woocommerce-ordering{
+    margin: 0;
+}
+.woolentor-view-controls .woolentor-filter-sort .woocommerce-ordering select.orderby{
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #111827;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.woolentor-layout-switcher {
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 8px;
+    background: #e5e7eb;
+}
+.woolentor-layout-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #4b5563;
+    padding: 0;
+}
+.woolentor-layout-btn:focus{
+    background: transparent;
+    color: #4b5563;
+}
+.woolentor-layout-btn.woolentor-active, .woolentor-layout-btn:hover {
+    background: #2563eb;
+    color: var(--woolentor-white);
+}
+.woolentor-layout-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+}
+
+/* Layout Switcher Button Style Two */
+.woolentor-product-filters.woolentor-style-two {
+    border-radius: 0;
+    background: #f5f4f2;
+    box-shadow: none;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 40px;
+}
+.woolentor-style-two .woolentor-layout-switcher {
+    background: transparent;
+    border-radius: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 40px;
+}
+.woolentor-style-two .woolentor-layout-btn{
+    width: auto;
+    height: auto;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    color: #6a6a6a;
+    cursor: pointer;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.woolentor-style-two .woolentor-layout-btn.woolentor-active, .woolentor-style-two .woolentor-layout-btn:hover{
+    color:#1a1a1a
+}
+.woolentor-style-two .woolentor-layout-btn.woolentor-active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #1a1a1a;
+}
+
+/* Product Cards Base */
+.woolentor-product-card {
+    background: #ffffff;
+    border-radius: var(--woolentor-border-radius);
+    position: relative;
+    transition: var(--woolentor-transition);
+    border: 1px solid var(--woolentor-gray-200);
+}
+
+/* Product Item Container */
+.woolentor-product-item {
+    transition: all 0.3s ease;
+    min-width: 0;
+}
+
+/* Layout View Content Visibility Control */
+.woolentor-grid-card .woolentor-list-view-content {
+    display: none !important;
+}
+
+.woolentor-list-card .woolentor-grid-view-content {
+    display: none !important;
+}
+
+.woolentor-grid-card .woolentor-grid-view-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.woolentor-list-card .woolentor-list-view-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+/* Grid Card Layout */
+.woolentor-grid-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    overflow: visible;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #ffffff;
+    position: relative;
+}
+
+/* List Card Layout */
+.woolentor-list-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 200px;
+    padding: 20px;
+    box-shadow: var(--woolentor-shadow-sm);
+}
+
+/* Card Hover Effects */
+.woolentor-card-hover-lift .woolentor-product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.woolentor-card-hover-scale .woolentor-product-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.woolentor-card-hover-shadow .woolentor-product-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Hover Effects */
+.woolentor-image-hover-zoom .woolentor-product-image img:hover,
+.woolentor-image-hover-zoom .woolentor-product-image .woolentor-product-img:hover {
+    transform: scale(1.1);
+}
+
+.woolentor-image-hover-fade .woolentor-product-image:hover img,
+.woolentor-image-hover-fade .woolentor-product-image:hover .woolentor-product-img {
+    opacity: 0.8;
+}
+
+.woolentor-image-hover-grayscale .woolentor-product-image img,
+.woolentor-image-hover-grayscale .woolentor-product-image .woolentor-product-img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.woolentor-image-hover-grayscale .woolentor-product-image:hover img,
+.woolentor-image-hover-grayscale .woolentor-product-image:hover .woolentor-product-img {
+    filter: grayscale(0%);
+}
+
+/* Product Image Container */
+.woolentor-product-image {
+    position: relative;
+    overflow: hidden;
+}
+.woolentor-product-secondary-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, transform 2s cubic-bezier(0, 0, 0.44, 1.18);
+    width: 100%;
+}
+.woolentor-product-secondary-img a{
+    width: 100%;
+    height: 100%;
+}
+.woolentor-product-card:hover .woolentor-product-secondary-img {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.09);
+}
+.woolentor-product-image .woolentor-product-secondary-img img{
+    transform: scale(1) !important;
+}
+
+/* Grid Image */
+.woolentor-grid-card .woolentor-product-image {
+    flex-shrink: 0;
+    background: #f5f5f5;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.woolentor-grid-card .woolentor-product-image img,
+.woolentor-grid-card .woolentor-product-image .woolentor-product-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* List Image */
+.woolentor-list-card .woolentor-product-image {
+    flex-shrink: 0;
+    margin-right: 20px;
+    border-radius: var(--woolentor-border-radius-sm);
+    overflow: hidden;
+    box-shadow: var(--woolentor-shadow-sm);
+    width: 30%;
+}
+
+.woolentor-list-card .woolentor-product-image img,
+.woolentor-list-card .woolentor-product-image .woolentor-product-img {
+    width: 100%;
+    object-fit: cover;
+    transition: var(--woolentor-transition);
+}
+
+/* Badge System */
+.woolentor-badges {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 10;
+    left: 15px;
+    top: 15px;
+}
+
+/* Badge Positions */
+.woolentor-badge-pos-top-left .woolentor-badges {
+    top: 12px;
+    left: 12px;
+}
+
+.woolentor-badge-pos-top-right .woolentor-badges {
+    top: 12px;
+    right: 12px;
+    left: auto;
+}
+
+.woolentor-badge-pos-top-center .woolentor-badges {
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Badge Styles */
+.woolentor-badge {
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1;
+}
+
+/* Badge Style Variants */
+.woolentor-sale-badge {
+    background: #e74c3c;
+}
+
+.woolentor-new-badge {
+    background: #10b981;
+}
+
+.woolentor-trending-badge {
+    background: #f59e0b;
+}
+
+.woolentor-badge-style-solid .woolentor-sale-badge {
+    background: #e74c3c;
+}
+
+.woolentor-badge-style-solid .woolentor-new-badge {
+    background: #10b981;
+}
+
+.woolentor-badge-style-solid .woolentor-trending-badge {
+    background: #f59e0b;
+}
+
+.woolentor-badge-style-gradient .woolentor-sale-badge {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    box-shadow: 0 4px 8px rgba(238, 90, 36, 0.3);
+}
+
+.woolentor-badge-style-gradient .woolentor-new-badge {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+}
+
+.woolentor-badge-style-gradient .woolentor-trending-badge {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    box-shadow: 0 4px 8px rgba(245, 158, 11, 0.3);
+}
+
+.woolentor-badge-style-outline .woolentor-badge {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid;
+    backdrop-filter: blur(8px);
+}
+
+.woolentor-badge-style-outline .woolentor-sale-badge {
+    border-color: var(--woolentor-danger-color);
+    color: var(--woolentor-danger-color);
+}
+
+.woolentor-badge-style-outline .woolentor-new-badge {
+    border-color: var(--woolentor-success-color);
+    color: var(--woolentor-success-color);
+}
+
+.woolentor-badge-style-outline .woolentor-trending-badge {
+    border-color: var(--woolentor-warning-color);
+    color: var(--woolentor-warning-color);
+}
+
+/* Quick Actions */
+.woolentor-quick-actions {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    transform: translateX(10px);
+    z-index: 15;
+}
+
+.woolentor-grid-card:hover .woolentor-quick-actions,
+.woolentor-product-image:hover .woolentor-quick-actions {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.woolentor-quick-action {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.98);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    padding: 0;
+}
+.woolentor-quick-action a{
+    color: #333;
+    text-decoration: none;
+}
+.woolentor-quick-action svg{
+    margin: 0;
+}
+
+.woolentor-quick-action:hover {
+    background: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.woolentor-quick-action svg {
+    width: 18px;
+    height: 18px;
+    stroke-width: 2;
+    color: #333;
+    display: block;
+}
+
+/* Wishlist button integration styles */
+.woolentor-quick-actions .woolentor-wishlist-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.98);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.woolentor-quick-actions .woolentor-wishlist-btn:hover {
+    background: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the wishlist elements from the function */
+.woolentor-quick-actions .woolentor-wishlist-btn .wishlist,
+.woolentor-quick-actions .woolentor-wishlist-btn .yith-wcwl-add-to-wishlist,
+.woolentor-quick-actions .woolentor-wishlist-btn .tinvwl_add_to_wishlist_button {
+    display: contents;
+}
+
+.woolentor-quick-actions .woolentor-wishlist-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* Hide tooltips in quick actions */
+.woolentor-quick-actions .woolentor-wishlist-btn .ht-product-action-tooltip,
+.woolentor-quick-actions .woolentor-wishlist-btn .wishsuite-tooltip,
+.woolentor-quick-actions .woolentor-wishlist-btn span:not(svg *) {
+    display: none !important;
+}
+
+/* Ensure SVG icons are properly sized */
+.woolentor-quick-actions .woolentor-wishlist-btn svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+    color: currentColor;
+    overflow: visible;
+}
+
+/* Hide loading spinners */
+.woolentor-quick-actions .woolentor-wishlist-btn .ajax-loading,
+.woolentor-quick-actions .woolentor-wishlist-btn .fa-spinner {
+    display: none !important;
+}
+
+/* Quick view button styles */
+.woolentor-style-modern .woolentor-quickview-btn,
+.woolentor-style-modern .woolentorquickview{
+    color: #333;
+}
+.woolentor-style-modern .woolentor-quickview-btn svg,
+.woolentor-style-modern .woolentorquickview svg {
+    width: 18px;
+    height: 18px;
+    display: block !important;
+    color: currentColor !important;
+    stroke: currentColor !important;
+    fill: none !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    overflow: visible;
+}
+
+.woolentor-style-modern .woolentor-quickview-btn svg path,
+.woolentor-style-modern .woolentor-quickview-btn svg circle,
+.woolentor-style-modern .woolentorquickview svg path,
+.woolentor-style-modern .woolentorquickview svg circle {
+    stroke: currentColor !important;
+    fill: none !important;
+    stroke-width: 2 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Ensure quick action buttons have proper text color */
+.woolentor-quick-action.woolentorquickview {
+    color: #333;
+}
+
+/* Product Content */
+.woolentor-product-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grid Content */
+.woolentor-grid-card .woolentor-product-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    width: 100%;
+}
+
+/* List Content */
+.woolentor-list-card .woolentor-product-content {
+    padding: 0;
+}
+
+.woolentor-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.woolentor-content-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+/* Product Title */
+.woolentor-product-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    color: var(--woolentor-gray-900);
+}
+
+/* Product Categories */
+.woolentor-product-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 0 4px;
+}
+
+.woolentor-product-category {
+    font-size: 12px;
+    color: #999;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.woolentor-product-category:not(:first-child):before {
+    content: '•';
+    margin: 0 6px;
+    color: #ddd;
+}
+
+.woolentor-product-category:hover {
+    color: var(--woolentor-primary-color);
+    text-decoration: none;
+}
+
+.woolentor-grid-card .woolentor-product-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.woolentor-grid-card .woolentor-product-categories {
+    margin: 0 0 10px;
+}
+
+.woolentor-product-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--woolentor-transition-fast);
+}
+
+.woolentor-product-title a:hover {
+    color: var(--woolentor-primary-color);
+}
+
+/* Product Description */
+.woolentor-product-description {
+    margin: 0;
+}
+
+.woolentor-product-description p {
+    color: var(--woolentor-gray-600);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Product Features */
+.woolentor-product-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.woolentor-feature {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--woolentor-gray-600);
+    padding: 4px 8px;
+    background: var(--woolentor-gray-50);
+    border-radius: 16px;
+}
+
+.woolentor-feature svg {
+    color: var(--woolentor-success-color);
+    flex-shrink: 0;
+}
+
+/* Product Rating */
+.woolentor-layout-grid .woolentor-product-rating{
+    margin-bottom: 12px;
+}
+.woolentor-product-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.woolentor-product-stars {
+    display: flex;
+    gap: 2px;
+}
+.woolentor-product-stars .star{
+    width: 14px;
+    height: 14px;
+    color: #fbbf24;
+}
+.woolentor-product-stars .star.empty {
+    color: #e5e7eb;
+}
+.woolentor-product-stars .empty-half{
+    transform: scale(0.80);
+}
+
+.woolentor-product-grid-modern .woolentor-review-count,
+.woolentor-grid-card .woolentor-review-count {
+    font-size: 12px;
+    color: #9ca3af;
+    font-weight: 400;
+    display: inline-block !important;
+    line-height: 1;
+    position: relative;
+}
+.woolentor-product-rating .rating-info .review-count{
+    margin-left: 0;
+}
+
+/* Product Price */
+.woolentor-product-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--woolentor-primary-color);
+    margin: 8px 0;
+}
+
+.woolentor-grid-card .woolentor-product-price {
+    font-size: 20px;
+    align-items: center;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: #1f2937;
+    gap: 8px;
+}
+
+.woolentor-grid-card .woolentor-product-price del {
+    font-size: 16px;
+    color: #9ca3af;
+    font-weight: 400;
+    margin: 0;
+}
+
+.woolentor-grid-card .woolentor-product-price ins {
+    text-decoration: none;
+    color: #1f2937;
+}
+
+.woolentor-discount-percentage {
+    background: #fee2e2;
+    color: #e74c3c;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+
+
+.woolentor-product-price del {
+    color: var(--woolentor-gray-400);
+    font-weight: 400;
+    margin-right: 8px;
+    font-size: 0.9em;
+}
+
+.woolentor-product-price ins {
+    text-decoration: none;
+}
+
+/* Price and Stock Container */
+.woolentor-price-stock {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 40%;
+}
+.woolentor-price-stock .woolentor-product-price{
+    margin: 0;
+}
+
+/* Stock Status */
+.woolentor-stock-status {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.woolentor-in-stock {
+    color: var(--woolentor-success-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.woolentor-out-of-stock {
+    color: var(--woolentor-danger-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.woolentor-stock-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+.woolentor-out-of-stock .woolentor-stock-dot {
+    animation: none;
+    opacity: 0.6;
+}
+
+.woolentor-low-stock {
+    color: var(--woolentor-warning-color);
+    font-weight: 600;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+}
+
+/* Quantity Selector */
+.woolentor-quantity-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--woolentor-gray-300);
+    border-radius: var(--woolentor-border-radius-sm);
+    overflow: hidden;
+    width: fit-content;
+}
+
+.woolentor-qty-btn {
+    background: var(--woolentor-gray-50);
+    border: none;
+    width: 32px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--woolentor-transition-fast);
+    color: var(--woolentor-gray-600);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.woolentor-qty-btn:hover {
+    background: var(--woolentor-gray-200);
+    color: var(--woolentor-gray-800);
+}
+
+.woolentor-qty-input {
+    border: none;
+    width: 50px !important;
+    height: 32px !important;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    background: #ffffff;
+    outline: none;
+    line-height: 1;
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
+}
+
+.woolentor-qty-input::-webkit-outer-spin-button,
+.woolentor-qty-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.woolentor-qty-input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Product Actions */
+.woolentor-product-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.woolentor-grid-card .woolentor-product-actions {
+    margin-top: auto;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+/* Add to Cart Button */
+.woolentor-list-card .woolentor-product-actions .woolentor-cart-btn, .woolentor-cart-btn, .woolentor-product-actions .button, .woolentor-product-actions .add_to_cart_button {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: var(--woolentor-border-radius-sm);
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    gap: 5px;
+}
+
+.woolentor-product-actions .add_to_cart_button:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%) !important;
+    transform: translateY(-1px) !important;
+}
+
+.woolentor-grid-card .woolentor-cart-btn,
+.woolentor-grid-card .woolentor-product-actions .button,
+.woolentor-grid-card .woolentor-product-actions .add_to_cart_button {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    transition: all 0.2s ease;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.woolentor-cart-btn svg {
+    width: 16px;
+    height: 16px;
+}
+.woolentor-product-actions a.added_to_cart {
+    display: none;
+}
+
+.woolentor-grid-card .woolentor-cart-btn:hover,
+.woolentor-grid-card .woolentor-product-actions .button:hover,
+.woolentor-grid-card .woolentor-product-actions .add_to_cart_button:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    transform: translateY(-1px);
+}
+
+.woolentor-cart-btn:hover,
+.woolentor-product-actions .button:hover,
+.woolentor-product-actions .add_to_cart_button:hover {
+    background: var(--woolentor-primary-hover);
+    border-color: var(--woolentor-primary-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--woolentor-shadow-md);
+}
+
+/* Add to cart Button Loader */
+a.woolentor-cart-btn.button.add_to_cart_button.ajax_add_to_cart.added:after,
+a.woolentor-cart-action.added:after { 
+    font-family: 'WooCommerce'; content: '\e017'; margin-left: .53em; vertical-align: bottom; 
+} 
+a.woolentor-cart-btn.button.add_to_cart_button.ajax_add_to_cart.loading,
+a.woolentor-cart-action.loading { 
+    opacity: .25; 
+} 
+a.woolentor-cart-btn.button.add_to_cart_button.ajax_add_to_cart.loading:after,
+a.woolentor-cart-action.loading:after { 
+    display: inline-block; 
+    content: ""; 
+    position: relative; 
+    top: 0; 
+    right: -.5em;
+    left: auto; 
+    width: .8em; 
+    height: .8em; 
+    background-color: var(--woolentor-white,var(--woolentor-gray-100)); 
+    border-radius: 100%; 
+    animation: WoolentorDotPulse .65s 0s infinite cubic-bezier(.21,.53,.56,.8);
+    line-height: 1rem;
+} 
+@keyframes WoolentorDotPulse { 
+    0% { 
+        transform: scale(.1); opacity: 0; 
+    } 
+    50% { 
+        opacity: 1; 
+    } 
+    100% { 
+        transform: scale(1.2); opacity: 0; 
+    } 
+} 
+
+/* Wishlist Button */
+.woolentor-wishlist-btn {
+    background: #ffffff;
+    color: var(--woolentor-gray-600);
+    border: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--woolentor-border-radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--woolentor-transition);
+    flex-shrink: 0;
+}
+
+.woolentor-wishlist-btn:hover {
+    color: var(--woolentor-danger-color);
+    border-color: var(--woolentor-danger-color);
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.woolentor-wishlist-btn.added {
+    color: var(--woolentor-danger-color);
+    border-color: var(--woolentor-danger-color);
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.woolentor-wishlist-btn.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Out of Stock State */
+.woolentor-out-of-stock {
+    opacity: 0.7;
+    position: relative;
+}
+
+.woolentor-out-of-stock::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.woolentor-out-of-stock .woolentor-cart-btn,
+.woolentor-out-of-stock .add_to_cart_button {
+    background: var(--woolentor-gray-400);
+    border-color: var(--woolentor-gray-400);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.woolentor-out-of-stock .woolentor-cart-btn:hover,
+.woolentor-out-of-stock .add_to_cart_button:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* No Products States */
+.woolentor-product-grid .woolentor-no-products {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 15px 20px;
+    color: var(--woolentor-gray-400);
+    font-size: 16px;
+    font-style: italic;
+}
+.woolentor-product-grid .woolentor-no-products p{
+    margin: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .woolentor-product-grid-modern {
+        gap: 20px;
+    }
+
+    .woolentor-grid-card .woolentor-product-content {
+        padding: 16px;
+    }
+
+    .woolentor-product-title {
+        font-size: 16px;
+    }
+
+    .woolentor-grid-card .woolentor-product-title {
+        font-size: 14px;
+    }
+
+    .woolentor-grid-card .woolentor-product-categories {
+        margin: 3px 0 6px;
+    }
+
+    .woolentor-product-category {
+        font-size: 11px;
+        padding: 1px 6px;
+    }
+
+    .woolentor-product-price {
+        font-size: 18px;
+    }
+
+    .woolentor-grid-card .woolentor-product-price {
+        font-size: 16px;
+    }
+
+    /* List to Column on Mobile */
+    .woolentor-list-card {
+        flex-direction: column;
+        min-height: auto;
+        padding: 16px;
+    }
+
+    .woolentor-list-card .woolentor-product-image {
+        margin-right: 0;
+        margin-bottom: 16px;
+        align-self: center;
+        width: 100%;
+    }
+
+    .woolentor-content-footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .woolentor-price-stock {
+        order: 2;
+    }
+
+    .woolentor-product-actions {
+        order: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .woolentor-product-grid-modern.woolentor-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+    .woolentor-grid-card .woolentor-product-content {
+        padding: 14px;
+    }
+
+    .woolentor-product-title {
+        font-size: 15px;
+    }
+
+    .woolentor-grid-card .woolentor-product-title {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .woolentor-product-price {
+        font-size: 16px;
+    }
+
+    .woolentor-grid-card .woolentor-product-price {
+        font-size: 15px;
+    }
+
+    .woolentor-product-actions {
+        gap: 8px;
+        margin-top: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .woolentor-filter-row{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .woolentor-cart-btn,
+    .woolentor-product-actions .button,
+    .woolentor-product-actions .add_to_cart_button {
+        padding: 10px 16px;
+        font-size: 13px;
+        min-height: 40px;
+    }
+
+    .woolentor-wishlist-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .woolentor-list-card .woolentor-product-image img {
+        width: 160px;
+        height: 100px;
+    }
+
+    .woolentor-quick-actions {
+        right: 8px;
+    }
+
+    .woolentor-quick-action {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Accessibility */
+.woolentor-product-card:focus-within {
+    outline: none;
+    outline-offset: 0;
+}
+
+.woolentor-product-title a:focus,
+.woolentor-cart-btn:focus,
+.woolentor-wishlist-btn:focus,
+.woolentor-quick-action:focus {
+    outline: none;
+    outline-offset: 0;
+}
+
+/* Screen Reader Only */
+.woolentor-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .woolentor-product-card {
+        border: 2px solid;
+    }
+
+    .woolentor-badge {
+        border: 2px solid;
+    }
+
+    .woolentor-cart-btn,
+    .woolentor-wishlist-btn {
+        border-width: 2px;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .woolentor-stock-dot {
+        animation: none;
+    }
+}
+
+/* Pagination Styles */
+.woolentor-pagination {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.woolentor-pagination ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.woolentor-pagination ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.woolentor-pagination ul li a,
+.woolentor-pagination ul li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.woolentor-pagination ul li a:hover {
+    background: #f9fafb;
+    border-color: #d1d5db;
+    color: #374151;
+}
+
+.woolentor-pagination ul li span.current,
+.woolentor-pagination ul li a.current {
+    background: var(--woolentor-primary-color, #3858f6);
+    border-color: var(--woolentor-primary-color, #3858f6);
+    color: #ffffff;
+}
+
+.woolentor-pagination ul li.prev a,
+.woolentor-pagination ul li.next a {
+    font-weight: 400;
+}
+
+.woolentor-pagination ul li span.dots {
+    border: none;
+    background: transparent;
+    pointer-events: none;
+}
+
+/* AJAX Load More Button */
+.woolentor-ajax-load-more {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.woolentor-load-more-btn {
+    background: var(--woolentor-primary-color, #3858f6);
+    color: #ffffff;
+    border: 1px solid var(--woolentor-primary-color);
+    padding: 12px 32px;
+    border-radius: var(--woolentor-border-radius);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--woolentor-transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.woolentor-load-more-btn:hover:not(:disabled) {
+    background: var(--woolentor-primary-hover);
+    border-color: var(--woolentor-primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--woolentor-shadow-lg);
+}
+
+.woolentor-load-more-btn:disabled {
+    background: var(--woolentor-gray-400);
+    border-color: var(--woolentor-gray-400);
+    cursor: not-allowed;
+    transform: none;
+    opacity: 0.6;
+}
+
+.woolentor-ajax-loader {
+    margin: 0;
+    display: none;
+    padding: 0;
+    background-color: transparent !important;
+}
+
+.woolentor-ajax-loader .spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--woolentor-gray-300);
+    border-left-color: var(--woolentor-primary-color);
+    border-radius: 50%;
+    animation: woolentorspin 1s linear infinite;
+}
+
+@keyframes woolentorspin {
+    to { transform: rotate(360deg); }
+}
+
+/* Infinite Scroll Loader */
+.woolentor-infinite-scroll {
+    text-align: center;
+}
+
+/* For Gutenberg Block */
+.woolentor-content-align-flex-start .woolentor-product-content{
+    text-align: left;
+}
+.woolentor-content-align-center .woolentor-product-content{
+    text-align: center;
+}
+.woolentor-content-align-flex-end .woolentor-product-content{
+    text-align: right;
+}
+
+/* Print Styles */
+@media print {
+    .woolentor-product-grid-modern.woolentor-layout-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .woolentor-product-grid-modern.woolentor-layout-list{
+        gap: 15px;
+    }
+
+    .woolentor-product-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #000;
+        background: #fff;
+    }
+
+    .woolentor-grid-card {
+        height: auto;
+    }
+
+    .woolentor-product-actions,
+    .woolentor-quick-actions,
+    .woolentor-badges {
+        display: none;
+    }
+
+    .woolentor-product-price {
+        color: #000 !important;
+    }
+}
+
+/* Normal  :1366px. */
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Column Classes - Only for Grid Layout */
+    .woolentor-columns-tablet-1 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+        grid-template-columns: 1fr;
+    }
+    .woolentor-columns-tablet-2 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .woolentor-columns-tablet-3 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .woolentor-columns-tablet-4 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .woolentor-columns-tablet-5 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .woolentor-columns-tablet-6 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .woolentor-list-card .woolentor-list-view-content{
+        flex-direction: column;
+    }
+    /* Column Classes - Only for Grid Layout */
+    .woolentor-columns-mobile-1 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+        grid-template-columns: 1fr;
+    }
+    .woolentor-columns-mobile-2 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .woolentor-columns-mobile-3 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .woolentor-columns-mobile-4 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .woolentor-columns-mobile-5 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .woolentor-columns-mobile-6 .woolentor-product-grid .woolentor-products-wrapper > [class*="woolentor-columns-"]{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}

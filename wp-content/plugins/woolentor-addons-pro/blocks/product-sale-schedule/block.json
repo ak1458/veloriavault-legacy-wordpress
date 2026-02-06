@@ -1,0 +1,99 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+    "name": "woolentor/product-sale-schedule",
+    "category": "woolentor-single-product",
+    "title": "WL: Product Sale Schedule",
+    "description":"Display product sale schedule countdown for single product page.",
+    "keywords": ["woolentor","product","single","countdown","offer price","sale price","Product Sale Schedule"],
+    "attributes": {
+        "blockUniqId":{
+            "type": "string",
+            "default": ""
+        },
+        "areaPadding": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} { padding: {{areaPadding}}; }"
+            }
+        },
+        "areaMargin": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} { margin: {{areaMargin}}; }"
+            }
+        },
+        "areaBGProperty":{
+            "type": "object",
+            "default": {
+                "imageId": null,
+                "imageUrl":"",
+                "position": "",
+                "attachment": "",
+                "repeat": "",
+                "size": ""
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}}"
+            }
+        },
+
+        "customLabelDays":{
+            "type":"string"
+        },
+        "customLabelHours":{
+            "type":"string"
+        },
+        "customLabelMinutes":{
+            "type":"string"
+        },
+        "customLabelSeconds":{
+            "type":"string"
+        },
+        
+
+        "saleCountdownColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .ht-product-countdown-wrap.ht-product-countdown-wrap .ht-product-countdown .cd-single .cd-single-inner h3,{{WOOLENTOR_WRAPPER}} .ht-single-product-countdown.ht-product-countdown-wrap .ht-product-countdown .cd-single .cd-single-inner p{ color:{{saleCountdownColor}};}"
+            }
+        },
+        "saleCountdownBGColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .ht-product-countdown-wrap.ht-product-countdown-wrap .ht-product-countdown .cd-single .cd-single-inner{ background-color:{{saleCountdownBGColor}};}"
+            }
+        },
+        "itemSpace": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .ht-product-countdown-wrap.ht-product-countdown-wrap .ht-product-countdown .cd-single{ margin: {{itemSpace}}; }"
+            }
+        }
+       
+    }
+}

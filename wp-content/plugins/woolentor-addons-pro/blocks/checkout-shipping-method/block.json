@@ -1,0 +1,233 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+    "name": "woolentor/checkout-shipping-method",
+    "category": "woolentor-checkout",
+    "title": "WL: Checkout Shipping Method",
+    "description": "Display shipping Method for checkout page.",
+    "keywords": ["woolentor","shipping","shipping method","checkout method","woocommerce checkout","Checkout Shipping Method"],
+    "supports": {
+      "align": ["wide","full"]
+    },
+    "render": "file:./index.php",
+    "attributes": {
+        "blockUniqId":{
+            "type": "string",
+            "default": ""
+        },
+        "areaPadding": {
+            "type": "object",
+            "default": {
+                "device": "desktop"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} { padding: {{areaPadding}} !important; }"
+            }
+        },
+        "areaBGProperty":{
+            "type": "object",
+            "default": {
+                "imageId": null,
+                "imageUrl":"",
+                "position": "",
+                "attachment": "",
+                "repeat": "",
+                "size": ""
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}}"
+            }
+        },
+
+        "layout":{
+            "type":"string",
+            "default":"1"
+        },
+        "sectionTitle":{
+            "type":"string",
+            "default":"Shipping Method"
+        },
+        "free_shipping_desc":{
+            "type":"string"
+        },
+        "flat_rate_desc":{
+            "type":"string"
+        },
+        "local_pickup_desc":{
+            "type":"string"
+        },
+
+        "titleColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor-title{ color: {{titleColor}}; }"
+            }
+        },
+        "titleSize":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor-title { font-size: {{titleSize}}; }"
+            }
+        },
+        "titleMargin": {
+            "type": "object",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor-title{ margin: {{titleMargin}}; }"
+            }
+        },
+        "titlePadding": {
+            "type": "object",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor-title{ padding: {{titlePadding}}; }"
+            }
+        },
+        "titleAlign":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor-title{ text-align: {{titleAlign}}; }"
+            }
+        },
+
+        "methodNameColor":{
+            "type":"string",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}} ul#shipping_method li label{ color: {{methodNameColor}}; }"
+            }
+        },
+        "methodNameSize":{
+            "type":"string",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}} ul#shipping_method li label { font-size: {{methodNameSize}}; }"
+            }
+        },
+
+        "methodDescColor":{
+            "type":"string",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}} ul#shipping_method li .woolentor-desc { color: {{methodDescColor}}; }"
+            }
+        },
+        "methodDescSize":{
+            "type":"string",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}} ul#shipping_method li .woolentor-desc { font-size: {{methodDescSize}}; }"
+            }
+        },
+
+        "methodPriceColor":{
+            "type":"string",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}} ul#shipping_method li .woocommerce-Price-amount { color: {{methodPriceColor}}!important; }"
+            }
+        },
+
+        "methodItemBGColor":{
+            "type":"string",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}} ul#shipping_method li { background-color: {{methodItemBGColor}}!important; }"
+            }
+        },
+        "methodItemBorder":{
+            "type":"object",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}} ul#shipping_method li"
+            }
+        },
+        "methodItemBorderRadius": {
+            "type": "object",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}} ul#shipping_method li{ border-radius: {{methodItemBorderRadius}}; }"
+            }
+        },
+        "methodItemPadding": {
+            "type": "object",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}} ul#shipping_method li{ padding: {{methodItemPadding}}; }"
+            }
+        },
+        "methodItemMargin": {
+            "type": "object",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}} ul#shipping_method li{ margin: {{methodItemMargin}}; }"
+            }
+        },
+
+        "methodItemSeparatorBorder":{
+            "type":"object",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}}.woolentor-shipping-method-1 ul#shipping_method li:not(:last-child)::after",
+                "dependency": [
+                    [
+                        {
+                            "key": "layout", 
+                            "condition": "==", 
+                            "value": "2"
+                        }
+                    ]
+                ]
+            }
+        },
+
+        "radioButtonBorder":{
+            "type":"object",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}}.woolentor-shipping-method-1 ul#shipping_method input[type=radio] ~ label::before"
+            }
+        },
+        "radioButtonSelectedBorder":{
+            "type":"object",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}}.woolentor-shipping-method-1 ul#shipping_method input[type=radio]:checked ~ label::before"
+            }
+        },
+        "radioButtonBGColor":{
+            "type":"string",
+            "style" : {
+                "selector":".woocommerce {{WOOLENTOR_WRAPPER}}.woolentor-shipping-method-1 ul#shipping_method input[type=radio]:checked ~ label::after { background-color: {{radioButtonBGColor}}; }"
+            }
+        },
+
+        "messageColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}}.woolentor-shipping-method-1 .woolentor-shipping-alert { color: {{messageColor}}; }"
+            }
+        },
+        "messageSize":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}}.woolentor-shipping-method-1 .woolentor-shipping-alert { font-size: {{messageSize}}; }"
+            }
+        },
+        "messageBGColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}}.woolentor-shipping-method-1 .woolentor-shipping-alert { background-color: {{messageBGColor}}; }"
+            }
+        },
+        "messageBoxBorder":{
+            "type":"object",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}}.woolentor-shipping-method-1 .woolentor-shipping-alert"
+            }
+        },
+        "messageBoxBorderRadius": {
+            "type": "object",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}}.woolentor-shipping-method-1 .woolentor-shipping-alert{ border-radius: {{messageBoxBorderRadius}}; }"
+            }
+        },
+        "messageBoxPadding": {
+            "type": "object",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}}.woolentor-shipping-method-1 .woolentor-shipping-alert label{ padding: {{messageBoxPadding}}; }"
+            }
+        },
+        "messageBoxMargin": {
+            "type": "object",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}}.woolentor-checkout__shipping-method{ margin: {{messageBoxMargin}}; }"
+            }
+        }
+    }
+}

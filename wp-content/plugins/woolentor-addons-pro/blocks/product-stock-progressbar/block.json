@@ -1,0 +1,109 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+    "name": "woolentor/product-stock-progressbar",
+    "category": "woolentor-single-product",
+    "title": "WL: Available Stock Progressbar",
+    "description":"Display available stock progressbar for single product page.",
+    "keywords": ["woolentor","product","single","progressbar","available","stock","available stock progressbar"],
+    "attributes": {
+        "blockUniqId":{
+            "type": "string",
+            "default": ""
+        },
+        "areaPadding": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} { padding: {{areaPadding}}; }"
+            }
+        },
+        "areaMargin": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} { margin: {{areaMargin}}; }"
+            }
+        },
+        "areaBGProperty":{
+            "type": "object",
+            "default": {
+                "imageId": null,
+                "imageUrl":"",
+                "position": "",
+                "attachment": "",
+                "repeat": "",
+                "size": ""
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}}"
+            }
+        },
+
+        "showOrderCounter":{
+            "type":"boolean",
+            "default": true
+        },
+        "showAvailableCounter":{
+            "type":"boolean",
+            "default": true
+        },
+        "orderCustomText":{
+            "type":"string"
+        },
+        "availableCustomText":{
+            "type":"string"
+        },
+
+        "progressbarHeight":{
+            "type":"number",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor-stock-progress-bar .wlprogress-area{ height:{{progressbarHeight}}px;}"
+            }
+        },
+        "progressbarBGcolor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor-stock-progress-bar .wlprogress-area{ background-color:{{progressbarBGcolor}};}"
+            }
+        },
+        "sellProgressbarBGcolor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor-stock-progress-bar .wlprogress-bar{ background-color:{{sellProgressbarBGcolor}};}"
+            }
+        },
+        "orderAbilitySize":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor-stock-progress-bar .wlstock-info{ font-size:{{orderAbilitySize}};}"
+            }
+        },
+        "orderAbilityColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor-stock-progress-bar .wlstock-info{ color:{{orderAbilityColor}};}"
+            }
+        },
+        "counterNumberColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor-stock-progress-bar .wlstock-info span{ color:{{counterNumberColor}};}"
+            }
+        }
+    }
+}

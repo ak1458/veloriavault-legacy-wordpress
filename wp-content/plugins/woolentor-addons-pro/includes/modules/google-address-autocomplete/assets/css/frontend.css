@@ -1,0 +1,96 @@
+/**
+ * Google Address Autocomplete - Frontend Styles
+ */
+
+/* Google Places Autocomplete Container */
+.pac-container {
+    z-index: 100000 !important;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+    font-family: inherit;
+    margin-top: 2px;
+}
+
+/* Individual suggestion items */
+.pac-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-top: 1px solid #f0f0f0;
+    line-height: 1.4;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pac-item:first-child {
+    border-top: none;
+}
+
+.pac-item:hover,
+.pac-item-selected {
+    background-color: #f7f7f7;
+}
+
+/* Main text in suggestion */
+.pac-item-query {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Secondary text (city, country, etc.) */
+.pac-item span:not(.pac-item-query) {
+    color: #757575;
+    font-size: 13px;
+}
+
+/* Matched text highlighting */
+.pac-matched {
+    font-weight: 600;
+    color: #1a73e8;
+}
+
+/* Hide "Powered by Google" logo if needed (optional) */
+.pac-logo::after {
+    height: 20px;
+    padding: 8px 10px;
+    background-position: right center;
+}
+
+/* Address input field styling */
+#billing_address_1,
+#shipping_address_1,
+#billing-address_1,
+#shipping-address_1 {
+    background-image: none;
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 768px) {
+    .pac-container {
+        width: calc(100% - 20px) !important;
+        left: 10px !important;
+        right: 10px !important;
+    }
+
+    .pac-item {
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+
+    .pac-item-query {
+        font-size: 15px;
+    }
+}
+
+/* RTL Support */
+html[dir="rtl"] .pac-container {
+    direction: rtl;
+}
+
+html[dir="rtl"] .pac-icon {
+    margin-right: 0;
+    margin-left: 10px;
+}

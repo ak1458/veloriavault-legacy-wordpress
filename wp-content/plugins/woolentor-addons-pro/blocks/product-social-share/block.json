@@ -1,0 +1,234 @@
+{
+	"name": "woolentor/product-social-share",
+    "category": "woolentor-single-product",
+    "title": "WL: Product Social Share",
+    "description":"Display social share icon for single product page.",
+    "keywords": ["woolentor","product","single","social","share","social media","social share"],
+    "attributes": {
+        "blockUniqId":{
+            "type": "string",
+            "default": ""
+        },
+        "areaPadding": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} { padding: {{areaPadding}}; }"
+            }
+        },
+        "areaBGProperty":{
+            "type": "object",
+            "default": {
+                "imageId": null,
+                "imageUrl":"",
+                "position": "",
+                "attachment": "",
+                "repeat": "",
+                "size": ""
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}}"
+            }
+        },
+
+        "layout":{
+            "type":"string",
+            "default":"style-1"
+        },
+        "socialShareTitle":{
+            "type":"string"
+        },
+        "socialMediaList":{
+            "type": "array",
+            "default": [
+                {
+                    "socialMediaName":"Facebook",
+                    "socialMediaText":"Share"
+                },
+                {
+                    "socialMediaName":"Twitter",
+                    "socialMediaText":"Tweet"
+                },
+                {
+                    "socialMediaName":"Pinterest",
+                    "socialMediaText":"Save"
+                },
+                {
+                    "socialMediaName":"Google+",
+                    "socialMediaText":"Share"
+                },
+                {
+                    "socialMediaName":"Reddit",
+                    "socialMediaText":"Reddit"
+                }
+            ]
+        },
+
+        "socialMediaTitleColor":{
+            "type":"string",
+            "style" : {
+                "dependency": [
+                    [
+                        {
+                            "key": "socialShareTitle", 
+                            "condition": "!=", 
+                            "value": ""
+                        }
+                    ]
+                ],
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share h2{ color:{{socialMediaTitleColor}}; }"
+            }
+        },
+        "socialMediaTitleSize":{
+            "type":"string",
+            "style" : {
+                "dependency": [
+                    [
+                        {
+                            "key": "socialShareTitle", 
+                            "condition": "!=", 
+                            "value": ""
+                        }
+                    ]
+                ],
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share h2{ font-size:{{socialMediaTitleSize}}; }"
+            }
+        },
+        "socialMediaTitleMargin": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "dependency": [
+                    [
+                        {
+                            "key": "socialShareTitle", 
+                            "condition": "!=", 
+                            "value": ""
+                        }
+                    ]
+                ],
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share h2{ margin:{{socialMediaTitleMargin}}; }"
+            }
+        },
+
+        "shareButtonColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share ul li a{ color:{{shareButtonColor}}; }"
+            }
+        },
+        "shareButtonBGColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share ul li a{ background-color:{{shareButtonBGColor}}; }"
+            }
+        },
+        "shareButtonSize":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share ul li a{ font-size:{{shareButtonSize}}; }"
+            }
+        },
+        "shareButtonBorder":{
+            "type":"object",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share ul li a"
+            }
+        },
+        "shareButtonBorderRadius": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share ul li a{ border-radius:{{shareButtonBorderRadius}}; }"
+            }
+        },
+        "shareButtonPadding": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share ul li a{ padding:{{shareButtonPadding}}; }"
+            }
+        },
+        "shareButtonMargin": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share ul li{ margin:{{shareButtonMargin}}; }"
+            }
+        },
+        "shareButtonWidth":{
+            "type":"number",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share ul li a{ width:{{shareButtonWidth}}px; height:{{shareButtonWidth}}px; line-height:{{shareButtonWidth}}px;}"
+            }
+        },
+
+        "shareButtonHoverColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share ul li a:hover{ color:{{shareButtonHoverColor}}; }"
+            }
+        },
+        "shareButtonHoverBGColor":{
+            "type":"string",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share ul li a:hover{ background-color:{{shareButtonHoverBGColor}}; }"
+            }
+        },
+        "shareButtonHoverBorder":{
+            "type":"object",
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share ul li a:hover"
+            }
+        },
+        "shareButtonHoverBorderRadius": {
+            "type": "object",
+            "default": {
+                "top":"",
+                "right":"",
+                "bottom":"",
+                "left":"",
+                "unit":"px",
+                "link":"yes"
+            },
+            "style" : {
+                "selector":"{{WOOLENTOR_WRAPPER}} .woolentor_product_social_share ul li a:hover{ border-radius:{{shareButtonHoverBorderRadius}}; }"
+            }
+        }
+    }
+}

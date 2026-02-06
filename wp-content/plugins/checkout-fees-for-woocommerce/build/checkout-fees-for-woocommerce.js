@@ -1,0 +1,1 @@
+(()=>{const{PAYMENT_STORE_KEY:e}=window.wc.wcBlocksData,{extensionCartUpdate:t}=window.wc.blocksCheckout,{subscribe:c,select:o}=wp.data;c((function(){const c=o(e).getActivePaymentMethod();t({namespace:"checkout-fees-for-woocommerce",data:{payment_method:c}})}),e)})();

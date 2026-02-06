@@ -1,0 +1,3321 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Advanced Dynamic Pricing and Discount Rules for "
+"WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-25 17:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.1; wp-6.9-RC3; php-8.4.6\n"
+"X-Domain: advanced-dynamic-pricing-for-woocommerce"
+
+#: advanced-dynamic-pricing-for-woocommerce.php:31
+msgid " Free version of Advanced Dynamic Pricing For WooCommerce!"
+msgstr ""
+
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:105
+#, php-format
+msgid " from list: %s"
+msgstr ""
+
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:108
+#, php-format
+msgid " not from list: %s"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:290
+#: BaseVersion/views/admin_page/tabs/options/individual_wc_coupon_suppress_coupons.php:7
+#: BaseVersion/views/admin_page/tabs/options/individual_wc_coupon_suppress_coupons.php:12
+msgid "\"Individual use\" WC coupon suppress coupons added by rules"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:28
+#: BaseVersion/templates/reporter/tabs/cart.php:58
+#: BaseVersion/templates/reporter/tabs/cart.php:82
+#: BaseVersion/templates/reporter/tabs/cart.php:111
+#: BaseVersion/templates/reporter/tabs/products.php:9
+#: BaseVersion/templates/reporter/tabs/rules.php:22
+#: BaseVersion/templates/reporter/tabs/rules.php:34
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:70
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:77
+msgid "#"
+msgstr ""
+
+#. Message about the load order
+#: BaseVersion/Includes/Compatibility/AlgWcCurrencySwitcherCmp.php:41
+#: BaseVersion/Includes/Compatibility/WcSubscriptionsCmp.php:53
+#: BaseVersion/Includes/Compatibility/PDFProductVouchersCmp.php:42
+#: BaseVersion/Includes/Compatibility/AeliaSwitcherCmp.php:42
+#: BaseVersion/Includes/Compatibility/GiftCardsSomewhereWarmCmp.php:42
+#: BaseVersion/Includes/Compatibility/WcsAttCmp.php:47
+#: BaseVersion/Includes/Compatibility/WooCommerceMultiCurrencyCmp.php:45
+#: BaseVersion/Includes/Compatibility/SmartCouponsCmp.php:45
+#: BaseVersion/Includes/Compatibility/WoocsCmp.php:47
+#: BaseVersion/Includes/Compatibility/VillaThemeMultiCurrencyCmp.php:41
+#: BaseVersion/Includes/Compatibility/YayCurrencyCmp.php:47
+#: BaseVersion/Includes/Compatibility/Wpml/WpmlCmp.php:104
+#, php-format
+msgid "%1$s should not be called earlier the %2$s action."
+msgstr ""
+
+#. total items count
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Paginator.php:46
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Message about the imported rule
+#: BaseVersion/Includes/ImportExport/ImporterCSV.php:78
+#, php-format
+msgid "%s rule were imported"
+msgid_plural "%s  rules were imported"
+msgstr[0] ""
+msgstr[1] ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:67
+#: BaseVersion/views/conditions/cart/weight.php:13
+#: BaseVersion/views/conditions/cart/subtotal.php:13
+#: BaseVersion/views/conditions/cart/items-count.php:13
+msgid "&gt;"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:66
+#: BaseVersion/views/conditions/cart/weight.php:12
+#: BaseVersion/views/conditions/cart/subtotal.php:12
+#: BaseVersion/views/conditions/cart/items-count.php:12
+msgid "&gt;="
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:64
+#: BaseVersion/views/conditions/cart/weight.php:10
+#: BaseVersion/views/conditions/cart/subtotal.php:10
+#: BaseVersion/views/conditions/cart/items-count.php:10
+msgid "&lt;"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:65
+#: BaseVersion/views/conditions/cart/weight.php:11
+#: BaseVersion/views/conditions/cart/subtotal.php:11
+#: BaseVersion/views/conditions/cart/items-count.php:11
+msgid "&lt;="
+msgstr ""
+
+#: BaseVersion/views/conditions/cart/items-count.php:14
+msgid "="
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:211
+msgid "[All zones]"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:227
+msgid "[Rest of the World]"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:198
+msgid "Above add to cart"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:194
+msgid "Above product"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:202
+msgid "Above product meta"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:190
+msgid "Above product summary"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules.php:90
+msgid "Activate"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules.php:39
+msgid "Active"
+msgstr ""
+
+#: BaseVersion/templates/deals-table.php:6
+msgid "Active deals"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/CustomerSubscriptions.php:77
+msgid "Active subscriptions"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:445
+msgid "Add cart adjustment"
+msgstr ""
+
+#: BaseVersion/views/admin_page/admin_page.php:38
+msgid "Add collection"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:531
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:524
+msgid "Add condition"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartAdjustment/Impl/DiscountAmountRepeatable.php:36
+msgid "Add fixed discount on each rule execution *"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartAdjustment/Impl/DiscountAmountRepeatableSetsCount.php:36
+msgid "Add fixed discount to each item line affected by rule *"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartAdjustment/Impl/FeeAmountRepeatable.php:41
+msgid "Add fixed fee on each rule execution *"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartAdjustment/Impl/FeeAmountRepeatableSetsCount.php:41
+msgid "Add fixed fee to each item line affected by rule *"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:293
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:404
+msgid "Add free items at regular price and show discount as coupon"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:556
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:549
+msgid "Add limit"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/import_rule_csv.php:44
+msgid "Add new rules after existing"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:310
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:420
+msgid "Add product"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:617
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:249
+msgid "Add product filter"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:178
+msgid "Add range"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:54
+msgid "Add role discount"
+msgstr ""
+
+#: BaseVersion/views/admin_page/admin_page.php:31
+#: BaseVersion/views/admin_page/tabs/rules.php:116
+msgid "Add rule"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/WcProductPageExtensions.php:196
+msgid "Add rule for the product"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:203
+msgid "Added {{qty}} free {{product_name}}"
+msgstr ""
+
+#: BaseVersion/Includes/LoadStrategies/RestApi.php:41
+msgid "ADP Coupon"
+msgstr ""
+
+#: BaseVersion/Includes/LoadStrategies/RestApi.php:47
+msgid "ADP Coupon  (rule trigger)"
+msgstr ""
+
+#: BaseVersion/Includes/LoadStrategies/RestApi.php:45
+msgid "ADP Coupon (fixed cart item)"
+msgstr ""
+
+#: BaseVersion/Includes/LoadStrategies/RestApi.php:43
+msgid "ADP Coupon (percent with limit)"
+msgstr ""
+
+#. Name of the plugin
+msgid "Advanced Dynamic Pricing and Discount Rules for WooCommerce"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:127
+msgid "Advanced Dynamic Pricing for WooCommerce is available"
+msgstr ""
+
+#: BaseVersion/Includes/Loader.php:128
+msgid "Advanced Dynamic Pricing for WooCommerce requires active WooCommerce!"
+msgstr ""
+
+#. A message about the need for a specific php version
+#: BaseVersion/Includes/Loader.php:122
+#, php-format
+msgid ""
+"Advanced Dynamic Pricing for WooCommerce requires PHP version %s or later."
+msgstr ""
+
+#. A message about the need for a specific php version
+#: BaseVersion/Includes/Loader.php:135
+#, php-format
+msgid ""
+"Advanced Dynamic Pricing for WooCommerce requires WooCommerce version %s or "
+"later."
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:263
+msgid "Advertising"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:63
+msgid "Affected"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:86
+#: BaseVersion/templates/reporter/tabs/cart.php:115
+msgid "Affected rules"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:678
+msgid "After cart contents"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:302
+#: BaseVersion/views/admin_page/tabs/options/process_product_strategy.php:25
+msgid "After matching condition"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:657
+msgid "After mini cart contents"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:636
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:684
+msgid "After order total"
+msgstr ""
+
+#. Author of the plugin
+msgid "AlgolPlus"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:200
+#: BaseVersion/views/admin_page/tabs/rules.php:31
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:469
+msgid "All"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:128
+#: BaseVersion/views/admin_page/tabs/options/bulk_table_calculation_mode.php:19
+msgid "All active rules"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:224
+msgid "All different item meta"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:212
+msgid "All different products"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:218
+msgid "All different variations"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/subscriptions.php:13
+msgid "all of selected"
+msgstr ""
+
+#: BaseVersion/Includes/ImportExport/ImporterCSV.php:23
+msgid "All rules were deleted"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:11
+msgid "All time"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:12
+msgid "all time"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:283
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:394
+msgid "amount"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:615
+#: BaseVersion/Includes/Advertising/DiscountMessage.php:52
+msgid "Amount Saved"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/order_amount_saved_url_to_customizer.php:10
+#: BaseVersion/views/admin_page/tabs/options/amount_saved_url_to_customizer.php:10
+msgid "Amount saved"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:614
+msgid "Amount saved label"
+msgstr ""
+
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:29
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:156
+msgid "Any product"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/WcOrderPreviewExtensions.php:59
+#: BaseVersion/Includes/AdminExtensions/MetaBoxes/OrderAppliedDiscountRules.php:34
+msgid "Applied discounts"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/rules.php:31
+msgid "Applied to cart items"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/rules.php:19
+msgid "Applied to visible products"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:361
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:387
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:461
+#: BaseVersion/views/admin_page/tabs/rules.php:94
+#: BaseVersion/views/admin_page/tabs/options/external_coupons_behavior.php:19
+#: BaseVersion/views/admin_page/tabs/options/external_coupons_behavior.php:38
+msgid "Apply"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:128
+msgid "Apply at first to:"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:425
+msgid "Apply pricing rules to backend orders"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/update_prices_while_doing_rest_api.php:6
+msgid "Apply pricing rules while doing API request"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:229
+#: BaseVersion/views/admin_page/tabs/options/update_prices_while_doing_cron.php:8
+msgid "Apply pricing rules while doing cron"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:234
+msgid "Apply pricing rules while doing REST API"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/replace_price_with_min_bulk_price.php:30
+msgid "Apply to category/tag pages"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:362
+msgid "Apply to unmodified cart"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:388
+msgid "Apply to unmodified cart items only"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:475
+msgid "Are you sure to delete the selected rules?"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:137
+msgid "Are you sure to reset all settings to default?"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:134
+msgid "As appears in the cart"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:444
+msgid "At bottom of the page"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/subscriptions.php:11
+msgid "at least one of selected"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:442
+msgid "At top of the page"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:166
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:348
+msgid "Attributes"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:574
+msgid "Auto add to cart"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/replace_price_with_min_bulk_price.php:44
+#: BaseVersion/views/admin_page/tabs/options/message_after_add_free_product.php:28
+#: BaseVersion/views/admin_page/tabs/options/product_price_html.php:29
+msgid "Available tags"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:669
+msgid "Available tags: {{qty}}, {{product}}, {{discount}}, {{cart_condition}}"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:338
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:379
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:559
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:577
+msgid "Background color"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:350
+msgid "Background higlight color"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:546
+msgid "Backup"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:271
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:382
+msgid "Based on"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:545
+msgid "Based on all items in the cart"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:530
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:675
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:776
+msgid "Based on all matched products"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:647
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:755
+msgid "Based on cart position"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:621
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:729
+msgid "Based on product"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:560
+msgid "Based on product categories in all cart"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:660
+msgid "Based on product meta data"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:576
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:688
+msgid "Based on selected categories in all cart"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:592
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:702
+msgid "Based on selected products in all cart"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:608
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:716
+msgid "Based on sets"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:634
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:742
+msgid "Based on variation"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:676
+msgid "Before cart contents"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:298
+#: BaseVersion/views/admin_page/tabs/options/process_product_strategy.php:21
+msgid "Before matching condition"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:655
+msgid "Before mini cart contents"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:634
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:682
+msgid "Before order total"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:632
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:680
+msgid "Before shipping"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:200
+msgid "Below add to cart"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:196
+msgid "Below product"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:204
+msgid "Below product meta"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:192
+msgid "Below product summary"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:366
+msgid "Best between coupon and rule"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:263
+#: BaseVersion/views/admin_page/tabs/options/apply_discount_for_onsale_products.php:22
+msgid "Best between discounted regular price and sale price"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:176
+msgid "BOGO(free)"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:100
+msgid "Bold text"
+msgstr ""
+
+#: BaseVersion/Includes/ImportExport/ImporterCSV.php:216
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:180
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:110
+msgid "Bulk"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules.php:89
+msgid "Bulk actions"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:268
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:498
+msgid "Bulk deal"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:572
+msgid "Bulk mode"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:129
+msgid ""
+"bulk qty counts all products in the cart even if the products don’t match to "
+"the Product Filter"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:131
+msgid ""
+"bulk qty counts all the products from the selected category, e.g., both "
+"Product A + Product B qty"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:134
+msgid "bulk qty counts by each product separately"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:135
+msgid ""
+"bulk qty counts by each variation separately, e.g., separately for the Green "
+"variation, and for the Red variation"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:130
+msgid ""
+"bulk qty counts by the each products from the selected category, e.g., "
+"separately for the Product A, separately for the Product B"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:136
+msgid "bulk qty counts from the first range for every cart line separately"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:128
+msgid "bulk qty counts only for the products matched with the Product Filter"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:132
+msgid "bulk qty counts only for the selected products from this field"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:137
+msgid "bulk qty counts separately for each product’s meta data"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:569
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:562
+msgid "Bulk rules"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:237
+msgid "Bulk table"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:186
+msgid "Bulk table message"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:168
+msgid "Buy 3 for X"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/compatibility.php:11
+#: BaseVersion/views/admin_page/tabs/collections.php:11
+#: BaseVersion/views/admin_page/tabs/statistics.php:11
+msgid "Buy a pro version of our plugin and get an access to this section"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:177
+msgid "Buy one and get another one as a gift in the cart"
+msgstr ""
+
+#: BaseVersion/views/admin_page/admin_page.php:53
+msgid "Cache recalculation"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:125
+#: BaseVersion/views/admin_page/tabs/options/bulk_table_calculation_mode.php:8
+msgid "Calculate price based on"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:183
+msgid "Calculation"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:257
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:110
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:366
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:368
+msgid "Can be applied"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:254
+msgid "Can be applied "
+msgstr ""
+
+#: BaseVersion/Includes/ImportExport/ImporterCSV.php:278
+msgid "Can not find "
+msgstr ""
+
+#: BaseVersion/Includes/ImportExport/ImporterCSV.php:204
+msgid "Can't open file."
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:623
+#: BaseVersion/Includes/Debug/DebugBar.php:67
+#: BaseVersion/templates/reporter/main.php:20
+#: BaseVersion/Includes/Core/Rule/CartCondition/ConditionsLoader.php:75
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:212
+msgid "Cart"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:575
+msgid "Cart adjustments"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:573
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:568
+msgid "Cart conditions"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/external_coupons_behavior.php:14
+msgid "Cart coupons"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:192
+msgid "Cart Discount"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:8
+msgid "Cart is empty"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/ConditionsLoader.php:74
+msgid "Cart items"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:566
+msgid "Cart/Shipping discounts"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:162
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:340
+msgid "Categories"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:71
+msgid "Category bulk table (Pricing)"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:435
+msgid "Category Bulk Table position"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:230
+msgid "Category page"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:164
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:344
+msgid "Category slugs"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:419
+msgid "Category table layout"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/override_cents.php:8
+msgid "Cents"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:278
+msgid "Cents|If selected, prices will end with: 0."
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:272
+msgid "Cents|Override the cents on the calculated price."
+msgstr ""
+
+#: BaseVersion/Includes/PluginActions.php:57
+msgid "Change the plugin settings"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:132
+msgid "Cheap products"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:322
+#: BaseVersion/views/admin_page/tabs/options/process_product_strategy_after_use_price.php:23
+msgid "Cheapest"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:667
+msgid "Checkout"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:42
+msgid ""
+"Choose a user role, which can get a discount, the discount type and amount."
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/backup.php:81
+msgid "Clear all rules before import"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:82
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:85
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:89
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:92
+msgid "Clone"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:147
+#: BaseVersion/views/admin_page/tabs/options/combine_fees.php:7
+#: BaseVersion/views/admin_page/tabs/options/combine_fees.php:12
+msgid "Combine multiple fees"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:137
+#: BaseVersion/views/admin_page/tabs/options/combine_discounts.php:8
+#: BaseVersion/views/admin_page/tabs/options/combine_discounts.php:12
+msgid "Combine multiple fixed discounts"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:64
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:71
+msgid "Common"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:170
+msgid "common rules were turned off, it were running too slow."
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Compatibility.php:86
+msgid "Compatibility"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:576
+msgid "Conditions"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:523
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:516
+msgid "Conditions relationship"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:544
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:537
+msgid "Configure how often the rule would be applied."
+msgstr ""
+
+#: BaseVersion/Includes/PluginActions.php:47
+msgid "Contact support"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:552
+msgid "Convert rules"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/backup.php:20
+msgid ""
+"Copy these settings and use it to migrate plugin to another WordPress "
+"install."
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:114
+msgid "Cost"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ShippingCountry.php:47
+msgid "Country"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:141
+msgid "Coupon"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:61
+msgid "Coupon amount"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:59
+msgid "Coupon code"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:116
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:299
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:154
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:410
+msgid "coupon_name"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/DebugBar.php:71
+#: BaseVersion/Includes/Core/Rule/CartAdjustment/CartAdjustmentsLoader.php:50
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:254
+msgid "Coupons"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:223
+msgid "Create rule"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:93
+msgid "Creating a Rule"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:14
+msgid "Current"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:127
+#: BaseVersion/views/admin_page/tabs/options/bulk_table_calculation_mode.php:15
+msgid "Current bulk rule"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:15
+msgid "current day"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:17
+msgid "current month"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Paginator.php:102
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Paginator.php:106
+msgid "Current Page"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:16
+msgid "current week"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:18
+msgid "current year"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:168
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:352
+msgid "Custom attributes"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:178
+msgid "Custom fields"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/ConditionsLoader.php:76
+msgid "Customer"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/show_matched_bulk_table.php:24
+#: BaseVersion/views/admin_page/tabs/options/amount_saved_url_to_customizer.php:32
+#: BaseVersion/views/admin_page/tabs/options/show_category_bulk_table.php:23
+msgid "Customize"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:486
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:479
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/Date.php:61
+msgid "Date"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/ConditionsLoader.php:77
+msgid "Date & time"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:21
+msgid "day"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:20
+msgid "Days"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:22
+#: BaseVersion/views/conditions/customer/order-count.php:23
+#: BaseVersion/views/conditions/customer/order-count.php:24
+#: BaseVersion/views/conditions/customer/order-count.php:25
+#: BaseVersion/views/conditions/customer/order-count.php:26
+msgid "days"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/DaysOfWeek.php:43
+msgid "Days of week"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules.php:91
+msgid "Deactivate"
+msgstr ""
+
+#: advanced-dynamic-pricing-for-woocommerce.php:30
+msgid "deactivate"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:299
+msgid "Debug"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:142
+#: BaseVersion/views/admin_page/tabs/options/default_discount_name.php:7
+#: BaseVersion/views/admin_page/tabs/options/default_discount_name.php:12
+msgid "Default discount name"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:152
+#: BaseVersion/views/admin_page/tabs/options/default_fee_name.php:7
+#: BaseVersion/views/admin_page/tabs/options/default_fee_name.php:11
+msgid "Default fee name"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:157
+#: BaseVersion/views/admin_page/tabs/options/default_fee_tax_class.php:28
+#: BaseVersion/views/admin_page/tabs/options/default_fee_tax_class.php:33
+msgid "Default fee tax class"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules.php:92
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:75
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:78
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:82
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:85
+msgid "Delete"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/import_rule_csv.php:32
+msgid "Delete rules before import"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:84
+msgid "Describe settings of the rules list, talking about rules priority."
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:114
+msgid ""
+"Detailed information about every rule sections: from Product filter to "
+"Limits."
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:104
+msgid "Detailed information about plugin settings"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:89
+msgid "Difference between free and pro."
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:374
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:396
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:464
+#: BaseVersion/views/admin_page/tabs/options/external_coupons_behavior.php:27
+#: BaseVersion/views/admin_page/tabs/options/external_coupons_behavior.php:46
+msgid "Disable all if any of cart items updated"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:370
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:392
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:462
+#: BaseVersion/views/admin_page/tabs/options/external_coupons_behavior.php:23
+#: BaseVersion/views/admin_page/tabs/options/external_coupons_behavior.php:42
+msgid "Disable all if any rule applied"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:412
+msgid "Disable external coupons"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:100
+#: BaseVersion/views/admin_page/tabs/options/rule_max_exec_time.php:7
+#: BaseVersion/views/admin_page/tabs/options/rule_max_exec_time.php:12
+msgid "Disable rule if it runs longer than X seconds"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:445
+#: BaseVersion/views/admin_page/tabs/options/disable_shipping_calc_during_process.php:7
+#: BaseVersion/views/admin_page/tabs/options/disable_shipping_calc_during_process.php:12
+msgid "Disable shipping calculation"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:301
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:311
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:531
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:541
+#: BaseVersion/Includes/Core/Rule/CartAdjustment/CartAdjustmentsLoader.php:49
+msgid "Discount"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:300
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:530
+msgid "Discount column title"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:309
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:539
+msgid "Discount column title, for fixed price"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:78
+msgid "Discount message (Pricing)"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:577
+msgid "Discount messages"
+msgstr ""
+
+#: BaseVersion/views/cart_adjustments/discount.php:11
+msgid "discount name"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:259
+#: BaseVersion/views/admin_page/tabs/options/apply_discount_for_onsale_products.php:16
+msgid "Discount regular price"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:261
+#: BaseVersion/views/admin_page/tabs/options/apply_discount_for_onsale_products.php:19
+msgid "Discount sale price"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:330
+#: BaseVersion/templates/reporter/tabs/products.php:13
+msgid "Discounted price"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:329
+msgid "Discounted price column title"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:319
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:549
+msgid "Discounted price column title, for fixed price"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:174
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:425
+msgid "Display ranges as headers"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:172
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:423
+msgid "Display ranges as rows"
+msgstr ""
+
+#: BaseVersion/Includes/PluginActions.php:53
+msgid "Docs"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/help.php:13
+msgid "Docs site"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:258
+#: BaseVersion/views/admin_page/tabs/options/apply_discount_for_onsale_products.php:14
+msgid "Don't apply discount if product is already on sale"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:112
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:150
+msgid "Don't change product price and show discount as coupon"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:414
+msgid "Don't disable"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:177
+#: BaseVersion/views/admin_page/tabs/options/do_not_modify_price_at_product_page.php:7
+#: BaseVersion/views/admin_page/tabs/options/do_not_modify_price_at_product_page.php:11
+msgid "Don't modify product price on product page"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/import_rule_csv.php:64
+msgid "Don't optimize the rules during importing"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/dont_recalculate_cart_if_not_changed.php:7
+#: BaseVersion/views/admin_page/tabs/options/dont_recalculate_cart_if_not_changed.php:12
+msgid "Don't recalculate  cart if cart items don't have changed"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:450
+#: BaseVersion/views/admin_page/tabs/options/dont_recalculate_cart_on_page_load.php:7
+#: BaseVersion/views/admin_page/tabs/options/dont_recalculate_cart_on_page_load.php:12
+msgid "Don't recalculate cart on page load"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/import_rule_csv.php:26
+msgid "Download sample CSV"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:167
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:172
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:187
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:192
+msgid "Edit rule"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/message_after_add_free_product.php:16
+#: BaseVersion/views/admin_page/tabs/options/product_price_html.php:16
+msgid "Enable"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:258
+msgid "enable the \"Product only\" rules"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:82
+msgid ""
+"Enter the discount amount based on the number of items in the cart. Put the "
+"product quantity in the range  and choose the type of bulk and discount."
+msgstr ""
+
+#: BaseVersion/Includes/Debug/ReporterAjax.php:81
+#: BaseVersion/Includes/PriceDisplay/PriceAjax.php:87
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:58
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:58
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:99
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:79
+msgid "Error"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:247
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:253
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:406
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:412
+msgid "Exclude products"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:190
+msgid "exclusive rules were turned off, it were running too slow."
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:89
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:91
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:96
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:98
+msgid "Expand"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:130
+msgid "Expensive products"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/reports.php:9
+msgid "Export all"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/manage_bulk_ranges.php:24
+msgid "Export into CSV"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/backup.php:39
+msgid "Export JSON"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/manage_bulk_ranges.php:17
+msgid "Export rules with non-empty bulk ranges as CSV"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/backup.php:17
+msgid "Export settings"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:459
+#: BaseVersion/views/admin_page/tabs/options/external_coupons_behavior.php:9
+msgid "External coupons"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:359
+msgid "External coupons|Cart coupons"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:385
+msgid "External coupons|Product coupons"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/help.php:16
+msgid "FAQ"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:151
+#: BaseVersion/Includes/Core/Rule/CartAdjustment/CartAdjustmentsLoader.php:51
+msgid "Fee"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:84
+msgid "Fee amount"
+msgstr ""
+
+#: BaseVersion/views/cart_adjustments/fee.php:34
+msgid "fee name"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/DebugBar.php:72
+msgid "Fees"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/default_fee_name.php:18
+msgid "Fees with the same name are grouped in the cart."
+msgstr ""
+
+#: BaseVersion/Includes/ImportExport/ImporterCSV.php:158
+msgid "File must contain one rule or more."
+msgstr ""
+
+#. not used in code, we need it to make .pot correctly
+#: BaseVersion/Includes/Helpers/Helpers.php:569
+msgid "Filter by products"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:314
+#: BaseVersion/views/admin_page/tabs/options/process_product_strategy_after_use_price.php:15
+msgid "First matched"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:489
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:482
+msgid "First Order"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Paginator.php:84
+msgid "First page"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage.php:246
+msgid "five star"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:527
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:642
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:183
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:300
+msgid "Fixed discount"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:471
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:787
+msgid "Fixed discount for item"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:473
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:795
+msgid "Fixed discount for set"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:802
+msgid "Fixed discount for the range"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartAdjustment/Impl/DiscountAmount.php:31
+msgid "Fixed discount, once"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/default_discount_name.php:19
+msgid "Fixed discounts with the same name are grouped in the cart."
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartAdjustment/Impl/FeeAmount.php:36
+msgid "Fixed fee, once"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:321
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:551
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:531
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:187
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:304
+msgid "Fixed price"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:842
+msgid "Fixed price by the formula"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:472
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:818
+msgid "Fixed price for item"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:474
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:826
+msgid "Fixed price for set"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:834
+msgid "Fixed price for the range"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:646
+msgid "Fixed unit price"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:133
+msgid ""
+"for cases when the Product filter qty > 1, or for multiple Product filters, "
+"the bulk qty will be counted only for the product sets"
+msgstr ""
+
+#: BaseVersion/Includes/ImportExport/ImporterCSV.php:219
+msgid "for Roles"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:193
+#: BaseVersion/views/admin_page/tabs/options/force_displaying_variation_price.php:7
+#: BaseVersion/views/admin_page/tabs/options/force_displaying_variation_price.php:12
+msgid "Force displaying variation price"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:573
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:247
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:571
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:564
+msgid "Free products"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:134
+msgid "Free shipping!"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:108
+msgid "Frequently Created Rules"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:286
+msgid "Friday"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:50
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:55
+msgid "From"
+msgstr ""
+
+#: BaseVersion/views/conditions/datetime/time.php:10
+#: BaseVersion/views/conditions/datetime/date.php:10
+msgid "from"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:218
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:434
+msgid "From {{price}} {{price_suffix}}"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/DebugBar.php:78
+#: BaseVersion/templates/reporter/main.php:26
+#: BaseVersion/views/admin_page/tabs/tools/system_report.php:18
+msgid "Get system report"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:78
+msgid "Getting started"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/base.php:17
+msgid "Gifted!"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:172
+msgid "Gifts"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:173
+msgid "Give a gift according to the condition"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:193
+msgid ""
+"Give a whole cart discounts, fee or change the shipping price according to "
+"the condition"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:583
+msgid "Give gift from the list (1st available)"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:610
+msgid "Global options"
+msgstr ""
+
+#: BaseVersion/Includes/PluginActions.php:76
+msgid "Go to Pro"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:95
+msgid "Guest"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/replace_price_with_min_bulk_price.php:12
+msgid "Guide for supported tags"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:406
+msgid "Has the administrator visited the plugin review page"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/compatibility.php:6
+msgid ""
+"Have problems with other Woocommerce plugins (Product addons, bundles or "
+"feeds)?"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:267
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:497
+msgid "Header bulk title"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:276
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:506
+msgid "Header tier title"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/help.php:11
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:61
+msgid "Help"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:284
+#: BaseVersion/views/admin_page/tabs/options/hide_coupon_word_in_totals.php:7
+#: BaseVersion/views/admin_page/tabs/options/hide_coupon_word_in_totals.php:12
+msgid "Hide \"Coupon\" word in cart totals"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:245
+#: BaseVersion/views/admin_page/tabs/options/create_blank_rule.php:7
+#: BaseVersion/views/admin_page/tabs/options/create_blank_rule.php:12
+msgid "Hide rules wizard"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:482
+msgid "Highlight rows (on hover) and set qty on click"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:477
+msgid "Highlight selected range when qty changed"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:37
+#: BaseVersion/templates/reporter/tabs/products.php:15
+msgid "History"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:94
+msgid "How to add a new rule."
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:256
+#: BaseVersion/views/admin_page/tabs/options/apply_discount_for_onsale_products.php:8
+msgid "How to apply rules to a product that already has a sale price"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:109
+msgid "How to create a rule for the most popular discounts scenario."
+msgstr ""
+
+#: BaseVersion/templates/reporter/main.php:41
+msgid "How to hide it."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://algolplus.com/"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:417
+msgid "If any of cart items updated"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:415
+msgid "If any rule applied"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/override_cents.php:21
+msgid "If selected, prices will end with: "
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:126
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:231
+msgid "If you add many lines to this section – you will create product bundle"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:189
+msgid "If you leave this field empty, we will show default bulk description"
+msgstr ""
+
+#. Wdp rating link
+#: BaseVersion/Includes/AdminExtensions/AdminPage.php:244
+#, php-format
+msgid ""
+"If you like %1$s please leave us a %2$s rating. A huge thanks in advance!"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/backup.php:89
+#: BaseVersion/views/admin_page/tabs/tools/manage_bulk_ranges.php:37
+#: BaseVersion/views/admin_page/tabs/tools/import_rule_csv.php:58
+msgid "Import"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/backup.php:74
+msgid "Import JSON"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/ReporterAjax.php:56
+msgid "Import key not found"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/ReporterAjax.php:124
+msgid "Import key not provided"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:533
+msgid "Import rules (CSV)"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/backup.php:45
+msgid "Import settings"
+msgstr ""
+
+#: BaseVersion/Includes/ImportExport/ImporterCSV.php:232
+msgid "Imported Rule"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:312
+#: BaseVersion/views/admin_page/tabs/options/process_product_strategy_after_use_price.php:9
+msgid "In \"After matching condition\" mode - use product price from cart"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/role.php:10
+#: BaseVersion/views/conditions/shipping/country.php:10
+#: BaseVersion/views/conditions/products/product-category-slug.php:21
+#: BaseVersion/views/conditions/products/product-custom-fields.php:21
+#: BaseVersion/views/conditions/products/product-custom-attributes.php:21
+#: BaseVersion/views/conditions/products/product-taxonomy.php:24
+#: BaseVersion/views/conditions/products/product-attributes.php:21
+#: BaseVersion/views/conditions/products/product-categories.php:21
+#: BaseVersion/views/conditions/products/product-sku.php:21
+#: BaseVersion/views/conditions/products/products.php:21
+#: BaseVersion/views/conditions/products/product-tags.php:21
+#: BaseVersion/views/conditions/datetime/days-of-week.php:10
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:314
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:349
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:371
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:393
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:416
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:440
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:461
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:483
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:505
+msgid "in list"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/amount_saved_url_to_customizer.php:15
+msgid "In the cart"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/amount_saved_url_to_customizer.php:20
+msgid "In the mini-cart"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/order_amount_saved_url_to_customizer.php:15
+msgid "In the order backend"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules.php:47
+msgid "Inactive"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:53
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:58
+msgid "include"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:113
+msgid "Initial cost"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:33
+msgid "Initial price"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/ReporterAjax.php:80
+#: BaseVersion/Includes/PriceDisplay/PriceAjax.php:86
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:57
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:57
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:98
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:78
+msgid "Invalid nonce specified"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/CustomerLogged.php:43
+msgid "Is logged in"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:113
+msgid "Italic text"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:221
+msgid "Item cost"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:334
+msgid "Item price"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/DebugBar.php:70
+msgid "Items"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/CartItemsCount.php:76
+msgid "Items count"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:112
+msgid "Label"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:318
+#: BaseVersion/views/admin_page/tabs/options/process_product_strategy_after_use_price.php:19
+msgid "Last matched"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Paginator.php:133
+msgid "Last page"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:515
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:508
+msgid "Less"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:207
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:324
+msgid "Limit discount to amount"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:579
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:575
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:570
+msgid "Limits"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:181
+msgid "Make a bulk discount for your products, categories, SKU and etc"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:185
+msgid "Make a bulk discount only for some user's roles"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:189
+msgid "Make a fixed, percentage or fixed price discount for some user's roles"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:165
+msgid ""
+"Make a fixed, percentage or fixed price discount for your products, "
+"categories, SKU and etc."
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:169
+msgid "Make the fixed price for the set of 3 products"
+msgstr ""
+
+#. Description of the plugin
+msgid "Manage WooCommerce discounts"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:525
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:518
+msgid "Match All"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:527
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:520
+msgid "Match Any"
+msgstr ""
+
+#: BaseVersion/views/cart_adjustments/discount.php:16
+msgid "max discount"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/Limit/Impl/MaxUsage.php:43
+msgid "Max usage"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/migration_rules.php:25
+#: BaseVersion/views/admin_page/tabs/tools/migration_rules.php:37
+msgid "Migrate"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/migration_rules.php:17
+msgid "Migrate \"Common\" rule type to \"Product only\" rule type"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/migration_rules.php:29
+msgid "Migrate \"Product only\" rule type to \"Common\" rule type"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/support_persistence_rules.php:28
+msgid "Migrate rules"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:646
+msgid "Mini Cart"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:269
+msgid "modified by other pricing rules"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:282
+msgid "Monday"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:35
+msgid "month"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:34
+msgid "Months"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:36
+#: BaseVersion/views/conditions/customer/order-count.php:37
+#: BaseVersion/views/conditions/customer/order-count.php:38
+#: BaseVersion/views/conditions/customer/order-count.php:39
+#: BaseVersion/views/conditions/customer/order-count.php:40
+#: BaseVersion/views/conditions/customer/order-count.php:41
+#: BaseVersion/views/conditions/customer/order-count.php:42
+#: BaseVersion/views/conditions/customer/order-count.php:43
+#: BaseVersion/views/conditions/customer/order-count.php:44
+#: BaseVersion/views/conditions/customer/order-count.php:45
+#: BaseVersion/views/conditions/customer/order-count.php:46
+msgid "months"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:514
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:507
+msgid "More"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/product_price_html.php:40
+msgid "More available tags"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/compatibility.php:8
+#: BaseVersion/views/admin_page/tabs/collections.php:8
+#: BaseVersion/views/admin_page/tabs/statistics.php:8
+msgid "More details"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:99
+msgid "More details about applying of the sections/rules as a coupon."
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:119
+msgid "More details about Tools tab."
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:326
+#: BaseVersion/views/admin_page/tabs/options/process_product_strategy_after_use_price.php:27
+msgid "Most expensive"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:83
+#: BaseVersion/templates/reporter/tabs/products.php:10
+msgid "Name"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:519
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:512
+msgid "Need more conditions?"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options.php:87
+msgid "Need more settings?"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:88
+msgid "Need more settings? Go to PRO"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Paginator.php:122
+msgid "Next page"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/is-logged-in.php:11
+msgid "No"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/base.php:23
+msgid "No changes!"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:610
+msgid "No filters"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options.php:57
+msgid "No options found"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:173
+msgid "No ranges"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules.php:112
+msgid "No rules defined"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:206
+msgid "None"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/subscriptions.php:15
+msgid "none of selected"
+msgstr ""
+
+#: BaseVersion/views/conditions/products/product-category-slug.php:23
+#: BaseVersion/views/conditions/products/product-custom-fields.php:23
+#: BaseVersion/views/conditions/products/product-custom-attributes.php:23
+#: BaseVersion/views/conditions/products/product-taxonomy.php:26
+#: BaseVersion/views/conditions/products/product-attributes.php:23
+#: BaseVersion/views/conditions/products/product-categories.php:23
+#: BaseVersion/views/conditions/products/product-sku.php:23
+#: BaseVersion/views/conditions/products/products.php:23
+#: BaseVersion/views/conditions/products/product-tags.php:23
+msgid "not containing"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/role.php:11
+#: BaseVersion/views/conditions/shipping/country.php:11
+#: BaseVersion/views/conditions/products/product-category-slug.php:22
+#: BaseVersion/views/conditions/products/product-custom-fields.php:22
+#: BaseVersion/views/conditions/products/product-custom-attributes.php:22
+#: BaseVersion/views/conditions/products/product-taxonomy.php:25
+#: BaseVersion/views/conditions/products/product-attributes.php:22
+#: BaseVersion/views/conditions/products/product-categories.php:22
+#: BaseVersion/views/conditions/products/product-sku.php:22
+#: BaseVersion/views/conditions/products/products.php:22
+#: BaseVersion/views/conditions/products/product-tags.php:22
+#: BaseVersion/views/conditions/datetime/days-of-week.php:11
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:316
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:351
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:373
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:395
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:418
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:442
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:464
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:486
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:508
+msgid "not in list"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:668
+msgid "Offer message."
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:578
+msgid "Offer to buy more"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:261
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:420
+msgid "on sale products"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/amount_saved_url_to_customizer.php:26
+msgid "On the checkout page"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:128
+msgid "on this page"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:260
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:113
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:371
+msgid "Once"
+msgstr ""
+
+#: BaseVersion/templates/reporter/main.php:38
+msgid "Only admins see this panel. "
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/show_debug_bar.php:10
+msgid "Only admins will see this panel"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/product_price_html.php:35
+msgid ""
+"Only for products which are already in the cart: {{Nth_item}}, "
+"{{qty_already_in_cart}}."
+msgstr ""
+
+#. Only the rules for a specific product are shown
+#: BaseVersion/views/admin_page/tabs/rules.php:72
+#, php-format
+msgid "Only rules for product \"%s\" are shown"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/subscriptions.php:14
+msgid "only selected"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:164
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:415
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:62
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:330
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:335
+msgid "Options"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/backup.php:70
+msgid "Or import JSON backup file:"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:268
+msgid "Order"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/CustomerOrderCount.php:60
+msgid "Order count"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/products.php:11
+msgid "Original price"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/replace_price_with_min_bulk_price.php:34
+#: BaseVersion/views/admin_page/tabs/options/message_after_add_free_product.php:21
+#: BaseVersion/views/admin_page/tabs/options/product_price_html.php:21
+msgid "Output template"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/override_cents.php:15
+msgid "Override the cents on the calculated price."
+msgstr ""
+
+#. Links to previous and next pages
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Paginator.php:113
+#, php-format
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/backup.php:61
+msgid ""
+"Paste text into this field to import settings into the current WordPress "
+"install."
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:810
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:529
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:644
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:185
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:302
+#: BaseVersion/Includes/Core/Rule/CartAdjustment/Impl/DiscountPercentage.php:37
+msgid "Percentage discount"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:205
+msgid "Please enable coupons (cart adjustments won't work)"
+msgstr ""
+
+#: advanced-dynamic-pricing-for-woocommerce.php:29
+msgid "Please, "
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/manage_bulk_ranges.php:42
+msgid "Please, create some bulk rules at first"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:10
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:14
+msgid "Please, enable coupons to use price replacements."
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:97
+msgid "Please, read about difference between Tier and Bulk modes"
+msgstr ""
+
+#: BaseVersion/Includes/PluginActions.php:52
+msgid "Plugin documentation"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:79
+msgid "Plugins installation, activation and updates."
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:472
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:465
+msgid "Popular conditions:"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:627
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:650
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:671
+msgid "Position of amount saved"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Paginator.php:95
+msgid "Previous page"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:35
+msgid "Price"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage.php:73
+#: BaseVersion/Includes/AdminExtensions/AdminPage.php:74
+#: BaseVersion/Includes/AdminExtensions/WcProductPageExtensions.php:70
+#: BaseVersion/views/admin_page/admin_page.php:25
+msgid "Pricing Rules"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductAttributesAll.php:22
+msgid "Product attributes"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:64
+msgid "Product bulk table (Pricing)"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:184
+msgid "Product Bulk Table position"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductCategoriesAll.php:22
+msgid "Product categories"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductCategorySlugAll.php:22
+msgid "Product category slug"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Collections.php:55
+msgid "Product Collections"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/external_coupons_behavior.php:33
+msgid "Product coupons"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductCustomAttributesAll.php:22
+msgid "Product custom attributes"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductCustomFieldsAll.php:22
+msgid "Product custom fields"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:164
+msgid "Product Discount"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:570
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:565
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:558
+msgid "Product discounts"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:563
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:556
+msgid "Product filters"
+msgstr ""
+
+#. Product from categories with slug
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:65
+#, php-format
+msgid "Product from categories with slug: %s"
+msgstr ""
+
+#. Product from categories
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:57
+#, php-format
+msgid "Product from categories: %s"
+msgstr ""
+
+#. Product from sellers
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:50
+#, php-format
+msgid "Product from sellers: %s"
+msgstr ""
+
+#. Product from the list
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:35
+#, php-format
+msgid "Product from the list: %s"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:495
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:488
+msgid "Product in the Cart"
+msgstr ""
+
+#. Product not from categories with slug
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:68
+#, php-format
+msgid "Product not from categories with slug: %s"
+msgstr ""
+
+#. Product not from categoriesg
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:59
+#, php-format
+msgid "Product not from categories: %s"
+msgstr ""
+
+#. Product not from sellers
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:52
+#, php-format
+msgid "Product not from sellers: %s"
+msgstr ""
+
+#. Product not from the list
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:37
+#, php-format
+msgid "Product not from the list: %s"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:61
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:67
+msgid "Product only"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:221
+msgid "Product page"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:200
+msgid "Product price"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/product_price_html.php:8
+msgid "Product price html template"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:162
+msgid "Product price html template|Enable"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:167
+msgid "Product price html template|Output template"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductSKUAll.php:22
+msgid "Product SKU"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:168
+msgid "Product table layout"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductTagsAll.php:22
+msgid "Product tags"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/WcProductPageExtensions.php:95
+msgid "Product wasn't returned"
+msgstr ""
+
+#. Product with attributes from list
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:88
+#, php-format
+msgid "Product with attributes from list: %s"
+msgstr ""
+
+#. Product with attributes not from list
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:91
+#, php-format
+msgid "Product with attributes not from list: %s"
+msgstr ""
+
+#. Product with brands from list
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:81
+#, php-format
+msgid "Product with brands from list: %s"
+msgstr ""
+
+#. translators:Product with brands not from list
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:83
+#, php-format
+msgid "Product with brands not from list: %s"
+msgstr ""
+
+#. Product without custom fields
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:97
+#, php-format
+msgid "Product with custom fields: %s"
+msgstr ""
+
+#. Product with SKUs from the list
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:42
+#, php-format
+msgid "Product with SKUs from the list: %s"
+msgstr ""
+
+#. Product with SKUs not from the list
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:44
+#, php-format
+msgid "Product with SKUs not from the list: %s"
+msgstr ""
+
+#. Product with tags from list
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:74
+#, php-format
+msgid "Product with tags from list: %s"
+msgstr ""
+
+#. Product with tags not from list
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:76
+#, php-format
+msgid "Product with tags not from list: %s"
+msgstr ""
+
+#. Product without custom fields
+#: BaseVersion/Includes/VolumePricingTable/FiltersFormatter.php:99
+#, php-format
+msgid "Product without custom fields: %s"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/DebugBar.php:68
+#: BaseVersion/templates/reporter/main.php:22
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:158
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:607
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:332
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductsAll.php:22
+msgid "Products"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:850
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductAttributesAll.php:42
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductSKUAll.php:42
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductsAll.php:42
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductCustomAttributesAll.php:42
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductTaxonomyAll.php:28
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductCategorySlugAll.php:42
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductCategoriesAll.php:42
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductCustomFieldsAll.php:42
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/ProductTagsAll.php:42
+msgid "Qty"
+msgstr ""
+
+#: BaseVersion/views/conditions/products/product-category-slug.php:10
+#: BaseVersion/views/conditions/products/product-category-slug.php:16
+#: BaseVersion/views/conditions/products/product-custom-fields.php:10
+#: BaseVersion/views/conditions/products/product-custom-fields.php:16
+#: BaseVersion/views/conditions/products/product-custom-attributes.php:10
+#: BaseVersion/views/conditions/products/product-custom-attributes.php:16
+#: BaseVersion/views/conditions/products/product-taxonomy.php:13
+#: BaseVersion/views/conditions/products/product-taxonomy.php:19
+#: BaseVersion/views/conditions/products/product-attributes.php:10
+#: BaseVersion/views/conditions/products/product-attributes.php:16
+#: BaseVersion/views/conditions/products/product-categories.php:10
+#: BaseVersion/views/conditions/products/product-categories.php:16
+#: BaseVersion/views/conditions/products/product-sku.php:10
+#: BaseVersion/views/conditions/products/product-sku.php:16
+#: BaseVersion/views/conditions/products/products.php:10
+#: BaseVersion/views/conditions/products/products.php:16
+#: BaseVersion/views/conditions/products/product-tags.php:10
+#: BaseVersion/views/conditions/products/product-tags.php:16
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:577
+msgid "qty"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:479
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:551
+msgid "qty from"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:480
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:556
+msgid "qty to"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:292
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:522
+#: BaseVersion/templates/reporter/tabs/cart.php:31
+msgid "Quantity"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:291
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:521
+msgid "Quantity column title"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/manage_bulk_ranges.php:28
+msgid "Re-import CSV to update ranges for EXISTING rules"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options.php:69
+#: BaseVersion/views/admin_page/tabs/options/process_product_strategy.php:13
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:133
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:154
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:243
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:465
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:545
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:238
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:263
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:355
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:434
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:459
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:538
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:43
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:83
+msgid "Read docs"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools.php:52
+#: BaseVersion/views/admin_page/tabs/options/support_persistence_rules.php:24
+#: BaseVersion/views/admin_page/tabs/options/support_shortcode_products_bogo.php:19
+#: BaseVersion/views/admin_page/tabs/options/support_shortcode_products_on_sale.php:19
+msgid "Read short guide"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:472
+msgid "Read-only quantity for free products"
+msgstr ""
+
+#: BaseVersion/views/admin_page/admin_page.php:55
+msgid "Recalculate Product only rules cache"
+msgstr ""
+
+#: BaseVersion/templates/reporter/main.php:56
+msgid "Refresh"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:224
+#: BaseVersion/views/admin_page/tabs/options/uninstall_remove_data.php:7
+#: BaseVersion/views/admin_page/tabs/options/uninstall_remove_data.php:12
+msgid "Remove all data on uninstall"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:469
+msgid "Remove rule?"
+msgstr ""
+
+#: BaseVersion/Includes/CartProcessor/CartProcessor.php:1115
+msgid "Removed {{qty}} free {{product_name}}"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:280
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:391
+msgid "Repeat counter = subtotal amount divided by"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/replace_price_with_min_bulk_price.php:20
+msgid "Replace price with lowest bulk price"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:214
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:430
+msgid "Replace price with lowest bulk price|Enable"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:219
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:435
+msgid "Replace price with lowest bulk price|Output template"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/DebugBar.php:73
+msgid "Replaced by coupon"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/DebugBar.php:74
+msgid "Replaced by fee"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/reset_settings.php:5
+msgid "Reset settings to default values"
+msgstr ""
+
+#: BaseVersion/templates/removed-free-cart-item-stub.php:30
+#: BaseVersion/templates/removed-auto-added-mini-cart-item-stub.php:30
+#: BaseVersion/templates/removed-free-mini-cart-item-stub.php:30
+#: BaseVersion/templates/removed-auto-added-cart-item-stub.php:30
+msgid "Restore"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:483
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:476
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/CustomerRole.php:43
+msgid "Role"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:184
+msgid "Role Bulk"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:188
+msgid "Role Discount"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:571
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:567
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:560
+msgid "Role discounts"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:13
+msgid "Role discounts and bulk discounts applied"
+msgstr ""
+
+#: BaseVersion/Includes/ImportExport/ImporterCSV.php:223
+#: BaseVersion/Includes/ImportExport/ImporterCSV.php:225
+msgid "Roles"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:209
+#: BaseVersion/views/admin_page/tabs/options/is_calculate_based_on_wc_precision.php:7
+#: BaseVersion/views/admin_page/tabs/options/is_calculate_based_on_wc_precision.php:11
+msgid "Round up totals to match modified item prices"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/DebugBar.php:76
+msgid "Rule"
+msgstr ""
+
+#: BaseVersion/Includes/Core/RuleProcessor/Exceptions/RuleExecutionTimeout.php:13
+msgid "Rule execution timeout"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/DebugBar.php:75
+msgid "Rule ID"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:58
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:63
+msgid "Rule type"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/DebugBar.php:69
+#: BaseVersion/templates/reporter/main.php:24
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:97
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:275
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:63
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:481
+msgid "Rules"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:83
+msgid "Rules List"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:105
+#: BaseVersion/views/admin_page/tabs/options/rules_per_page.php:7
+#: BaseVersion/views/admin_page/tabs/options/rules_per_page.php:11
+msgid "Rules per page"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:113
+msgid "Rules Sections"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:98
+msgid "Rules Settings"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:221
+msgid "Same item meta only"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:209
+msgid "Same product only"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:215
+msgid "Same variation only"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:287
+msgid "Saturday"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options.php:90
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:577
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:572
+msgid "Save changes"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options.php:20
+msgid "Search"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options.php:56
+msgid "Search results"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules.php:60
+msgid "Search rules"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:464
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:458
+msgid "Select a cart condition that would trigger a rule execution."
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:202
+msgid "Select discount type"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:277
+msgid "Select exact products to exclude"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:242
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:354
+msgid "Select products that would be gifted to the customers."
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:153
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:262
+msgid "Select the discount type and enter its value."
+msgstr ""
+
+#: BaseVersion/views/cart_adjustments/shipping-cost.php:10
+#: BaseVersion/views/conditions/customer/subscriptions.php:23
+#: BaseVersion/views/conditions/customer/role.php:19
+#: BaseVersion/views/conditions/shipping/country.php:19
+#: BaseVersion/views/conditions/products/product-category-slug.php:33
+#: BaseVersion/views/conditions/products/product-custom-fields.php:33
+#: BaseVersion/views/conditions/products/product-custom-attributes.php:33
+#: BaseVersion/views/conditions/products/product-taxonomy.php:37
+#: BaseVersion/views/conditions/products/product-attributes.php:33
+#: BaseVersion/views/conditions/products/product-categories.php:33
+#: BaseVersion/views/conditions/products/product-sku.php:33
+#: BaseVersion/views/conditions/products/products.php:33
+#: BaseVersion/views/conditions/products/product-tags.php:33
+#: BaseVersion/views/conditions/datetime/days-of-week.php:19
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:326
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:339
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:361
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:383
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:405
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:429
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:451
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:473
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:495
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:517
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:632
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:429
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:143
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:153
+msgid "Select values"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:132
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:237
+msgid ""
+"Select what to discount: any products, certain products, collections, "
+"categories, category slugs, attributes, custom attributes, tags, SKUs, "
+"custom fields, sellers."
+msgstr ""
+
+#. Long number of characters
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:443
+msgctxt "select2 msg when input is too long"
+msgid "Please delete %d character"
+msgstr ""
+
+#. Short number of characters
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:437
+msgctxt "select2 msg when input is too short"
+msgid "Please enter %d or more characters"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:448
+msgctxt "select2 msg when it get error while loading"
+msgid "The results could not be loaded"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:453
+msgctxt "select2 msg when loading more"
+msgid "Loading more results…"
+msgstr ""
+
+#. Max items selected
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:459
+msgctxt "select2 msg when max items selected"
+msgid "You can only select %d item"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:431
+msgctxt "select2 msg when results wasn't found"
+msgid "no results"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:464
+msgctxt "select2 msg when searching"
+msgid "Searching…"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:367
+msgid "Sellers"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:17
+msgid "Sequentially"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/req_variations_for_optimization_at_shop.php:10
+msgid "Set 0 to disable "
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:433
+msgid ""
+"Set up a discount, fee, or shipping depending on the execution of a rule in "
+"the shopping cart."
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartAdjustment/Impl/FreeShipping.php:20
+msgid "Set zero cost for all shipping methods"
+msgstr ""
+
+#: BaseVersion/Includes/PluginActions.php:58
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:162
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:103
+msgid "Settings"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/DebugBar.php:77
+#: BaseVersion/Includes/Core/Rule/CartAdjustment/CartAdjustmentsLoader.php:52
+#: BaseVersion/Includes/Core/Rule/CartCondition/ConditionsLoader.php:78
+msgid "Shipping"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:492
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:485
+msgid "Shipping Country"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:353
+msgid "Show Amount saved in in the order backend"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:337
+msgid "Show Amount saved in the cart"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:342
+msgid "Show Amount saved in the mini cart"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:347
+msgid "Show Amount saved on the checkout page"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:440
+#: BaseVersion/views/admin_page/tabs/options/req_variations_for_optimization_at_shop.php:7
+#: BaseVersion/views/admin_page/tabs/options/req_variations_for_optimization_at_shop.php:17
+msgid "Show approximate price range if product has X variations or more"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:76
+#: BaseVersion/views/admin_page/tabs/options/show_category_bulk_table.php:10
+#: BaseVersion/views/admin_page/tabs/options/show_category_bulk_table.php:14
+msgid "Show bulk table on category page"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:70
+#: BaseVersion/views/admin_page/tabs/options/show_matched_bulk_table.php:10
+#: BaseVersion/views/admin_page/tabs/options/show_matched_bulk_table.php:14
+msgid "Show bulk table on product page"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:182
+#: BaseVersion/views/admin_page/tabs/options/discount_table_ignores_conditions.php:7
+#: BaseVersion/views/admin_page/tabs/options/discount_table_ignores_conditions.php:11
+msgid "Show bulk table regardless of conditions"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:251
+#: BaseVersion/views/admin_page/tabs/options/show_debug_bar.php:8
+#: BaseVersion/views/admin_page/tabs/options/show_debug_bar.php:16
+msgid "Show debug panel at bottom of the page"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:214
+msgid "Show discounted price"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:95
+#: BaseVersion/views/admin_page/tabs/options/limit_results_in_autocomplete.php:7
+#: BaseVersion/views/admin_page/tabs/options/limit_results_in_autocomplete.php:12
+msgid "Show first X results in autocomplete"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:225
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:455
+msgid "Show fixed discount column"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:237
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:467
+msgid "Show footer"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:60
+msgid "Show matched adjustments"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:40
+msgid "Show matched bulk"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:44
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:49
+msgid "Show matched cart adjustments"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:65
+msgid "Show matched deals"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:55
+msgid "Show matched get products"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/message_after_add_free_product.php:8
+msgid "Show message after adding free product"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:199
+msgid "Show message after adding free product|Enable"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:204
+msgid "Show message after adding free product|Output template"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:89
+#: BaseVersion/views/admin_page/tabs/options/show_onsale_badge.php:7
+#: BaseVersion/views/admin_page/tabs/options/show_onsale_badge.php:12
+msgid "Show On Sale badge for Simple product if price was modified"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:83
+#: BaseVersion/views/admin_page/tabs/options/show_striked_prices.php:7
+#: BaseVersion/views/admin_page/tabs/options/show_striked_prices.php:11
+msgid "Show striked prices in the cart"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:120
+#: BaseVersion/views/admin_page/tabs/options/show_cross_out_subtotal_in_cart_totals.php:7
+#: BaseVersion/views/admin_page/tabs/options/show_cross_out_subtotal_in_cart_totals.php:11
+msgid "Show striked subtotal in cart totals"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:36
+#: BaseVersion/views/admin_page/tabs/options/show_unmodified_price_if_discounts_with_coupon.php:10
+#: BaseVersion/views/admin_page/tabs/options/show_unmodified_price_if_discounts_with_coupon.php:14
+msgid "Show unmodified price if product discounts added as coupon"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:221
+msgid "Skip and create a blank rule next time"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:60
+msgid "Skip bulk rules if role rule was applied"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:160
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:336
+msgid "SKUs"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/Ajax.php:194
+#: BaseVersion/Includes/AdminExtensions/AdminPage/AdminPageFilterTitles.php:314
+msgid "Slug"
+msgstr ""
+
+#: BaseVersion/Includes/CartProcessor/CartCouponsProcessorMerge.php:575
+#: BaseVersion/Includes/CartProcessor/CartCouponsProcessor.php:691
+#: BaseVersion/Includes/CartProcessor/CartCouponsProcessor.php:853
+msgid "Sorry, coupons are disabled for these products."
+msgstr ""
+
+#: BaseVersion/Includes/CartProcessor/CartCouponsProcessorMerge.php:528
+#: BaseVersion/Includes/CartProcessor/CartCouponsProcessorMerge.php:537
+#: BaseVersion/Includes/CartProcessor/CartCouponsProcessorMerge.php:591
+#: BaseVersion/Includes/CartProcessor/CartCouponsProcessorMerge.php:602
+#: BaseVersion/Includes/CartProcessor/CartCouponsProcessor.php:529
+#: BaseVersion/Includes/CartProcessor/CartCouponsProcessor.php:535
+msgid "Sorry, this coupon is not applicable to cart."
+msgstr ""
+
+#: BaseVersion/views/conditions/datetime/date.php:12
+msgid "specific date"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:286
+msgid "Split"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:217
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:332
+msgid "Split discount by:"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Statistics.php:60
+msgid "Statistics"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:375
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:573
+msgid "Style body"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:287
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:517
+msgid "Style columns"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:393
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:591
+msgid "Style footer"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:251
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:481
+msgid "Style header"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:480
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:473
+msgid "Subtotal"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:272
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:383
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/CartSubtotal.php:54
+msgid "Subtotal (exc. VAT)"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:274
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:385
+msgid "Subtotal (inc. VAT)"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:858
+msgid "Sum"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:481
+msgid "sum from"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:482
+msgid "sum to"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:281
+msgid "Sunday"
+msgstr ""
+
+#: BaseVersion/Includes/PluginActions.php:48
+#: BaseVersion/views/admin_page/tabs/help.php:19
+msgid "Support"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:455
+#: BaseVersion/views/admin_page/tabs/options/support_persistence_rules.php:7
+#: BaseVersion/views/admin_page/tabs/options/support_persistence_rules.php:17
+msgid "Support Product only rules"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:115
+#: BaseVersion/views/admin_page/tabs/options/support_shortcode_products_bogo.php:7
+#: BaseVersion/views/admin_page/tabs/options/support_shortcode_products_bogo.php:12
+msgid "Support shortcode [adp_products_bogo]"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:110
+#: BaseVersion/views/admin_page/tabs/options/support_shortcode_products_on_sale.php:7
+#: BaseVersion/views/admin_page/tabs/options/support_shortcode_products_on_sale.php:12
+msgid "Support shortcode [adp_products_on_sale]"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:239
+#: BaseVersion/views/admin_page/tabs/options/suppress_other_pricing_plugins.php:7
+#: BaseVersion/views/admin_page/tabs/options/suppress_other_pricing_plugins.php:12
+msgid "Suppress other pricing plugins in frontend"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Options.php:288
+msgid "System"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:527
+msgid "System report"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:170
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:356
+msgid "Tags"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:126
+msgid "Text align"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:137
+msgid "Text color"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:362
+msgid "Text higlight color"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage.php:249
+msgid "Thank you for selling with Advanced Dynamic Pricing for WooCommerce."
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage.php:246
+msgid "Thanks!"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:165
+msgid "The common rule was turned off, it was running too slow."
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:185
+msgid "The exclusive rule was turned off, it was running too slow."
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:54
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:59
+msgid ""
+"The sale will start at 00:00:00 of \"From\" date and end at 23:59:59 of "
+"\"To\" date."
+msgstr ""
+
+#. phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped, WordPress.WP.I18n.MissingTranslatorsComment
+#: BaseVersion/views/admin_page/tabs/options/update_prices_while_doing_cron.php:15
+#, php-format
+msgctxt ""
+"this option is always on for the [Yoast SEO](https://wordpress."
+"org/plugins/wordpress-seo/) and [Facebook for WooCommerce](https://wordpress."
+"org/plugins/facebook-for-woocommerce/) plugins."
+msgid "this option is always on for the %1$s and %2$s plugins."
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:285
+msgid "Thursday"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:112
+msgid "Tier"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:277
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:507
+msgid "Tier deal"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/Time.php:54
+msgid "Time"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/rules.php:24
+msgid "Timing"
+msgstr ""
+
+#: BaseVersion/templates/reporter/tabs/cart.php:29
+#: BaseVersion/templates/reporter/tabs/rules.php:23
+#: BaseVersion/templates/reporter/tabs/rules.php:35
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:98
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:105
+msgid "Title"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:52
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:57
+msgid "To"
+msgstr ""
+
+#: BaseVersion/views/conditions/datetime/time.php:11
+#: BaseVersion/views/conditions/datetime/date.php:11
+msgid "to"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:196
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:313
+msgid "To increase the price, make a negative discount"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:247
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Help.php:118
+msgid "Tools"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:169
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:278
+msgid "Total"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/CartCondition/Impl/CartWeight.php:72
+msgid "Total weight"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:283
+msgid "Tuesday"
+msgstr ""
+
+#: BaseVersion/Includes/ImportExport/ImporterCSV.php:119
+msgid "Unknown type "
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:210
+#: BaseVersion/views/admin_page/tabs/rules/persistent_rule.php:258
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:112
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:325
+#: BaseVersion/views/admin_page/tabs/rules/rule.php:369
+msgid "Unlimited"
+msgstr ""
+
+#: BaseVersion/views/admin_page/admin_page.php:61
+msgid "Update Bogo List"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Tools.php:539
+msgid "Update bulk ranges (CSV)"
+msgstr ""
+
+#: BaseVersion/views/admin_page/admin_page.php:58
+msgid "Update Onsale List"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/import_rule_csv.php:38
+msgid "Update rules having same product filter, otherwise add new rule"
+msgstr ""
+
+#: BaseVersion/Includes/PluginActions.php:75
+msgid "Upgrade to Advanced Dynamic Pricing Pro"
+msgstr ""
+
+#: BaseVersion/Includes/Core/Rule/Limit/LimitsLoader.php:45
+msgid "Usage restrictions"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:255
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:485
+msgid "Use bulk table message as table header"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:187
+#: BaseVersion/views/admin_page/tabs/options/use_first_range_as_min_qty.php:7
+#: BaseVersion/views/admin_page/tabs/options/use_first_range_as_min_qty.php:12
+msgid "Use first range as minimum quantity if bulk rule is active"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/support_persistence_rules.php:10
+msgid "Use it only if you should setup huge # of product rules"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:21
+msgid "Use max price"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates/wdp-sortable-blocks.php:19
+msgid "Use min price"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:172
+#: BaseVersion/views/admin_page/tabs/options/initial_price_context.php:8
+#: BaseVersion/views/admin_page/tabs/options/initial_price_context.php:12
+msgid "Use prices modified by get_price hook"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/rules/templates.php:587
+msgid "Use product from filter"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/collections.php:6
+msgid ""
+"Use this section if you want to filter products by many parameters(for "
+"example, category+weight+cost) at same time"
+msgstr ""
+
+#. Count rules for the product
+#: BaseVersion/Includes/AdminExtensions/WcProductPageExtensions.php:189
+#, php-format
+msgid "View %s rules for the product"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/statistics.php:6
+msgid "View most active rules, discounted products and etc"
+msgstr ""
+
+#: BaseVersion/Includes/CartProcessor/CartCouponsProcessorMerge.php:435
+#: BaseVersion/Includes/CartProcessor/CartCouponsProcessor.php:355
+msgid "WDP Coupon"
+msgstr ""
+
+#: BaseVersion/Includes/CartProcessor/CartCouponsProcessor.php:380
+msgid "WDP Coupon (exact item application)"
+msgstr ""
+
+#: BaseVersion/Includes/Helpers/Helpers.php:284
+msgid "Wednesday"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:29
+msgid "week"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:28
+msgid "Weeks"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:30
+#: BaseVersion/views/conditions/customer/order-count.php:31
+#: BaseVersion/views/conditions/customer/order-count.php:32
+msgid "weeks"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:866
+msgid "Weight"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:483
+msgid "weight from"
+msgstr ""
+
+#: BaseVersion/Includes/AdminExtensions/AdminPage/Tabs/Rules.php:484
+msgid "weight to"
+msgstr ""
+
+#: BaseVersion/Includes/Settings/OptionsInstaller.php:296
+#: BaseVersion/views/admin_page/tabs/options/process_product_strategy.php:9
+msgid "When the striked price should be shown"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/ReporterAjax.php:128
+msgid "Wrong import key"
+msgstr ""
+
+#: BaseVersion/Includes/Debug/ReporterAjax.php:132
+msgid "Wrong value for parameter \"reports\""
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:48
+msgid "Years"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/order-count.php:49
+#: BaseVersion/views/conditions/customer/order-count.php:50
+#: BaseVersion/views/conditions/customer/order-count.php:51
+#: BaseVersion/views/conditions/customer/order-count.php:52
+#: BaseVersion/views/conditions/customer/order-count.php:53
+#: BaseVersion/views/conditions/customer/order-count.php:54
+#: BaseVersion/views/conditions/customer/order-count.php:55
+#: BaseVersion/views/conditions/customer/order-count.php:56
+#: BaseVersion/views/conditions/customer/order-count.php:57
+msgid "years"
+msgstr ""
+
+#: BaseVersion/views/conditions/customer/is-logged-in.php:10
+msgid "Yes"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/show_category_bulk_table.php:25
+msgid "You can use shortcode [adp_category_bulk_rules_table]"
+msgstr ""
+
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:185
+#: BaseVersion/Includes/CustomizerExtensions/CustomizerExtensions.php:437
+msgid ""
+"You can use shortcode [adp_product_bulk_rules_table] in product template."
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/show_matched_bulk_table.php:26
+msgid "You can use shortcode [adp_product_bulk_rules_table] too"
+msgstr ""
+
+#. Message about the deletion of an automatically added product
+#: BaseVersion/templates/removed-auto-added-mini-cart-item-stub.php:19
+#: BaseVersion/templates/removed-auto-added-cart-item-stub.php:19
+msgid "You have deleted %d auto added products from the cart."
+msgstr ""
+
+#. deleted free products message
+#: BaseVersion/templates/removed-free-cart-item-stub.php:19
+#: BaseVersion/templates/removed-free-mini-cart-item-stub.php:19
+msgid "You have deleted %d free products from the cart."
+msgstr ""
+
+#. Recommendation for enabling persistence rules
+#: BaseVersion/Includes/AdminExtensions/AdminNotice.php:257
+#, php-format
+msgid ""
+"You have more than %s rules. If you found out the site’s slow performance, "
+"we recommend to "
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/tools/migration_rules.php:12
+msgid "You need to enable the \"Support Product only rules\" option"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/product_price_html.php:30
+msgid ""
+"{{price_html}},  {{regular_price_striked}}, {{discounted_price_inclTax}}, "
+"{{discounted_price_exclTax}}, {{price_inclTax}}, {{price_exclTax}}"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/replace_price_with_min_bulk_price.php:45
+msgid ""
+"{{price}}, {{price_suffix}}, {{price_striked}}, {{initial_price}}, "
+"{{regular_price_striked}}, {{min_max_range}}"
+msgstr ""
+
+#: BaseVersion/views/admin_page/tabs/options/message_after_add_free_product.php:29
+msgid "{{qty}}, {{product_name}}"
+msgstr ""

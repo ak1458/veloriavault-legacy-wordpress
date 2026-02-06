@@ -1,0 +1,95 @@
+/*
+	Theme Name:   Savoy Child
+	Theme URI:    http://themeforest.net/item/savoy-minimalist-ajax-woocommerce-theme/12537825
+	Description:  Savoy child theme
+	Author:       NordicMade
+	Author URI:   http://www.nordicmade.com
+	Template:     savoy
+	Version:      1.0
+*/
+
+
+/* Child theme CSS
+--------------------------------------------------------------- */
+
+
+/* Swipeable Category Filter Styles */
+.veloria-swipe-filter-container {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.veloria-swipe-filter {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Desktop: Wrap to next line if needed */
+    gap: 10px;
+    align-items: center;
+}
+
+.veloria-filter-item {
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.veloria-filter-link {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50px; /* Pill shape */
+    color: #333;
+    text-decoration: none !important;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    background-color: #fff;
+}
+
+.veloria-filter-link:hover {
+    border-color: #000;
+    color: #000;
+    background-color: #f9f9f9;
+}
+
+.veloria-filter-link.active {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.veloria-filter-link .count {
+    opacity: 0.6;
+    margin-left: 3px;
+    font-size: 0.9em;
+}
+
+/* Mobile Specific (Swipe/Horizontal Scroll) */
+@media (max-width: 768px) {
+    .veloria-swipe-filter-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+        padding-bottom: 5px; /* Space for scrollbar if visible */
+        margin-right: -15px; /* Negative margin to pull to edge if in container */
+        padding-right: 15px; /* Padding to balance */
+        /* Hide scrollbar functionality */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* IE 10+ */
+    }
+    
+    .veloria-swipe-filter-container::-webkit-scrollbar { 
+        display: none; /* Chrome/Safari */
+    }
+
+    .veloria-swipe-filter {
+        flex-wrap: nowrap; /* Prevent wrapping on mobile */
+        padding-left: 2px; /* Slight buffer */
+    }
+    
+    .veloria-filter-link {
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+}

@@ -1,0 +1,192 @@
+.wp-embed-responsive .wp-block {
+    outline: 0;
+}
+.woolentor-quick-checkout-modal-body{
+    position: relative;
+}
+.woolentor-quick-checkout-modal-area.loading .woolentor-quick-checkout-modal-body::before {
+    content: url("../../../../../assets/images/spinner.gif");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button Style */
+a.woolentor-quick-checkout-btn-pos-top_thumbnail:not(.woolentor-quick-checkout-button-single-product){
+    position: absolute !important;
+    top: 0;
+    left: 8px !important;
+    z-index: 9;
+}
+.ht-product-inner a.woolentor-quick-checkout-btn-pos-top_thumbnail{
+    position: static !important;
+}
+
+.woolentor-quick-checkout-button {
+    display: inline-flex !important;
+    align-items: center;
+    position: relative !important;
+}
+.woolentor-quick-checkout-button svg {
+    fill:currentColor;
+    transition: all 200ms ease-out;
+    width: 23px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.woolentor-quick-checkout-btn-icon {
+    font-size: 20px;
+    margin-right: 5px;
+    display: inline-flex;
+}
+
+.woolentor-quick-checkout-btn-image{
+    width: 25px;
+    margin-right: 5px;
+}
+.woolentor-quick-checkout-btn-image img{
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.woolentor-quick-checkout-icon-pos-after_text {
+    flex-flow: row-reverse;
+}
+.woolentor-quick-checkout-icon-pos-after_text .woolentor-quick-checkout-btn-image,.woolentor-quick-checkout-icon-pos-after_text .woolentor-quick-checkout-btn-icon{
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+a.woolentor-quick-checkout-button.loading {
+    opacity: .25;
+    position: relative;
+}
+a.woolentor-quick-checkout-button.loading:after{
+    display: inline-block;
+    content: "";
+    position: relative;
+    top: 0;
+    right: -8px;
+    left: auto;
+    width: 12px;
+    height: 12px;
+    background-color: #2cc215;
+    border-radius: 100%;
+    animation: dotLoadingAnimation .65s 0s infinite cubic-bezier(.21,.53,.56,.8);
+}
+@keyframes dotLoadingAnimation {
+    0% {
+        transform: scale(.1);
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    to {
+        transform: scale(1.2);
+        opacity: 0
+    }
+}
+
+/* Modal Style */
+.woolentor-quick-checkout-modal-area{
+    position: fixed;
+    z-index: 1043;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding-right: 17px;
+    -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.woolentor-quick-checkout-modal-area.woolentor-quick-checkout-open{
+	visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 1024 !important;
+}
+
+.woolentor-quick-checkout-modal-area .woolentor-quick-checkout-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.woolentor-quick-checkout-modal-body>iframe {
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+}
+
+.woolentor-quick-checkout-modal-wrapper {
+    width: calc(100% - 30px);
+    max-width: 1600px;
+    margin: auto !important;
+    height: calc(100% - 120px);
+}
+.woolentor-quick-checkout-modal-content {
+    position: relative;
+    -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+    background-color: rgb(255, 255, 255);
+    overflow: visible;
+    height: 100%;
+}
+.woolentor-quick-checkout-modal-body{
+    height: 100%;
+}
+
+.woolentor-quick-checkout-modal.woolentor-quick-checkout-open .woolentor-quick-checkout-modal-content {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+span.woolentor-quick-checkout-modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    line-height: 30px;
+    font-size: 24px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 0;
+    z-index: 9;
+    transition: 0.4s;
+    background-color: #222;
+    color: #fff;
+    border-radius: 100%;
+}
+span.woolentor-quick-checkout-modal-close:hover{
+	color: #FF0000;
+}
+@media (max-width: 767px) {
+    .woolentor-quick-checkout-modal-wrapper{
+        overflow-y:auto; 
+    }
+}

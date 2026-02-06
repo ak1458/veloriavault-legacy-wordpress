@@ -1,0 +1,656 @@
+/**
+ * Product Grid Magazine Style
+ * Editorial Magazine Layout inspired by high-end fashion publications
+ */
+
+/* ===================================
+   CSS Variables
+   =================================== */
+.woolentor-product-grid-magazine {
+    --magazine-bg-primary: #faf9f7;
+    --magazine-bg-secondary: #f5f4f2;
+    --magazine-text-primary: #1a1a1a;
+    --magazine-text-secondary: #6a6a6a;
+    --magazine-accent: #1a1a1a;
+    --magazine-border: #d4d4d4;
+    --magazine-hover: #2a2a2a;
+    --magazine-white: #ffffff;
+}
+
+/* ===================================
+   Grid Container
+   =================================== */
+.woolentor-product-grid-magazine {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+    position: relative;
+}
+
+/* ===================================
+   Grid Layout Mode
+   =================================== */
+.woolentor-product-grid-magazine.woolentor-layout-grid {
+    display: grid;
+    grid-template-columns:repeat(12, 1fr) !important;
+}
+
+.woolentor-product-grid-magazine.woolentor-layout-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===================================
+   Asymmetric Grid Layout - Repeating Pattern for Unlimited Products
+   =================================== */
+/* Pattern: 5-7, 6-6, 7-5, 4-8 (repeats every 8 items) */
+
+/* Items 1, 9, 17, 25, etc. (8n+1) */
+.woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(8n+1) { grid-column: span 5; }
+
+/* Items 2, 10, 18, 26, etc. (8n+2) */
+.woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(8n+2) { grid-column: span 7; }
+
+/* Items 3, 11, 19, 27, etc. (8n+3) */
+.woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(8n+3) { grid-column: span 6; }
+
+/* Items 4, 12, 20, 28, etc. (8n+4) */
+.woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(8n+4) { grid-column: span 6; }
+
+/* Items 5, 13, 21, 29, etc. (8n+5) */
+.woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(8n+5) { grid-column: span 7; }
+
+/* Items 6, 14, 22, 30, etc. (8n+6) */
+.woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(8n+6) { grid-column: span 5; }
+
+/* Items 7, 15, 23, 31, etc. (8n+7) */
+.woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(8n+7) { grid-column: span 4; }
+
+/* Items 8, 16, 24, 32, etc. (8n) */
+.woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(8n) { grid-column: span 8; }
+
+/* ===================================
+   Product Card Base
+   =================================== */
+.woolentor-product-grid-magazine .woolentor-product-card {
+    position: relative;
+    background: transparent;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 0px solid transparent;
+    overflow: hidden;
+    height: 100%;
+    display: inherit;
+    border-radius: 0;
+}
+
+.woolentor-product-grid-magazine .woolentor-product-card:hover {
+    box-shadow: none;
+    transform: translateY(0);
+}
+.woolentor-product-grid-magazine .woolentor-quickview-btn svg{
+    fill: none !important;
+    color: currentColor;
+}
+
+/* ===================================
+   Grid View Content
+   =================================== */
+.woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-list-view-content {
+    display: none;
+}
+
+/* Product Image */
+.woolentor-product-grid-magazine .woolentor-grid-view-content .woolentor-product-image {
+    position: relative;
+    overflow: hidden;
+    background: var(--magazine-bg-secondary);
+}
+
+/* Alternating aspect ratios */
+.woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(odd) .woolentor-product-image {
+    aspect-ratio: 3/4;
+}
+
+.woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(even) .woolentor-product-image {
+    aspect-ratio: 4/3;
+}
+
+.woolentor-product-grid-magazine .woolentor-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.woolentor-product-grid-magazine .woolentor-product-card:hover .woolentor-product-image img {
+    transform: scale(1.05);
+}
+
+/* Product Number */
+.woolentor-product-grid-magazine .woolentor-product-number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 72px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1;
+    z-index: 2;
+    font-style: italic;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Badges */
+[class*="woolentor-badge-pos-wlpro_"] .woolentor-badges {
+    right: 12px;
+    left: auto;
+}
+
+/* Quick Actions */
+.woolentor-product-grid-magazine .woolentor-quick-actions {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 3;
+    top: auto;
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.woolentor-product-grid-magazine .woolentor-quick-action {
+    width: 44px;
+    height: 44px;
+    background: var(--magazine-white);
+    border: 1px solid var(--magazine-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.woolentor-product-grid-magazine .woolentor-product-card:hover .woolentor-quick-action {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.woolentor-product-grid-magazine .woolentor-quick-action:hover {
+    background: var(--magazine-accent);
+    border-color: var(--magazine-accent);
+    color: var(--magazine-white);
+}
+.woolentor-product-grid-magazine .woolentor-quick-action:hover a{
+    color: var(--magazine-white);
+}
+
+.woolentor-product-grid-magazine .woolentor-quick-action:hover svg {
+    stroke: currentColor;
+    color: currentColor;
+}
+
+/* Product Content */
+.woolentor-product-grid-magazine .woolentor-grid-view-content .woolentor-product-content {
+    padding: 30px 25px;
+}
+
+.woolentor-product-grid-magazine .woolentor-product-categories {
+    margin-bottom: 12px;
+}
+
+.woolentor-product-grid-magazine .woolentor-product-category {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--magazine-text-secondary);
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.woolentor-product-grid-magazine .woolentor-product-category:hover {
+    color: var(--magazine-accent);
+}
+
+.woolentor-product-grid-magazine .woolentor-product-title {
+    font-size: clamp(20px, 2vw, 28px);
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    color: var(--magazine-text-primary);
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.woolentor-product-grid-magazine .woolentor-product-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.woolentor-product-grid-magazine .woolentor-product-title a:hover {
+    color: var(--magazine-text-secondary);
+}
+
+.woolentor-product-grid-magazine .woolentor-product-description {
+    font-size: 16px;
+    color: var(--magazine-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.woolentor-product-grid-magazine .woolentor-product-price {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--magazine-text-primary);
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', Georgia, serif;
+    margin-top: 0;
+}
+
+.woolentor-product-grid-magazine .woolentor-product-actions .woolentor-discover-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--magazine-text-primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--magazine-accent);
+    transition: all 0.3s ease;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0 0 5px 0;
+    border-radius: 0;
+    min-height: auto;
+    font-weight: normal;
+    outline: none;
+}
+
+.woolentor-product-grid-magazine .woolentor-product-actions .woolentor-discover-btn:hover {
+    border-bottom-width: 2px;
+    letter-spacing: 3px;
+    background: none !important;
+    box-shadow: none !important;
+    color: var(--magazine-text-primary);
+}
+
+/* ===================================
+   List View Content
+   =================================== */
+.woolentor-product-grid-magazine.woolentor-layout-list .woolentor-grid-view-content {
+    display: none;
+}
+
+.woolentor-product-grid-magazine.woolentor-layout-list .woolentor-product-item {
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--magazine-border);
+}
+
+.woolentor-product-grid-magazine.woolentor-layout-list .woolentor-product-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.woolentor-product-grid-magazine .woolentor-list-view-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+}
+
+/* Alternating layout */
+.woolentor-product-grid-magazine.woolentor-layout-list .woolentor-product-item:nth-child(even) .woolentor-list-view-content {
+    direction: rtl;
+}
+
+.woolentor-product-grid-magazine.woolentor-layout-list .woolentor-product-item:nth-child(even) .woolentor-list-view-content > * {
+    direction: ltr;
+}
+
+/* List Image */
+.woolentor-product-grid-magazine .woolentor-list-view-content .woolentor-product-image {
+    position: relative;
+    overflow: hidden;
+    background: var(--magazine-bg-secondary);
+    aspect-ratio: 4/5;
+}
+
+.woolentor-product-grid-magazine .woolentor-list-product-number {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    font-size: 180px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.03);
+    line-height: 1;
+    z-index: 1;
+    font-style: italic;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* List Content */
+.woolentor-product-grid-magazine .woolentor-list-view-content .woolentor-product-content {
+    position: relative;
+    z-index: 2;
+}
+
+.woolentor-product-grid-magazine .woolentor-content-header {
+    margin-bottom: 30px;
+}
+
+.woolentor-product-grid-magazine .woolentor-list-view-content .woolentor-product-categories {
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--magazine-text-secondary);
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.woolentor-product-grid-magazine .woolentor-separator {
+    margin: 0 10px;
+}
+
+.woolentor-product-grid-magazine .woolentor-editorial-label {
+    color: var(--magazine-text-secondary);
+}
+
+.woolentor-product-grid-magazine .woolentor-editorial-badge {
+    display: inline-block;
+    background: var(--magazine-accent);
+    color: var(--magazine-white);
+    padding: 6px 18px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.woolentor-product-grid-magazine .woolentor-list-view-content .woolentor-product-title {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.woolentor-product-grid-magazine .woolentor-list-view-content .woolentor-product-description {
+    font-size: 18px;
+    color: var(--magazine-text-secondary);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Product Details */
+.woolentor-product-grid-magazine .woolentor-product-details {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--magazine-border);
+}
+
+.woolentor-product-grid-magazine .woolentor-detail-item {
+    flex: 1;
+}
+
+.woolentor-product-grid-magazine .woolentor-detail-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--magazine-text-secondary);
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.woolentor-product-grid-magazine .woolentor-detail-value {
+    font-size: 18px;
+    color: var(--magazine-text-primary);
+    font-weight: 500;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Product Price Standalone */
+.woolentor-product-grid-magazine .woolentor-product-price-standalone {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--magazine-text-primary);
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Content Footer - Actions */
+.woolentor-product-grid-magazine .woolentor-content-footer {
+    margin-top: 30px;
+}
+
+.woolentor-product-grid-magazine .woolentor-list-view-content .woolentor-product-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.woolentor-product-grid-magazine a.woolentor-primary-btn {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: var(--magazine-accent);
+    color: var(--magazine-white);
+    border: none;
+    padding: 16px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    min-height: auto;
+    font-weight: normal;
+    border-radius: 0;
+}
+
+.woolentor-product-grid-magazine a.woolentor-primary-btn:hover {
+    background: var(--magazine-hover) !important;
+    letter-spacing: 2px;
+}
+
+.woolentor-product-grid-magazine .woolentor-secondary-btn {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: none;
+    color: var(--magazine-text-primary);
+    border: 1px solid var(--magazine-accent);
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+}
+
+.woolentor-product-grid-magazine .woolentor-secondary-btn:hover {
+    background: var(--magazine-accent);
+    color: var(--magazine-white);
+}
+
+.woolentor-product-grid-magazine .woolentor-list-wishlist-btn {
+    width: 48px;
+    height: 48px;
+    background: var(--magazine-white);
+    border: 1px solid var(--magazine-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.woolentor-product-grid-magazine .woolentor-list-wishlist-btn a{
+    color: var(--magazine-accent);
+}
+.woolentor-product-grid-magazine .woolentor-list-wishlist-btn:hover a{
+    color: var(--magazine-white);
+}
+
+.woolentor-product-grid-magazine .woolentor-list-wishlist-btn:hover {
+    background: var(--magazine-accent);
+    border-color: var(--magazine-accent);
+    color: var(--magazine-white);
+}
+
+.woolentor-product-grid-magazine .woolentor-list-wishlist-btn:hover svg {
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ===================================
+   Grid List Tab Mode
+   =================================== */
+.woolentor-product-grid-magazine.woolentor-layout-grid-list-tab .woolentor-list-view-content {
+    display: none;
+}
+
+.woolentor-product-grid-magazine.woolentor-layout-grid-list-tab.woolentor-list-active .woolentor-grid-view-content {
+    display: none;
+}
+
+.woolentor-product-grid-magazine.woolentor-layout-grid-list-tab.woolentor-list-active .woolentor-list-view-content {
+    display: grid;
+}
+
+.woolentor-product-grid-magazine.woolentor-layout-grid-list-tab.woolentor-list-active {
+    display: flex;
+    flex-direction: column;
+}
+
+.woolentor-product-grid-magazine.woolentor-layout-grid-list-tab.woolentor-list-active .woolentor-product-item {
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--magazine-border);
+}
+
+/* ===================================
+   Animation
+   =================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.woolentor-product-grid-magazine .woolentor-product-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+/* Repeating animation delays for unlimited products (8 item cycle) */
+.woolentor-product-grid-magazine .woolentor-product-item:nth-child(8n+1) .woolentor-product-card { animation-delay: 0.1s; }
+.woolentor-product-grid-magazine .woolentor-product-item:nth-child(8n+2) .woolentor-product-card { animation-delay: 0.2s; }
+.woolentor-product-grid-magazine .woolentor-product-item:nth-child(8n+3) .woolentor-product-card { animation-delay: 0.3s; }
+.woolentor-product-grid-magazine .woolentor-product-item:nth-child(8n+4) .woolentor-product-card { animation-delay: 0.4s; }
+.woolentor-product-grid-magazine .woolentor-product-item:nth-child(8n+5) .woolentor-product-card { animation-delay: 0.5s; }
+.woolentor-product-grid-magazine .woolentor-product-item:nth-child(8n+6) .woolentor-product-card { animation-delay: 0.6s; }
+.woolentor-product-grid-magazine .woolentor-product-item:nth-child(8n+7) .woolentor-product-card { animation-delay: 0.7s; }
+.woolentor-product-grid-magazine .woolentor-product-item:nth-child(8n) .woolentor-product-card { animation-delay: 0.8s; }
+
+/* ===================================
+   Responsive Design
+   =================================== */
+@media (max-width: 1200px) {
+    .woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(1),
+    .woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(2),
+    .woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(3),
+    .woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(4),
+    .woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(5),
+    .woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(6),
+    .woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(7),
+    .woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item:nth-child(8) {
+        grid-column: span 6;
+    }
+
+    .woolentor-product-grid-magazine .woolentor-list-view-content {
+        gap: 40px;
+    }
+
+    .woolentor-product-grid-magazine .woolentor-list-product-number {
+        font-size: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .woolentor-product-grid-magazine {
+        gap: 30px;
+    }
+
+    .woolentor-product-grid-magazine.woolentor-layout-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px;
+    }
+
+    .woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-item{
+        grid-column: span 12 !important;
+    }
+
+    .woolentor-product-grid-magazine.woolentor-layout-grid .woolentor-product-image {
+        aspect-ratio: 3/4 !important;
+    }
+
+    .woolentor-product-grid-magazine .woolentor-product-number {
+        font-size: 48px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .woolentor-product-grid-magazine .woolentor-quick-action {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .woolentor-product-grid-magazine .woolentor-list-view-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .woolentor-product-grid-magazine.woolentor-layout-list .woolentor-product-item:nth-child(even) .woolentor-list-view-content {
+        direction: ltr;
+    }
+
+    .woolentor-product-grid-magazine .woolentor-list-product-number {
+        font-size: 100px;
+        top: -20px;
+        left: -10px;
+    }
+
+    .woolentor-product-grid-magazine .woolentor-product-details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .woolentor-product-grid-magazine .woolentor-list-view-content .woolentor-product-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .woolentor-product-grid-magazine .woolentor-primary-btn,
+    .woolentor-product-grid-magazine .woolentor-secondary-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

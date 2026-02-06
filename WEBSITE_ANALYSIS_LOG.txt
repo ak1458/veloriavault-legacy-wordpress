@@ -1,0 +1,303 @@
+# WEBSITE ANALYSIS LOG
+# veloriavault.com - January 25, 2026
+
+## ANALYSIS SESSION LOG
+
+[2026-01-25 05:21:12 UTC] Analysis started
+[2026-01-25 05:21:12 UTC] Target: veloriavault.com
+[2026-01-25 05:21:12 UTC] Hosting: Hostinger Shared Hosting
+[2026-01-25 05:21:12 UTC] Platform detected: WordPress
+
+---
+
+## FILE SYSTEM EXPLORATION
+
+[05:21] Listed /domains/veloriavault.com/public_html
+- Found: 21 files, 3 directories
+- WordPress installation confirmed
+
+[05:21] Core files identified:
+- wp-config.php (4,335 bytes) - Modified Jan 22, 2026
+- .htaccess (7,098 bytes) - Modified Jan 23, 2026
+- error_log (33,118 bytes) - Contains PHP errors
+- xmlrpc.php (3,205 bytes) - Enabled
+- aios-bootstrap.php (945 bytes) - Security firewall
+
+---
+
+## CONFIGURATION ANALYSIS
+
+### wp-config.php Analysis
+[05:21] Database: u679998479_vv1125
+[05:21] Table prefix: wpur_ (customized - GOOD)
+[05:21] WP_DEBUG: false (GOOD)
+[05:21] DISALLOW_FILE_EDIT: true (GOOD)
+[05:21] WP_CACHE: true (SpeedyCache)
+[05:21] Security plugins: AIOWPS Firewall, Really Simple Security
+
+### .htaccess Analysis
+[05:21] SpeedyCache rules: Present
+[05:21] GZIP compression: Enabled
+[05:21] Browser caching: Enabled (1 year)
+[05:21] WebP conversion: Enabled
+[05:21] AIOWPS rules: Present
+  - .htaccess protection
+  - wp-config.php protection
+  - debug.log protection
+  - Directory indexing disabled
+[05:21] WordPress permalinks: Enabled
+[05:21] LiteSpeed integration: Configured
+[05:21] Custom redirect: /shop -> /shop-custom/
+
+---
+
+## ERROR LOG ANALYSIS
+
+[05:21] error_log file: 33,118 bytes, 57 lines
+[05:21] Date range: Oct 16, 2025 - Nov 9, 2025
+
+### Error Categories Found:
+
+#### Database Sync Errors (40+ occurrences)
+- "Commands out of sync; you can't run this command now"
+- Affected plugins:
+  * Jetpack Autoloader
+  * WooCommerce BatchProcessing
+  * WooCommerce Session Handler  
+  * WCBoost Wishlist
+  * Yoast SEO
+  * Facebook for WooCommerce
+  * Imagify
+
+#### Cron Errors (4 occurrences)
+- elementor_updater_cron: invalid_schedule
+- action_scheduler_run_queue: could_not_set
+- woocommerce_marketplace_cron: could_not_set
+- facebook_for_woocommerce: invalid_schedule
+
+#### Other Errors
+- Wishlist loading error: "Invalid wishlist"
+
+---
+
+## PLUGIN SCAN
+
+[05:22] Plugin directory: /wp-content/plugins/
+[05:22] Total plugins: 29
+
+Security:
+- all-in-one-wp-security-and-firewall
+
+E-commerce:
+- woocommerce
+- woo-razorpay
+- checkout-fees-for-woocommerce
+- woo-discount-rules
+- woo-discount-rules-pro
+- shiprocket
+
+Page Builders:
+- elementor
+- elementor-pro
+
+Marketing:
+- facebook-for-woocommerce
+- official-facebook-pixel
+- google-listings-and-ads
+- mailchimp-for-wp
+- instagram-widget-by-wpzoom
+
+Theme-related:
+- nm-custom-code
+- nm-post-types
+- nm-theme-settings
+- nm-wishlist
+- envato-market
+
+Performance:
+- speedycache
+- speedycache-pro
+
+SEO/Content:
+- wordpress-seo (Yoast)
+- webappick-product-feed-for-woocommerce
+- woolentor-addons
+- woolentor-addons-pro
+- contact-form-7
+
+Other:
+- hostinger
+- yith-activator
+- yith-woocommerce-color-label-variations-premium
+
+---
+
+## THEME SCAN
+
+[05:22] Theme directory: /wp-content/themes/
+[05:22] Themes found:
+- savoy (parent theme)
+- savoy-child (active child theme)
+
+[05:22] Bundled plugin ZIPs in savoy:
+- nm-wishlist.zip
+- envato-market.zip
+- nm-portfolio.zip
+- nm-theme-settings.zip
+- nm-custom-code.zip
+- nm-post-types.zip
+- js_composer.zip
+
+---
+
+## BACKUP SCAN
+
+[05:22] Backup locations found:
+
+### ai1wm-backups (All-in-One WP Migration)
+- Directory exists, protected with .htaccess
+
+### aiowps_backups (AIOS Security)
+CRITICAL FINDING:
+- backup.wp-config.php (4,094 bytes) - CONTAINS CREDENTIALS
+- Multiple .htaccess backup files
+
+---
+
+## UPLOADS SECURITY SCAN
+
+[05:22] PHP files in uploads: 24 files found
+
+Locations:
+- /uploads/redux/ (11 files) - Redux Framework
+- /uploads/aios/firewall-rules/ (1 file)
+- /uploads/woolentor-addons/ (2 files)
+- /uploads/custom-css-js/ (1 file)
+- /uploads/backup/2025/ (multiple)
+
+Assessment: Most appear to be legitimate plugin files
+
+---
+
+## WEB SECURITY CHECKS
+
+[05:32] WordPress version: 6.9
+[05:32] PHP version: 8.3.26 (from headers)
+[05:32] Server: LiteSpeed on Hostinger
+
+### XML-RPC Check
+URL: https://veloriavault.com/xmlrpc.php
+Response: HTTP 405 (Method Not Allowed for GET)
+Status: ACCESSIBLE via POST - Security risk
+
+### robots.txt Check
+File exists: NO (in document root)
+Virtual generation: Possible via Yoast
+
+### Sitemap Check
+URL: /sitemap.xml
+Response: 301 redirect to /sitemap_index.xml
+Status: WORKING (Yoast SEO)
+
+### Debug Log Check
+File: /wp-content/debug.log
+Status: NOT FOUND (GOOD)
+
+---
+
+## EXPOSED SENSITIVE FILE CHECK
+
+[05:22] Sensitive files found:
+
+CRITICAL:
+- /wp-content/aiowps_backups/backup.wp-config.php
+  Contains: Database credentials, auth keys, salts
+
+MEDIUM:
+- /wp-content/aiowps_backups/*_htaccess_backup.txt (5 files)
+  Contains: Server configuration history
+
+---
+
+## FILE PERMISSIONS CHECK
+
+[05:22] Core file permissions:
+- aios-bootstrap.php: 644 (owner: u679998479)
+- .htaccess: 644
+- index.php: 644
+- wp-activate.php: 644
+- wp-config.php: 644
+- wp-login.php: 644
+- xmlrpc.php: 644
+
+Assessment: Standard permissions, acceptable for shared hosting
+
+---
+
+## HTTP SECURITY HEADERS
+
+[05:32] Headers observed:
+
+From homepage:
+- x-powered-by: PHP/8.3.26 (Consider hiding)
+- x-frame-options: SAMEORIGIN (GOOD)
+- content-security-policy: upgrade-insecure-requests (GOOD)
+- x-robots-tag: noindex, follow (Check context)
+
+---
+
+## SEO ELEMENTS CHECK
+
+### Yoast SEO
+- Version: 26.8
+- Schema markup: Present and valid
+- OpenGraph: Configured
+- Breadcrumbs: Enabled
+
+### llms.txt
+- File exists at document root
+- Content: Site pages and products listing
+- Generator: Hostinger Tools Plugin
+
+---
+
+## ANALYSIS SUMMARY
+
+### Critical Issues: 1
+1. Exposed wp-config backup with credentials
+
+### High Priority Issues: 4
+1. Database sync errors (recurring)
+2. PHP files in uploads directory
+3. Old backup files exposed
+4. XML-RPC accessible
+
+### Medium Priority Issues: 5
+1. No physical robots.txt
+2. Cron scheduling errors
+3. X-Powered-By header exposed
+4. Wishlist plugin errors
+5. Multiple caching solutions
+
+### Positive Findings: 10
+1. AIOS Security active
+2. Really Simple Security active
+3. File editing disabled
+4. Custom table prefix
+5. Directory indexing disabled
+6. wp-config.php protected
+7. GZIP compression enabled
+8. Browser caching enabled
+9. SSL enforced
+10. Yoast SEO configured
+
+---
+
+[2026-01-25 05:33:00 UTC] Analysis completed
+[2026-01-25 05:33:00 UTC] Total findings: 20
+[2026-01-25 05:33:00 UTC] Reports generated:
+- WEBSITE_ANALYSIS_REPORT.md
+- WEBSITE_ANALYSIS_LOG.txt
+
+---
+END OF LOG
