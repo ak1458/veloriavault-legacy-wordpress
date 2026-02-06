@@ -13,4 +13,4 @@ This repository contains the source code for the **Veloria Vault** WordPress web
 - **Backups**: Database and site backups are stored in the server's \BACKUPS_AND_LOGS\ directory.
 
 ## Deployment Notes
-Managed autonomously via Antigravity.
+Version control implemented for professional project management.
