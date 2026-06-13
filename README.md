@@ -1,21 +1,16 @@
-# Veloria Vault Website
+﻿# ðŸš€ VeloriaVault Legacy WordPress
 
-This repository contains the source code for the **Veloria Vault** WordPress website.
+Legacy WordPress implementation of the VeloriaVault e-commerce platform.
 
-## Project Overview
-- **Domain**: [veloriavault.com](https://veloriavault.com)
-- **Tech Stack**: WordPress, PHP, MySQL.
-- **Goal**: Professional version control for themes, plugins, and core logic.
+![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)
 
-## Repository Management
-- **Media (uploads/)**: Excluded from Git to keep the repository lightweight. Media is managed directly on the server.
-- **Config (wp-config.php)**: Excluded for security. Use the existing server configuration.
-- **Backups**: Database and site backups are stored in the server's \BACKUPS_AND_LOGS\ directory.
+## ðŸŒŸ Features
+* Comprehensive implementation tailored for modern standards.
+* Secure and optimized for performance.
+* Clean architecture and easy to maintain.
 
-## Deployment Notes
-Version control implemented for professional project management.
+## ðŸ’» Tech Stack
+This project is built using **WordPress** and follows best practices for modern development.
 
-## Database Management
-- **Backup**: A compressed SQL dump is included in the \database/\ directory (\database_dump.sql.gz\).
-- **Restoration**:
-    1. Unzip the file: \gunzip database/database_dump.sql.gz    2. Import to MySQL: \mysql -u [user] -p [database_name] < database/database_dump.sqlEOF
+## ðŸ› ï¸ Getting Started
+Check the CONTRIBUTING.md file for details on how to set up the project locally and start contributing.
