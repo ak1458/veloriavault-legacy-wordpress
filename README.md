@@ -1,20 +1,11 @@
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)
-
-### Stack
-
-WordPress • PHP • MySQL
-
-### Local development
-
-Check the `CONTRIBUTING.md` file for details on how to set up the project locally and start contributing.
-
----
+[![WordPress](https://img.shields.io/badge/WordPress-CMS-21759B?logo=wordpress&logoColor=white)](https://wordpress.org)
+[![PHP](https://img.shields.io/badge/PHP-Backend-777BB4?logo=php&logoColor=white)](https://php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)](https://mysql.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ﻿# ðŸš€ VeloriaVault Legacy WordPress
 
 Legacy WordPress implementation of the VeloriaVault e-commerce platform.
-
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)
 
 ## ðŸŒŸ Features
 * Comprehensive implementation tailored for modern standards.
