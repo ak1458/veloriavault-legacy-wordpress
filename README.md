@@ -1,21 +1,27 @@
+# Veloria Vault Website
+
 [![WordPress](https://img.shields.io/badge/WordPress-CMS-21759B?logo=wordpress&logoColor=white)](https://wordpress.org)
 [![PHP](https://img.shields.io/badge/PHP-Backend-777BB4?logo=php&logoColor=white)](https://php.net)
 [![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)](https://mysql.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-﻿# ðŸš€ VeloriaVault Legacy WordPress
 
-Legacy WordPress implementation of the VeloriaVault e-commerce platform.
+This repository contains the source code for the **Veloria Vault** WordPress website.
 
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)
+## Project Overview
+- **Domain**: [veloriavault.com](https://veloriavault.com)
+- **Tech Stack**: WordPress, PHP, MySQL.
+- **Goal**: Professional version control for themes, plugins, and core logic.
 
-## ðŸŒŸ Features
-* Comprehensive implementation tailored for modern standards.
-* Secure and optimized for performance.
-* Clean architecture and easy to maintain.
+## Repository Management
+- **Media (uploads/)**: Excluded from Git to keep the repository lightweight. Media is managed directly on the server.
+- **Config (wp-config.php)**: Excluded for security. Use the existing server configuration.
+- **Backups**: Database and site backups are stored in the server's \BACKUPS_AND_LOGS\ directory.
 
-## ðŸ’» Tech Stack
-This project is built using **WordPress** and follows best practices for modern development.
+## Deployment Notes
+Version control implemented for professional project management.
 
-## ðŸ› ï¸ Getting Started
-Check the CONTRIBUTING.md file for details on how to set up the project locally and start contributing.
+## Database Management
+- **Backup**: A compressed SQL dump is included in the \database/\ directory (\database_dump.sql.gz\).
+- **Restoration**:
+    1. Unzip the file: \gunzip database/database_dump.sql.gz    2. Import to MySQL: \mysql -u [user] -p [database_name] < database/database_dump.sqlEOF
