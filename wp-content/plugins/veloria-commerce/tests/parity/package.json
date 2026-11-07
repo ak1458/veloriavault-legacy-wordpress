@@ -1,0 +1,7 @@
+{
+  "name": "veloria-parity",
+  "private": true,
+  "type": "module",
+  "description": "Dev-only: golden vectors from the original TypeScript discount engine",
+  "devDependencies": { "esbuild": "0.25.10" }
+}

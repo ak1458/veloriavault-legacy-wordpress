@@ -1,0 +1,19 @@
+/*
+ * Veloria storefront stylesheet (Tailwind CSS v4, same version as the
+ * Next.js build). Utility classes are collected from the PHP templates and
+ * JS modules, so markup copied from the React components renders identically.
+ */
+@import "tailwindcss" source(none);
+@source "../../*.php";
+@source "../../template-parts";
+@source "../../templates";
+@source "../../page-templates";
+@source "../../woocommerce";
+@source "../../inc";
+@source "../js";
+/* Classes used inside policy page content (edited in WordPress, so not in templates). */
+@source inline("space-y-2 list-disc pl-5 text-2xl text-xl font-serif text-gray-900 text-gray-700 text-gray-500 text-sm mt-10 mt-8 mb-4 mb-3 italic");
+
+@import "./fonts.css";
+@import "./globals.css";
+@import "./wordpress.css";

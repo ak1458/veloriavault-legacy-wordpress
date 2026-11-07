@@ -1,0 +1,239 @@
+/*
+ * WordPress / WooCommerce / Alpine specifics that the Next.js build did not
+ * need. Nothing here changes the storefront's look.
+ */
+
+/* Alpine: hide elements until their component initialises. */
+[x-cloak] {
+  display: none !important;
+}
+
+/* Motion that framer-motion produced on the headless site. */
+@keyframes veloria-progress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes veloria-fade-x {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes veloria-fade-y {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes veloria-truck {
+  from { left: 2rem; }
+  to { left: calc(100% - 2rem); }
+}
+.veloria-in-x { animation: veloria-fade-x 0.2s ease-out both; }
+.veloria-in-y { animation: veloria-fade-y 0.2s ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+  .veloria-in-x, .veloria-in-y { animation: none; }
+}
+
+/* Keep the sticky header below the admin bar for logged-in editors. */
+.admin-bar header.sticky {
+  top: 32px;
+}
+@media (max-width: 782px) {
+  .admin-bar header.sticky {
+    top: 46px;
+  }
+}
+
+/* Screen-reader text used by WordPress core output. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+/* WooCommerce notices printed on the payment page. */
+.veloria-wc-notices .woocommerce-error,
+.veloria-wc-notices .woocommerce-message,
+.veloria-wc-notices .woocommerce-info {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+.veloria-wc-notices .woocommerce-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+}
+.veloria-wc-notices .woocommerce-message,
+.veloria-wc-notices .woocommerce-info {
+  background: #fcf8e8;
+  border: 1px solid #f0e6c8;
+  color: #8a6d3b;
+}
+
+/* Razorpay plugin's receipt form, restyled to the storefront button. */
+.veloria-pay #razorpay_payment_form,
+.veloria-pay form[name="razorpayform"] {
+  margin: 0;
+}
+.veloria-pay #btn-razorpay {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #072654;
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+.veloria-pay #btn-razorpay:hover {
+  background: #0d3a7a;
+}
+.veloria-pay #btn-razorpay-cancel {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  background: none;
+  border: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* WordPress password-reset form (only WooCommerce screen still rendered by WC). */
+.veloria-wc-form input[type="text"],
+.veloria-wc-form input[type="email"],
+.veloria-wc-form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  margin-top: 0.25rem;
+}
+.veloria-wc-form label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.veloria-wc-form button,
+.veloria-wc-form .button {
+  margin-top: 1.5rem;
+  width: 100%;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+}
+.veloria-wc-form button:hover,
+.veloria-wc-form .button:hover {
+  background: #b59a5c;
+}
+
+/* Native WooCommerce forms retain extension hooks while using Veloria's palette. */
+.veloria-native-commerce .woocommerce,
+.elementor-widget-woocommerce-checkout-page .woocommerce,
+.elementor-widget-woocommerce-cart .woocommerce {
+  color: #211a12;
+  font-family: Lato, sans-serif;
+}
+.veloria-native-commerce .woocommerce form.checkout,
+.veloria-native-commerce .woocommerce-cart-form,
+.veloria-native-commerce .cart-collaterals,
+.veloria-native-commerce .woocommerce-MyAccount-content {
+  background: white;
+  padding: clamp(16px, 3vw, 32px);
+  border: 1px solid #e8e1d7;
+  border-radius: 12px;
+}
+.veloria-native-commerce .woocommerce h2,
+.veloria-native-commerce .woocommerce h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.veloria-builder-products ul.products { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 24px; }
+.veloria-builder-products ul.products::before,.veloria-builder-products ul.products::after { display: none; }
+.veloria-builder-products ul.products li.product { float: none !important; width: auto !important; margin: 0 !important; }
+.veloria-native-wishlist { margin-top: 12px; }
+.veloria-native-order-tools { margin: 24px 0; padding: 20px; border: 1px solid #e8e1d7; border-radius: 8px; }
+/* Order actions: own layout so the broad .veloria-wc-form button rules and
+   WooCommerce's zero button margin cannot glue the buttons together. */
+.veloria-native-order-tools .veloria-order-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+.veloria-native-order-tools .veloria-order-actions .button { margin: 0; width: auto; flex: 1 1 200px; min-height: 48px; display: inline-flex; align-items: center; justify-content: center; text-align: center; line-height: 1.2; border-radius: 8px; }
+.veloria-native-commerce .woocommerce .veloria-native-order-tools .veloria-order-actions .veloria-cancel-action { background: #fff; color: #9b1c1c; border: 1px solid #e5b4b4; }
+.veloria-native-commerce .woocommerce .veloria-native-order-tools .veloria-order-actions .veloria-cancel-action:hover { background: #fdf2f2; color: #7f1414; }
+.veloria-native-order-tools .veloria-order-progress { margin: 8px 0 0; padding: 12px; border: 1px solid #f3dfa6; background: #fffbeb; color: #7a5a12; border-radius: 8px; font-size: .875rem; }
+@media (max-width: 640px) { .veloria-native-order-tools .veloria-order-actions .button { flex-basis: 100%; } }
+@media(max-width:767px) { .veloria-builder-products ul.products { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+.veloria-native-commerce .woocommerce .form-row label {
+  display: block;
+  color: #5c564d;
+  font-size: .875rem;
+  margin: 8px 0 6px;
+}
+.veloria-native-commerce .woocommerce .input-text,
+.veloria-native-commerce .woocommerce select,
+.veloria-native-commerce .woocommerce textarea {
+  background: white;
+  border: 1px solid #d6cfc3;
+  border-radius: 6px;
+  padding: 11px 12px;
+  min-height: 44px;
+}
+.veloria-native-commerce .woocommerce a.button,
+.veloria-native-commerce .woocommerce button.button,
+.veloria-native-commerce .woocommerce input.button {
+  background: #1a1a1a;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.veloria-native-commerce .woocommerce .button.alt { background: #9f8040; }
+.veloria-native-commerce .woocommerce table.shop_table { border-color: #e8e1d7; }
+.veloria-native-commerce .woocommerce table.shop_table th,
+.veloria-native-commerce .woocommerce table.shop_table td { padding: 14px 12px; }
+.veloria-native-commerce .woocommerce #payment { background: #faf8f5; border-radius: 8px; }
+.veloria-native-commerce .woocommerce input[type=radio],
+.veloria-native-commerce .woocommerce input[type=checkbox] { accent-color: #9f8040; }
+.veloria-native-commerce .woocommerce .quantity .qty { min-width: 65px; }
+.veloria-native-commerce .woocommerce-MyAccount-navigation a { display: block; padding: 12px; border-bottom: 1px solid #e8e1d7; }
+.veloria-native-commerce .woocommerce-MyAccount-navigation .is-active a { color: #9f8040; font-weight: 700; }
+@media (max-width: 768px) {
+  .veloria-native-commerce .woocommerce .col2-set .col-1,
+  .veloria-native-commerce .woocommerce .col2-set .col-2,
+  .veloria-native-commerce .woocommerce-MyAccount-navigation,
+  .veloria-native-commerce .woocommerce-MyAccount-content { float: none; width: 100%; margin-bottom: 20px; }
+}
+
+/*
+ * WooCommerce's unlayered `.woocommerce img, .woocommerce-page img { height: auto }`
+ * beats Tailwind's layered size utilities (h-10, h-12, …) on shop, product and
+ * cart pages, so logos and card images lose their height. Hand the height back
+ * to the layered rules; untagged images still get Tailwind's base `height: auto`.
+ */
+body:is(.woocommerce, .woocommerce-page) img {
+  height: revert-layer;
+}

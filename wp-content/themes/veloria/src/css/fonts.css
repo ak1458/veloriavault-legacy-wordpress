@@ -1,0 +1,53 @@
+/*
+ * Self-hosted fonts, matching next/font in src/app/layout.tsx:
+ *   Inter (variable)            → --font-sans
+ *   Playfair Display (variable) → --font-serif (no italic face, as before)
+ *   Lato 300/400/700            → --font-lato, the body face
+ */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/inter-latin-wght-normal.woff2") format("woff2-variations");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("../fonts/playfair-display-latin-wght-normal.woff2") format("woff2-variations");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/lato-latin-300-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/lato-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/lato-latin-700-normal.woff2") format("woff2");
+}
+
+/* next/font exposed these as CSS variables on <body>. */
+body {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-lato: "Lato", ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-lato), var(--font-sans), sans-serif;
+}

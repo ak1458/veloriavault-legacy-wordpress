@@ -1,0 +1,11 @@
+.git
+.superpowers
+.gstack
+**/node_modules
+dev/private
+OLD DATA
+dist
+**/.next
+*.log
+deploy/*.env
+_dev-local

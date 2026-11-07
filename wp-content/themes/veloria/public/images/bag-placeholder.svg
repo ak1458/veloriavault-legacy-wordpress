@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#f5f5f5"/>
+  <path d="M140 160h120v140H140z" stroke="#d4d4d4" stroke-width="2"/>
+  <path d="M170 160v-30a30 30 0 0130-30 30 30 0 0130 30v30" stroke="#d4d4d4" stroke-width="2"/>
+  <text x="200" y="340" text-anchor="middle" fill="#999" font-family="system-ui" font-size="14">
+    No Image Available
+  </text>
+</svg>

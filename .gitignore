@@ -1,20 +1,21 @@
-# Logs
-*.log
-wp-content/debug.log
-
-# WordPress Content
-wp-content/uploads/
-wp-content/backups/
-wp-content/upgrade/
-wp-content/cache/
-wp-content/aiowps_backups/
-wp-content/staging/
-
-# Configuration
-wp-config.php
-.htaccess
-
-# OS Files
+node_modules/
+/dist/
+.superpowers/
+.gstack/
+.impeccable/
 .DS_Store
-Thumbs.db
-database/*.sql.gz
+*.log
+.env
+.env.*
+!.env.example
+deploy/*.env
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+*.sql
+*.sql.gz
+*.wpress
+*.pem
+*.key
+_dev-local/
+dev/private/

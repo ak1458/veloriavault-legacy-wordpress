@@ -1,0 +1,10 @@
+[
+  {"label":"IST start rejects previous millisecond","coupon":{"startDate":"2026-10-23"},"now":"2026-10-22T18:29:59Z","millis":999,"error":"This coupon is not yet active"},
+  {"label":"IST start accepts local midnight","coupon":{"startDate":"2026-10-23"},"now":"2026-10-22T18:30:00Z","error":null},
+  {"label":"IST expiry accepts last millisecond","coupon":{"expiryDate":"2026-10-23"},"now":"2026-10-23T18:29:59Z","millis":999,"error":null},
+  {"label":"IST expiry rejects next midnight","coupon":{"expiryDate":"2026-10-23"},"now":"2026-10-23T18:30:00Z","error":"This coupon has expired"},
+  {"label":"Explicit expiry keeps exact offset","coupon":{"expiryDate":"2026-10-23T12:00:00+05:30"},"now":"2026-10-23T06:30:00Z","error":"This coupon has expired"},
+  {"label":"Explicit expiry accepts preceding millisecond","coupon":{"expiryDate":"2026-10-23T12:00:00+05:30"},"now":"2026-10-23T06:29:59Z","millis":999,"error":null},
+  {"label":"Store timezone is respected after DST transition","timezone":"America/New_York","coupon":{"expiryDate":"2026-11-01"},"now":"2026-11-02T04:59:59Z","millis":999,"error":null},
+  {"label":"DST expiry uses next local midnight","timezone":"America/New_York","coupon":{"expiryDate":"2026-11-01"},"now":"2026-11-02T05:00:00Z","error":"This coupon has expired"}
+]

@@ -1,0 +1,27 @@
+{
+  "name": "veloria-theme",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Build tooling for the Veloria WordPress theme. Output (assets/dist, assets/fonts) is committed so servers never need Node.js.",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:fonts && npm run build:css && npm run build:js",
+    "build:css": "tailwindcss -i src/css/app.css -o assets/dist/app.css --minify",
+    "build:js": "esbuild src/js/main.js --bundle --minify --format=iife --target=es2019 --outfile=assets/dist/app.js",
+    "build:fonts": "node tools/copy-fonts.mjs",
+    "watch:css": "tailwindcss -i src/css/app.css -o assets/dist/app.css --watch",
+    "watch:js": "esbuild src/js/main.js --bundle --format=iife --target=es2019 --outfile=assets/dist/app.js --watch",
+    "icons": "node tools/build-icons.mjs"
+  },
+  "devDependencies": {
+    "@alpinejs/collapse": "3.14.9",
+    "@fontsource-variable/inter": "5.2.6",
+    "@fontsource-variable/playfair-display": "5.2.6",
+    "@fontsource/lato": "5.2.6",
+    "@tailwindcss/cli": "4.2.1",
+    "alpinejs": "3.14.9",
+    "esbuild": "0.25.10",
+    "gsap": "3.15.0",
+    "tailwindcss": "4.2.1"
+  }
+}
